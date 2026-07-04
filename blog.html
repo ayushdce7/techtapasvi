@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing & Web Development Blog | SEO, Ads, SMM, Content — TechTapasvi</title>
+<meta name="description" content="Practical guides on SEO, Google & Meta Ads, social media marketing, content writing, web development and email marketing — from TechTapasvi, Ghaziabad, serving clients across India.">
+<meta name="keywords" content="digital marketing blog India, SEO blog, social media marketing tips, content writing guide, Google ads tips, website development blog, TechTapasvi blog">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.techtapasvi.com/blog.html">
+<meta name="author" content="TechTapasvi">
+<meta name="geo.placename" content="Ghaziabad">
+<meta name="geo.region" content="IN-UP">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TechTapasvi Blog — Digital Marketing & Web Development Insights">
+<meta property="og:description" content="SEO, Ads, SMM, Content Writing, Web Development & Email Marketing guides from TechTapasvi.">
+<meta property="og:image" content="logo.png">
+<meta property="og:locale" content="en_IN">
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "TechTapasvi Blog",
+  "url": "https://www.techtapasvi.com/blog.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TechTapasvi",
+    "logo": "logo.png",
+    "areaServed": [{"@type":"Country","name":"India"}]
+  }
+}
+</script>
+
+<style>
+:root{
+  --navy:#0A1B3D; --navy-2:#12285A;
+  --blue:#2E6EF6; --blue-light:#5FA8FF; --sky:#38BDF8;
+  --orange:#FF8A1E; --amber:#FFC542; --teal:#14B8A6;
+  --bg:#F5F8FC; --ink:#0A1B3D; --ink-muted:#5B6B8C; --line:#E3E9F5; --radius:18px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--bg); overflow-x:hidden; }
+h1,h2,h3,h4{ font-family:'Space Grotesk',sans-serif; letter-spacing:-0.01em; }
+a{text-decoration:none;}
+.text-muted-2{color:var(--ink-muted);}
+.section-pad{padding:5rem 0;}
+@media (max-width:768px){ .section-pad{padding:3rem 0;} }
+
+.skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:.6rem 1rem;z-index:2000;border-radius:0 0 8px 0;}
+.skip-link:focus{left:0;}
+
+.growth-spine{ position:fixed; left:0; top:0; width:4px; height:100vh; background:linear-gradient(180deg,var(--sky),var(--blue),var(--orange)); transform:scaleY(0); transform-origin:top; z-index:1500; transition:transform .05s linear; }
+
+/* Navbar (shared look with homepage) */
+.navbar-custom{ background:rgba(255,255,255,.85); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); padding:.7rem 0; transition:box-shadow .3s ease, padding .3s ease; }
+.navbar-custom.scrolled{ box-shadow:0 6px 24px rgba(10,27,61,.08); padding:.4rem 0; }
+.navbar-brand img{height:44px;}
+.nav-link-custom{ font-weight:600; color:var(--navy)!important; margin:0 .6rem; position:relative; font-size:.98rem; }
+.nav-link-custom.active{ color:var(--blue)!important; }
+.nav-link-custom::after{ content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:var(--orange); transition:width .25s ease; }
+.nav-link-custom:hover::after, .nav-link-custom.active::after{width:100%;}
+.btn-cta{ background:linear-gradient(135deg,var(--orange),var(--amber)); color:#fff!important; font-weight:700; border:none; border-radius:50px; padding:.6rem 1.4rem; box-shadow:0 8px 20px rgba(255,138,30,.35); transition:transform .25s ease, box-shadow .25s ease; }
+.btn-cta:hover{ transform:translateY(-2px); box-shadow:0 12px 26px rgba(255,138,30,.45); color:#fff; }
+.btn-outline-navy{ border:2px solid var(--navy); color:var(--navy); font-weight:700; border-radius:50px; padding:.55rem 1.3rem; transition:all .25s ease; }
+.btn-outline-navy:hover{ background:var(--navy); color:#fff; }
+
+/* Blog Header */
+.blog-hero{
+  background:radial-gradient(circle at 85% 10%, rgba(56,189,248,.15), transparent 45%),
+             radial-gradient(circle at 10% 90%, rgba(255,138,30,.10), transparent 45%),
+             linear-gradient(180deg,#F5F8FC 0%, #EEF3FB 100%);
+  padding:7.5rem 0 3.5rem;
+}
+.breadcrumb-custom{ font-size:.85rem; color:var(--ink-muted); font-weight:600; }
+.breadcrumb-custom a{ color:var(--blue); }
+.eyebrow{ display:inline-flex; align-items:center; gap:.5rem; background:#fff; border:1px solid var(--line); border-radius:50px; padding:.4rem 1rem; font-weight:600; font-size:.82rem; color:var(--blue); box-shadow:0 4px 14px rgba(10,27,61,.05); }
+.eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:pulse 1.6s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,138,30,.5);}70%{box-shadow:0 0 0 8px rgba(255,138,30,0);}100%{box-shadow:0 0 0 0 rgba(255,138,30,0);}}
+.blog-hero h1{ font-size:clamp(2rem,4vw,3rem); font-weight:700; color:var(--navy); margin:1.1rem 0; }
+
+/* Category quick nav pills */
+.cat-nav{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.5rem; }
+.cat-nav a{
+  background:#fff; border:1.5px solid var(--line); color:var(--navy); font-weight:600; font-size:.85rem;
+  padding:.5rem 1.1rem; border-radius:50px; transition:all .25s ease;
+}
+.cat-nav a:hover{ background:var(--navy); color:#fff; border-color:var(--navy); }
+
+/* Reveal on scroll */
+.reveal{opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in-view{opacity:1; transform:translateY(0);}
+.reveal-delay-1.in-view{transition-delay:.08s;}
+.reveal-delay-2.in-view{transition-delay:.16s;}
+.reveal-delay-3.in-view{transition-delay:.24s;}
+@media (prefers-reduced-motion: reduce){ .reveal, .reveal.in-view{ transition:none!important; opacity:1!important; transform:none!important;} }
+
+/* Category section header */
+.cat-header{ display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:2rem; }
+.cat-icon{
+  width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center; margin-bottom:.9rem;
+  box-shadow:0 10px 22px rgba(10,27,61,.15);
+}
+.cat-title{ font-size:clamp(1.4rem,2.4vw,1.9rem); font-weight:700; color:var(--navy); }
+.cat-count{ font-size:.85rem; color:var(--ink-muted); font-weight:600; }
+
+/* Blog cards */
+.blog-card{ background:#fff; border-radius:16px; overflow:hidden; border:1px solid var(--line); height:100%; transition:transform .3s ease, box-shadow .3s ease;}
+.blog-card:hover{ transform:translateY(-6px); box-shadow:0 24px 44px -24px rgba(10,27,61,.25); }
+.blog-thumb{ height:160px; position:relative; overflow:hidden;}
+.blog-thumb img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+.blog-card:hover .blog-thumb img{ transform:scale(1.08); }
+.blog-thumb .thumb-overlay{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,27,61,.05) 40%, rgba(10,27,61,.85) 100%); }
+.blog-thumb .tag{ position:absolute; bottom:10px; left:10px; z-index:2; color:#fff; font-size:.7rem; font-weight:700; padding:.28rem .75rem; border-radius:50px;}
+.blog-body{padding:1.2rem;}
+.blog-date{font-size:.75rem; color:var(--ink-muted); font-weight:600;}
+.blog-link{color:var(--blue); font-weight:700; font-size:.85rem;}
+.blog-title-sm{ font-size:.98rem; line-height:1.35; }
+
+/* View all button row */
+.view-all-wrap{ text-align:center; margin-top:2rem; margin-bottom:1rem;}
+.btn-view-all{
+  border:2px solid var(--line); color:var(--navy); font-weight:700; border-radius:50px; padding:.6rem 1.6rem;
+  transition:all .25s ease; display:inline-flex; align-items:center; gap:.5rem; font-size:.9rem;
+}
+.btn-view-all:hover{ background:var(--navy); border-color:var(--navy); color:#fff; transform:translateX(3px); }
+
+.cat-divider{ border:none; border-top:1px solid var(--line); margin:0; }
+
+/* Newsletter CTA */
+.newsletter-band{
+  background:linear-gradient(120deg,var(--navy),#0F2A5C 60%, var(--navy));
+  border-radius:28px; padding:3rem 2rem; color:#fff; position:relative; overflow:hidden;
+}
+.newsletter-band::after{ content:""; position:absolute; inset:0; background-image:radial-gradient(var(--sky) 1.5px, transparent 1.5px); background-size:26px 26px; opacity:.08; }
+.newsletter-band .form-control{ border-radius:50px; border:none; padding:.8rem 1.3rem; }
+
+/* Footer */
+footer{ background:var(--navy); color:#C7D3EC; padding:4rem 0 1.5rem;}
+footer h5{ color:#fff; font-family:'Space Grotesk',sans-serif; margin-bottom:1.2rem;}
+footer a{ color:#C7D3EC; }
+footer a:hover{ color:var(--sky); }
+.footer-social a{ width:38px; height:38px; border-radius:50%; border:1px solid rgba(255,255,255,.2); display:inline-flex; align-items:center; justify-content:center; margin-right:.5rem; transition:background .25s; }
+.footer-social a:hover{ background:var(--blue); border-color:var(--blue); }
+.footer-bottom{ border-top:1px solid rgba(255,255,255,.1); margin-top:2.5rem; padding-top:1.5rem; font-size:.85rem;}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="growth-spine" id="growthSpine"></div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" alt="TechTapasvi - Digital Marketing & Website Development">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#lead-form" class="btn btn-cta">Get Free Growth Audit</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ================= BLOG HERO ================= -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="reveal in-view">
+      <div class="breadcrumb-custom mb-2"><a href="index.html">Home</a> &nbsp;/&nbsp; Blog</div>
+      <span class="eyebrow"><span class="pulse"></span> Insights & Resources</span>
+      <h1>The TechTapasvi Blog</h1>
+      <p class="fs-5 text-muted-2 mb-0" style="max-width:640px;">Practical, no-fluff guides on SEO, paid ads, social media, content, web development and email marketing — written for business owners, not just marketers.</p>
+      <div class="cat-nav">
+        <a href="#cat-seo">SEO</a>
+        <a href="#cat-smm">Social Media Marketing</a>
+        <a href="#cat-content">Content Writing</a>
+        <a href="#cat-ads">Paid Ads</a>
+        <a href="#cat-webdev">Web Development</a>
+        <a href="#cat-email">Email Marketing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEO CATEGORY ================= -->
+<section class="section-pad" id="cat-seo">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--orange),var(--amber));">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </div>
+        <div class="cat-title">Search Engine Optimization (SEO)</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">Rank higher, get found first, and turn organic search into your most reliable lead source.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=70" alt="Local SEO checklist for Indian businesses">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--orange)">SEO</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 12, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">The Complete Local SEO Checklist for Indian Businesses in 2026</h3>
+            <p class="small text-muted-2">A step-by-step checklist to help your business rank on Google Maps in your city.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=70" alt="On-page vs off-page SEO comparison">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--orange)">SEO</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 5, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">On-Page vs Off-Page SEO: What Should You Prioritize First?</h3>
+            <p class="small text-muted-2">Understanding where to focus your limited time and budget for faster results.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=70" alt="Core Web Vitals and search rankings">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--orange)">SEO</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 28, 2026 · 7 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How Google's Core Web Vitals Impact Your Search Rankings</h3>
+            <p class="small text-muted-2">Why a slow, clunky website could be quietly working against your SEO.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=70" alt="Keyword research fundamentals">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--orange)">SEO</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 20, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Keyword Research 101: Finding Terms Your Customers Actually Search</h3>
+            <p class="small text-muted-2">A beginner-friendly approach to building your first keyword list.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="seo-articles.html" class="btn-view-all">View All SEO Articles →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="cat-divider">
+
+<!-- ================= SMM CATEGORY ================= -->
+<section class="section-pad" id="cat-smm" style="background:#EEF3FB;">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--sky),var(--blue-light));">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.6l6.8-3.9M8.6 13.4l6.8 3.9"/></svg>
+        </div>
+        <div class="cat-title">Social Media Marketing (SMM)</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">Build a presence that actually converts followers into customers — not just likes.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=600&q=70" alt="Instagram vs LinkedIn for brands">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--sky)">SMM</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 10, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Instagram vs LinkedIn: Choosing the Right Platform for Your Brand</h3>
+            <p class="small text-muted-2">Not every platform fits every business — here's how to pick the right one.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=70" alt="Content calendar planning for social media">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--sky)">SMM</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 2, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How to Build a Content Calendar That Actually Gets Followed</h3>
+            <p class="small text-muted-2">A simple framework to stop posting randomly and start posting with purpose.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=70" alt="Organic vs paid social media budget">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--sky)">SMM</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 24, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Organic vs Paid Social: Where Should Your Budget Go?</h3>
+            <p class="small text-muted-2">A practical breakdown for businesses working with a limited budget.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=70" alt="Social media metrics that matter">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--sky)">SMM</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 15, 2026 · 4 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">5 Social Media Metrics That Actually Matter (And 5 That Don't)</h3>
+            <p class="small text-muted-2">Stop obsessing over likes — here's what to track instead.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="#" class="btn-view-all">View All Social Media Articles →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="cat-divider">
+
+<!-- ================= CONTENT WRITING CATEGORY ================= -->
+<section class="section-pad" id="cat-content">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--amber),#FFDD8A);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+        </div>
+        <div class="cat-title">Content Writing</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">Words that rank on Google and still make sense to the human reading them.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=70" alt="Content strategy for websites">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--amber); color:var(--navy);">Content</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 8, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Why Every Website Needs a Content Strategy, Not Just Content</h3>
+            <p class="small text-muted-2">Random blog posts rarely move the needle — here's what does.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=70" alt="Blog posts that rank and convert">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--amber); color:var(--navy);">Content</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 30, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How to Write Blog Posts That Rank and Convert</h3>
+            <p class="small text-muted-2">Balancing SEO structure with genuinely useful writing.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=70" alt="High-converting landing page copy">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--amber); color:var(--navy);">Content</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 22, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">The Anatomy of a High-Converting Landing Page Copy</h3>
+            <p class="small text-muted-2">The exact structure we use before writing a single word of copy.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=70" alt="Storytelling in marketing content">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--amber); color:var(--navy);">Content</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 14, 2026 · 4 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Storytelling in Marketing: Turning Features Into Benefits</h3>
+            <p class="small text-muted-2">Why nobody buys a feature list — and what to write instead.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="#" class="btn-view-all">View All Content Writing Articles →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="cat-divider">
+
+<!-- ================= PAID ADS CATEGORY ================= -->
+<section class="section-pad" id="cat-ads" style="background:#EEF3FB;">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--blue),var(--sky));">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+        </div>
+        <div class="cat-title">Paid Ads (Google & Meta)</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">Turn ad spend into predictable, measurable leads — not just impressions.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=70" alt="Google Ads vs Meta Ads comparison">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--blue)">Ads</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 14, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Google Ads vs Meta Ads: Which One Should You Start With?</h3>
+            <p class="small text-muted-2">A practical decision guide based on your business type and goals.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=70" alt="Lowering cost per lead in ad campaigns">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--blue)">Ads</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 6, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How to Lower Your Cost Per Lead Without Cutting Ad Spend</h3>
+            <p class="small text-muted-2">Small optimisations that compound into big savings over time.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=70" alt="Retargeting visitors who did not convert">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--blue)">Ads</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 29, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Retargeting 101: Bringing Back Visitors Who Didn't Convert</h3>
+            <p class="small text-muted-2">The single highest-ROI campaign most businesses aren't running.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=600&q=70" alt="Ad budget allocation across platforms">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--blue)">Ads</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 18, 2026 · 4 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">A Beginner's Guide to Ad Budget Allocation Across Platforms</h3>
+            <p class="small text-muted-2">How much to spend where when you're just getting started.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="#" class="btn-view-all">View All Paid Ads Articles →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="cat-divider">
+
+<!-- ================= WEB DEVELOPMENT CATEGORY ================= -->
+<section class="section-pad" id="cat-webdev">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--navy),var(--navy-2));">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+        </div>
+        <div class="cat-title">Web Development</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">Fast, functional websites that support your marketing instead of undermining it.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=70" alt="Website mistakes costing leads">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--navy)">Web Dev</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 11, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">5 Website Mistakes That Are Quietly Costing You Leads</h3>
+            <p class="small text-muted-2">Slow load times aren't the only culprit — here's what else drives visitors away.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=600&q=70" alt="Website speed as a ranking factor">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--navy)">Web Dev</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 3, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Why Website Speed Is a Ranking Factor (And How to Fix It)</h3>
+            <p class="small text-muted-2">Practical, non-technical steps to make your site load faster.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=70" alt="Mobile-first website design">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--navy)">Web Dev</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 26, 2026 · 4 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Mobile-First Design: Why It's No Longer Optional</h3>
+            <p class="small text-muted-2">Most of your visitors are on their phones — is your site ready?</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=70" alt="Custom website vs template">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--navy)">Web Dev</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 17, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How to Choose Between a Custom Website and a Template</h3>
+            <p class="small text-muted-2">Weighing cost, speed, and flexibility before you decide.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="#" class="btn-view-all">View All Web Development Articles →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="cat-divider">
+
+<!-- ================= EMAIL MARKETING CATEGORY ================= -->
+<section class="section-pad" id="cat-email" style="background:#EEF3FB;">
+  <div class="container">
+    <div class="cat-header reveal">
+      <div>
+        <div class="cat-icon" style="background:linear-gradient(135deg,var(--teal),#5EEAD4);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </div>
+        <div class="cat-title">Email Marketing</div>
+        <p class="text-muted-2 mb-0" style="max-width:560px;">The highest-ROI channel most businesses forget to invest in.</p>
+      </div>
+      <div class="cat-count">4 articles</div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=70" alt="Email marketing is still effective">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--teal)">Email</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 9, 2026 · 4 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Email Marketing Isn't Dead: Here's Proof</h3>
+            <p class="small text-muted-2">Why email still outperforms most social channels on ROI.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-1">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=70" alt="Writing email subject lines that get opened">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--teal)">Email</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">Jun 1, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">How to Write Subject Lines That Actually Get Opened</h3>
+            <p class="small text-muted-2">Small tweaks that can double your open rates.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-2">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=70" alt="Building an email list from scratch">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--teal)">Email</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 23, 2026 · 6 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Building an Email List From Scratch: A Practical Guide</h3>
+            <p class="small text-muted-2">Ethical, effective ways to grow a list people actually want to be on.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal reveal-delay-3">
+        <article class="blog-card">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=70" alt="Email automation basics">
+            <div class="thumb-overlay"></div>
+            <span class="tag" style="background:var(--teal)">Email</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-date">May 16, 2026 · 5 min read</div>
+            <h3 class="h6 fw-bold my-2 blog-title-sm" style="color:var(--navy)">Automation 101: Emails That Work While You Sleep</h3>
+            <p class="small text-muted-2">Setting up simple sequences that nurture leads automatically.</p>
+            <a href="#" class="blog-link">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="view-all-wrap reveal">
+      <a href="#" class="btn-view-all">View All Email Marketing Articles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER CTA ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="newsletter-band reveal">
+      <div class="row align-items-center g-4" style="position:relative; z-index:2;">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-2">Get new articles in your inbox</h2>
+          <p class="mb-0" style="color:#C7D3EC;">One practical email a week — no spam, unsubscribe anytime.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex flex-column flex-sm-row gap-2" onsubmit="return false;">
+            <input type="email" class="form-control" placeholder="you@business.com" required>
+            <button type="submit" class="btn btn-cta">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <img src="logo.png" alt="TechTapasvi Logo" style="height:48px;" class="mb-3">
+        <p class="small">Disciplined digital marketing, website development and tech training — headquartered in Ghaziabad, serving clients across India.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html#home">Home</a></li>
+          <li class="mb-2"><a href="index.html#services">Services</a></li>
+          <li class="mb-2"><a href="index.html#portfolio">Portfolio</a></li>
+          <li class="mb-2"><a href="index.html#courses">Courses</a></li>
+          <li class="mb-2"><a href="blog.html">Blog</a></li>
+          <li class="mb-2"><a href="index.html#about">About</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Blog Categories</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#cat-seo">SEO</a></li>
+          <li class="mb-2"><a href="#cat-smm">Social Media Marketing</a></li>
+          <li class="mb-2"><a href="#cat-content">Content Writing</a></li>
+          <li class="mb-2"><a href="#cat-ads">Paid Ads</a></li>
+          <li class="mb-2"><a href="#cat-webdev">Web Development</a></li>
+          <li class="mb-2"><a href="#cat-email">Email Marketing</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2">📍 Navyug Market Area, Ghaziabad, UP 201001</li>
+          <li class="mb-2">📞 +91 90000 00000</li>
+          <li class="mb-2">✉️ hello@techtapasvi.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      © 2026 TechTapasvi. All rights reserved. | Digital Marketing & Website Development Company | Ghaziabad, India
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', ()=>{
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+  document.getElementById('growthSpine').style.transform = `scaleY(${progress})`;
+}, {passive:true});
+
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in-view');
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.12});
+revealEls.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
