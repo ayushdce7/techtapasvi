@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush | Website Development & Digital Marketing Expert in Delhi NCR</title>
+<meta name="description" content="Ayush is a freelance website developer & digital marketing expert in Delhi NCR, offering website development, SEO, SMM, Google Ads, GBP optimization, brochure design, content writing, lead-generation & booking web apps, and membership apps.">
+<meta name="keywords" content="website developer Delhi, website developer Delhi NCR, freelance web developer Delhi, digital marketing agency Delhi, SEO expert Delhi NCR, Google Business Profile optimization Delhi, web app developer Delhi, brochure design Delhi">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ayush">
+<link rel="canonical" href="https://www.ayushwebdev.in/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ayush | Website Development & Digital Marketing Expert in Delhi NCR">
+<meta property="og:description" content="Smart websites, powerful marketing, real results — for businesses across Delhi & Delhi NCR.">
+<meta property="og:image" content="./assets/ayush-photo.jpg">
+<meta property="og:locale" content="en_IN">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ayush - Website Development & Digital Marketing",
+  "image": "./assets/ayush-photo.jpg",
+  "description": "Freelance website development and digital marketing services including SEO, SMM, Google/Meta Ads, Google Business Profile optimization, brochure design, content writing, lead-generation web apps and membership apps.",
+  "areaServed": ["Delhi", "Delhi NCR", "Gurugram", "Noida", "Ghaziabad", "Faridabad"],
+  "telephone": "+91-9971103293",
+  "url": "https://www.ayushwebdev.in/",
+  "priceRange": "₹₹"
+}
+</script>
+
+<style>
+  :root{
+    --navy:#0B1F3A;
+    --primary:#1652F0;
+    --primary-dark:#0F3FC0;
+    --accent:#12B76A;
+    --bg-tint:#F5F8FF;
+    --gray:#5B6472;
+    --white:#FFFFFF;
+    --line:#E6ECFA;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--navy);
+    background:var(--white);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Sora',sans-serif;
+    color:var(--navy);
+    font-weight:700;
+    letter-spacing:-0.02em;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--primary);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:20px;height:2px;background:var(--primary);display:inline-block;
+  }
+  .text-gray{color:var(--gray);}
+  .section{padding:100px 0;}
+  @media(max-width:768px){.section{padding:64px 0;}}
+  .bg-tint{background:var(--bg-tint);}
+  .btn-primary-custom{
+    background:var(--primary);border:none;color:#fff;
+    padding:14px 30px;border-radius:50px;font-weight:600;font-size:.95rem;
+    transition:all .3s ease;box-shadow:0 8px 20px rgba(22,82,240,.25);
+  }
+  .btn-primary-custom:hover{background:var(--primary-dark);transform:translateY(-3px);box-shadow:0 12px 26px rgba(22,82,240,.35);color:#fff;}
+  .btn-outline-custom{
+    border:1.5px solid var(--navy);color:var(--navy);background:transparent;
+    padding:13px 28px;border-radius:50px;font-weight:600;font-size:.95rem;
+    transition:all .3s ease;
+  }
+  .btn-outline-custom:hover{background:var(--navy);color:#fff;transform:translateY(-3px);}
+  .btn-whatsapp{
+    background:var(--accent);border:none;color:#fff;
+    padding:13px 26px;border-radius:50px;font-weight:600;font-size:.92rem;
+    transition:all .3s ease;
+  }
+  .btn-whatsapp:hover{background:#0e9a58;color:#fff;transform:translateY(-3px);}
+
+  /* Reveal animation */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.show{opacity:1;transform:translateY(0);}
+  .reveal-delay-1.show{transition-delay:.1s;}
+  .reveal-delay-2.show{transition-delay:.2s;}
+  .reveal-delay-3.show{transition-delay:.3s;}
+  .reveal-delay-4.show{transition-delay:.4s;}
+
+  /* NAVBAR */
+  .navbar-custom{
+    background:rgba(255,255,255,.85);backdrop-filter:blur(12px);
+    padding:16px 0;transition:all .3s ease;border-bottom:1px solid transparent;
+  }
+  .navbar-custom.scrolled{padding:10px 0;border-bottom:1px solid var(--line);box-shadow:0 4px 24px rgba(11,31,58,.06);}
+  .brand-word{font-family:'Sora',sans-serif;font-weight:800;font-size:1.4rem;color:var(--navy);}
+  .brand-word span{color:var(--primary);}
+  .brand-tag{font-size:.68rem;color:var(--gray);letter-spacing:.04em;display:block;margin-top:-3px;}
+  .nav-link-custom{font-weight:600;font-size:.92rem;color:var(--navy)!important;margin:0 10px;position:relative;}
+  .nav-link-custom::after{
+    content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);
+    transition:width .3s ease;
+  }
+  .nav-link-custom:hover::after{width:100%;}
+
+  /* HERO */
+  .hero{
+    padding:150px 0 90px;position:relative;overflow:hidden;
+    background:radial-gradient(circle at 85% 10%, rgba(22,82,240,.06), transparent 45%),
+               radial-gradient(circle at 10% 90%, rgba(18,183,106,.06), transparent 45%);
+  }
+  .hero-badges span{
+    font-size:.78rem;font-weight:600;color:var(--navy);background:var(--white);
+    border:1px solid var(--line);padding:7px 14px;border-radius:50px;display:inline-flex;
+    align-items:center;gap:6px;box-shadow:0 4px 14px rgba(11,31,58,.05);
+  }
+  .hero-badges i{color:var(--accent);}
+  .hero h1{font-size:3rem;line-height:1.12;}
+  @media(max-width:768px){.hero h1{font-size:2.15rem;}}
+  .hero h1 .accent{color:var(--primary);}
+
+  /* Browser mock (signature element) */
+  .browser-frame{
+    background:#fff;border-radius:14px;box-shadow:0 30px 70px rgba(11,31,58,.16);
+    border:1px solid var(--line);overflow:hidden;
+  }
+  .browser-bar{
+    display:flex;align-items:center;gap:8px;padding:10px 14px;background:#F0F3FB;border-bottom:1px solid var(--line);
+  }
+  .browser-dot{width:9px;height:9px;border-radius:50%;}
+  .browser-url{
+    flex:1;background:#fff;border-radius:20px;padding:5px 12px;font-size:.72rem;color:var(--gray);
+    font-family:'IBM Plex Mono',monospace;border:1px solid var(--line);white-space:nowrap;overflow:hidden;
+  }
+  .hero-screen{
+    position:relative;height:340px;background:linear-gradient(160deg,#EEF3FF,#fff);
+    display:flex;flex-direction:column;justify-content:center;padding:34px;
+  }
+  .hero-type-line{font-family:'Sora',sans-serif;font-weight:700;font-size:1.5rem;color:var(--navy);}
+  .cursor-blink{display:inline-block;width:3px;height:1.4rem;background:var(--primary);vertical-align:middle;margin-left:2px;animation:blink 1s step-start infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  .hero-skel{height:10px;background:#E3E9F7;border-radius:6px;margin-top:14px;overflow:hidden;position:relative;}
+  .hero-skel.w-70{width:70%;} .hero-skel.w-50{width:50%;} .hero-skel.w-90{width:90%;}
+  .hero-skel::after{
+    content:"";position:absolute;top:0;left:-40%;height:100%;width:40%;
+    background:linear-gradient(90deg,transparent,rgba(22,82,240,.18),transparent);
+    animation:shimmer 2.2s infinite;
+  }
+  @keyframes shimmer{0%{left:-40%;}100%{left:110%;}}
+  .hero-chip{
+    position:absolute;background:#fff;border-radius:12px;padding:10px 16px;box-shadow:0 12px 30px rgba(11,31,58,.14);
+    font-size:.8rem;font-weight:700;display:flex;align-items:center;gap:8px;border:1px solid var(--line);
+    animation:floaty 4s ease-in-out infinite;
+  }
+  @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+
+  /* Phone mockup beside laptop */
+  .phone-frame{
+    position:absolute;bottom:-30px;right:-22px;width:118px;background:#0B1F3A;border-radius:20px;
+    padding:8px 6px;box-shadow:0 26px 50px rgba(11,31,58,.32);z-index:3;
+  }
+  @media(max-width:991px){.phone-frame{width:96px;right:-10px;bottom:-20px;}}
+  .phone-screen{
+    background:linear-gradient(160deg,#EEF3FF,#fff);border-radius:14px;height:200px;padding:12px 10px;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  @media(max-width:991px){.phone-screen{height:170px;}}
+  .phone-dot-cam{width:20px;height:4px;background:#0B1F3A;border-radius:4px;margin:0 auto 4px;}
+  .phone-bar{height:6px;border-radius:4px;background:#D8E1FA;}
+  .phone-chip{background:var(--accent);color:#fff;font-size:.5rem;font-weight:700;border-radius:6px;padding:4px 6px;align-self:flex-start;font-family:'IBM Plex Mono',monospace;}
+
+  /* STATS */
+  .stat-num{font-family:'Sora',sans-serif;font-weight:800;font-size:2.5rem;color:var(--primary);}
+  .stat-band{border-radius:24px;background:var(--navy);color:#fff;padding:56px 30px;}
+  .stat-band .stat-num{color:var(--accent);}
+  .stat-label{font-size:.85rem;color:#B9C6E4;font-weight:500;}
+
+  /* SERVICES */
+  .service-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px;
+    height:100%;position:relative;transition:all .35s ease;border-left:4px solid transparent;
+  }
+  .service-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(11,31,58,.1);border-left-color:var(--primary);}
+  .service-icon{
+    width:56px;height:56px;border-radius:14px;background:var(--bg-tint);display:flex;align-items:center;
+    justify-content:center;font-size:1.5rem;color:var(--primary);margin-bottom:18px;transition:all .35s ease;
+  }
+  .service-card:hover .service-icon{background:var(--primary);color:#fff;transform:rotate(-6deg) scale(1.05);}
+  .service-card ul{padding-left:0;list-style:none;margin-top:12px;}
+  .service-card ul li{font-size:.88rem;color:var(--gray);margin-bottom:6px;padding-left:22px;position:relative;}
+  .service-card ul li::before{content:"\2713";position:absolute;left:0;color:var(--accent);font-weight:700;}
+
+  /* PORTFOLIO - browser frame with auto-pan screenshot */
+  .work-card{
+    background:#fff;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;
+    transition:box-shadow .35s ease,transform .35s ease;height:100%;
+  }
+  .work-card:hover{box-shadow:0 26px 55px rgba(11,31,58,.14);transform:translateY(-6px);}
+  .work-window{height:230px;overflow:hidden;position:relative;background:#EEF2FB;}
+  .work-window img{
+    width:100%;height:auto;display:block;position:absolute;top:0;left:0;
+    transition:transform 7s cubic-bezier(.22,.61,.36,1);
+  }
+  .work-card:hover .work-window img{transform:translateY(var(--pan,-60%));}
+  .work-body{padding:20px 22px 24px;}
+  .work-tag{
+    font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--primary);font-weight:600;
+  }
+  .work-title{font-size:1.05rem;margin:6px 0 4px;}
+  .work-desc{font-size:.86rem;color:var(--gray);margin-bottom:0;}
+
+  /* Work category sub-nav */
+  .work-subnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:56px;}
+  .work-subnav a{
+    font-size:.82rem;font-weight:600;color:var(--navy);background:#fff;border:1px solid var(--line);
+    padding:8px 16px;border-radius:50px;text-decoration:none;transition:.25s;
+  }
+  .work-subnav a:hover{background:var(--primary);color:#fff;border-color:var(--primary);transform:translateY(-2px);}
+  .work-group{margin-bottom:64px;}
+  .work-group-head{margin-bottom:28px;}
+  .work-group-head h3{font-size:1.4rem;margin-bottom:4px;}
+
+  /* Mockup visual tiles (for services without photographed work yet) */
+  .mock-tile{
+    height:230px;border-radius:0;position:relative;overflow:hidden;padding:22px;
+    display:flex;flex-direction:column;justify-content:center;gap:10px;
+  }
+  .mock-bar{height:9px;border-radius:5px;background:rgba(255,255,255,.55);}
+  .mock-bar.light{background:rgba(255,255,255,.3);}
+  .mock-chip{
+    align-self:flex-start;font-size:.68rem;font-weight:700;color:#fff;background:rgba(255,255,255,.22);
+    padding:5px 12px;border-radius:50px;font-family:'IBM Plex Mono',monospace;letter-spacing:.03em;
+  }
+  .mock-card-white{
+    background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 14px 30px rgba(11,31,58,.16);
+  }
+  .mock-card-white .mock-bar{background:#E3E9F7;}
+  .mock-card-white .mock-bar.accent{background:var(--accent);width:34%;}
+  .mock-grid-squares{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:120px;}
+  .mock-grid-squares span{display:block;padding-top:100%;border-radius:5px;background:rgba(255,255,255,.5);}
+  .mock-chart-bars{display:flex;align-items:flex-end;gap:7px;height:70px;}
+  .mock-chart-bars span{width:14px;border-radius:4px 4px 0 0;background:rgba(255,255,255,.55);}
+  .mock-flow{display:flex;align-items:center;gap:8px;}
+  .mock-flow .node{
+    width:34px;height:34px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:.9rem;color:var(--navy);box-shadow:0 8px 20px rgba(0,0,0,.15);
+  }
+  .mock-flow .fline{width:26px;height:2px;background:rgba(255,255,255,.6);}
+  .mock-fold{display:flex;gap:6px;height:150px;width:100%;}
+  .mock-fold .panel{flex:1;background:rgba(255,255,255,.16);border-radius:6px;padding:10px;display:flex;flex-direction:column;gap:8px;}
+  .mock-fold .panel .mock-bar{background:rgba(255,255,255,.55);height:6px;}
+  .mock-fold .panel:nth-child(2){transform:translateY(-6px);background:rgba(255,255,255,.26);}
+  .mock-pin{
+    width:40px;height:40px;border-radius:50% 50% 50% 0;background:#fff;transform:rotate(-45deg);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(0,0,0,.18);
+  }
+  .mock-pin i{transform:rotate(45deg);color:var(--primary);font-size:1rem;}
+  .mock-stars{color:#FFC94A;font-size:.8rem;letter-spacing:2px;}
+
+  /* PROCESS */
+  .process-step{position:relative;padding-left:0;}
+  .process-num{
+    font-family:'Sora',sans-serif;font-weight:800;font-size:2.1rem;color:var(--bg-tint);
+    -webkit-text-stroke:1.5px var(--primary);color:transparent;
+  }
+  .process-line{height:2px;background:var(--line);position:relative;top:-40px;}
+  @media(max-width:768px){.process-line{display:none;}}
+
+  /* FAQ - no accordion, plain list */
+  .faq-item{border-bottom:1px solid var(--line);padding:26px 0;}
+  .faq-q{font-family:'Sora',sans-serif;font-weight:600;font-size:1.05rem;display:flex;gap:12px;align-items:flex-start;}
+  .faq-q i{color:var(--primary);margin-top:3px;}
+  .faq-a{color:var(--gray);margin-top:10px;margin-left:30px;font-size:.94rem;}
+
+  /* BLOG */
+  .blog-card{
+    border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:100%;
+    transition:transform .3s ease,box-shadow .3s ease;background:#fff;
+  }
+  .blog-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(11,31,58,.1);}
+  .blog-cover{height:150px;background:linear-gradient(135deg,var(--primary),#5B84FF);position:relative;}
+  .blog-cover i{position:absolute;bottom:14px;right:18px;font-size:2.4rem;color:rgba(255,255,255,.35);}
+  .blog-cat{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);}
+  .blog-read{font-size:.85rem;font-weight:600;color:var(--primary);text-decoration:none;}
+
+  /* CONTACT */
+  .contact-panel{background:var(--navy);border-radius:24px;color:#fff;padding:50px;}
+  @media(max-width:768px){.contact-panel{padding:32px 22px;}}
+  .form-control-custom{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;
+    border-radius:10px;padding:13px 16px;font-size:.92rem;
+  }
+  .form-control-custom::placeholder{color:#9FB0D4;}
+  .form-control-custom:focus{background:rgba(255,255,255,.1);border-color:var(--accent);color:#fff;box-shadow:none;}
+  .contact-info-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px;}
+  .contact-info-item i{font-size:1.2rem;color:var(--accent);margin-top:2px;}
+
+  /* FOOTER */
+  footer{background:#08152B;color:#B9C6E4;padding:60px 0 24px;}
+  footer h6{color:#fff;font-family:'Sora',sans-serif;margin-bottom:18px;}
+  footer a{color:#B9C6E4;text-decoration:none;font-size:.9rem;}
+  footer a:hover{color:var(--accent);}
+  footer .social-icon{
+    width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;
+    align-items:center;justify-content:center;color:#fff;transition:.3s;
+  }
+  footer .social-icon:hover{background:var(--accent);transform:translateY(-3px);}
+
+  /* FLOATING BUTTONS */
+  .floating-stack{position:fixed;right:22px;bottom:24px;z-index:1050;display:flex;flex-direction:column;gap:14px;align-items:flex-end;}
+  .fab{
+    width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:1.5rem;box-shadow:0 10px 28px rgba(11,31,58,.25);text-decoration:none;
+    transition:transform .3s ease;position:relative;
+  }
+  .fab:hover{transform:scale(1.1);color:#fff;}
+  .fab-whatsapp{background:var(--accent);}
+  .fab-whatsapp::before{
+    content:"";position:absolute;inset:0;border-radius:50%;background:var(--accent);opacity:.5;
+    animation:pulse 2.2s infinite;
+  }
+  @keyframes pulse{0%{transform:scale(1);opacity:.5;}100%{transform:scale(1.9);opacity:0;}}
+  .fab-brochure{background:var(--primary);}
+  .fab-top{background:var(--navy);opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;width:44px;height:44px;font-size:1.1rem;}
+  .fab-top.visible{opacity:1;pointer-events:auto;transform:translateY(0);}
+  .fab-label{
+    position:absolute;right:64px;top:50%;transform:translateY(-50%);background:var(--navy);color:#fff;
+    padding:6px 12px;border-radius:8px;font-size:.78rem;white-space:nowrap;opacity:0;pointer-events:none;
+    transition:.25s;
+  }
+  .fab:hover .fab-label{opacity:1;}
+
+  /* MODAL tweaks */
+  .modal-content-custom{border-radius:20px;border:none;overflow:hidden;}
+  .modal-lead-side{background:linear-gradient(160deg,var(--navy),#122A52);color:#fff;padding:40px 30px;}
+  .modal-lead-side h5{color:#fff;}
+  .modal-lead-side li{margin-bottom:12px;font-size:.9rem;color:#CFDBF3;}
+  .modal-lead-side li i{color:var(--accent);margin-right:8px;}
+
+  .section-title{font-size:2.1rem;}
+  @media(max-width:768px){.section-title{font-size:1.6rem;}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <img src="./assets/ayush-photo.jpg" alt="Ayush - Website Developer Delhi NCR" style="width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid var(--primary);">
+      <span>
+        <span class="brand-word d-block">AYUSH<span>.</span></span>
+        <span class="brand-tag">Web & Growth Partner</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#process">Process</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#faq">FAQ</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-whatsapp" href="https://wa.me/919971103293?text=Hi%20Ayush%2C%20I%20want%20to%20discuss%20a%20project." target="_blank">
+            <i class="bi bi-whatsapp"></i> Chat Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow mb-3">Delhi NCR &middot; Freelance Web & Marketing Partner</div>
+        <h1 class="mb-4">Websites that look sharp. Marketing that <span class="accent">actually</span> brings customers.</h1>
+        <p class="text-gray fs-5 mb-4" style="max-width:520px;">I'm Ayush — I design, build and market websites & web apps for businesses across Delhi &amp; Delhi NCR, so you spend less time chasing leads and more time closing them.</p>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="https://wa.me/919971103293?text=Hi%20Ayush%2C%20I%20am%20interested%20in%20a%20website%2Fmarketing%20project." target="_blank" class="btn-primary-custom">
+            Start Your Project <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+          <a href="#work" class="btn-outline-custom">View My Work</a>
+        </div>
+        <div class="hero-badges d-flex flex-wrap gap-2">
+          <span><i class="bi bi-patch-check-fill"></i> 12+ Projects Delivered</span>
+          <span><i class="bi bi-geo-alt-fill"></i> Based in Delhi NCR</span>
+          <span><i class="bi bi-star-fill"></i> 5 Star Client Ratings</span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative reveal show" style="padding-right:40px;">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <span class="browser-dot" style="background:#FF5F57;"></span>
+              <span class="browser-dot" style="background:#FEBC2E;"></span>
+              <span class="browser-dot" style="background:#28C840;"></span>
+              <span class="browser-url"><i class="bi bi-lock-fill" style="font-size:.6rem;"></i>&nbsp; yourbusiness.in</span>
+            </div>
+            <div class="hero-screen">
+              <span class="hero-type-line" id="typeLine">Building your website<span class="cursor-blink"></span></span>
+              <div class="hero-skel w-70"></div>
+              <div class="hero-skel w-90"></div>
+              <div class="hero-skel w-50"></div>
+            </div>
+          </div>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="phone-dot-cam"></div>
+              <div class="phone-chip"><i class="bi bi-check2"></i> LIVE</div>
+              <div class="phone-bar" style="width:70%;"></div>
+              <div class="phone-bar" style="width:90%;"></div>
+              <div class="phone-bar" style="width:55%;"></div>
+              <div class="phone-bar" style="width:80%;background:var(--primary);height:14px;margin-top:auto;"></div>
+            </div>
+          </div>
+          <div class="hero-chip" style="top:-18px;right:34px;">
+            <i class="bi bi-graph-up-arrow text-success"></i> Rankings ↑ on Google
+          </div>
+          <div class="hero-chip" style="bottom:-16px;left:0;">
+            <i class="bi bi-chat-dots-fill" style="color:var(--primary);"></i> New lead on WhatsApp
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="stat-band reveal">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-num"><span class="counter" data-target="12">0</span>+</div>
+          <div class="stat-label">Websites &amp; Apps Built</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num"><span class="counter" data-target="10">0</span>+</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num"><span class="counter" data-target="24">0</span>hr</div>
+          <div class="stat-label">Avg. WhatsApp Response</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Personal Involvement, Every Project</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section bg-tint" id="services">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center mb-3">What I Do</div>
+      <h2 class="section-title">One person. Every piece of your online growth.</h2>
+      <p class="text-gray mt-3 mx-auto" style="max-width:600px;">From the first line of code to the ad that brings your next customer — here's how I help Delhi NCR businesses grow online.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+          <h4 class="h5">Website Development</h4>
+          <p class="text-gray small mb-0">Modern, fast and mobile-friendly websites built to convert visitors into customers.</p>
+          <ul>
+            <li>Business & Landing Pages</li>
+            <li>E-commerce Websites</li>
+            <li>Custom Dashboards & Web Apps</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-megaphone"></i></div>
+          <h4 class="h5">Digital Marketing</h4>
+          <p class="text-gray small mb-0">Get found by customers who are already searching for what you offer.</p>
+          <ul>
+            <li>SEO (Search Engine Optimization)</li>
+            <li>Social Media Marketing (SMM)</li>
+            <li>Google &amp; Meta Ads</li>
+            <li>Google Business Profile (GBP) Setup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <h4 class="h5">Brochure &amp; Content Writing</h4>
+          <p class="text-gray small mb-0">Clear, persuasive content and print-ready brochures that represent your brand well.</p>
+          <ul>
+            <li>Company & Service Brochures</li>
+            <li>Website & Landing Page Copy</li>
+            <li>Blog & SEO Content</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-calendar2-check"></i></div>
+          <h4 class="h5">Lead Generation &amp; Booking Apps</h4>
+          <p class="text-gray small mb-0">Custom web apps that capture leads and let customers book you directly.</p>
+          <ul>
+            <li>Lead-Capture Funnels</li>
+            <li>Appointment & Booking Systems</li>
+            <li>Enquiry & CRM-lite Tools</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-people"></i></div>
+          <h4 class="h5">Membership &amp; Subscription Apps</h4>
+          <p class="text-gray small mb-0">Portals for members, employees or subscribers — built around your workflow.</p>
+          <ul>
+            <li>Member / Employee Portals</li>
+            <li>HRMS-style Dashboards</li>
+            <li>Subscription Management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-headset"></i></div>
+          <h4 class="h5">Ongoing Support &amp; Growth</h4>
+          <p class="text-gray small mb-0">A website is day one — I help you keep it updated, secure and improving.</p>
+          <ul>
+            <li>Maintenance & Updates</li>
+            <li>Performance & Security</li>
+            <li>Monthly Marketing Reports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="text-center mb-4 reveal">
+      <div class="eyebrow justify-content-center mb-3">My Work</div>
+      <h2 class="section-title">Websites, web apps &amp; marketing work for Delhi NCR businesses</h2>
+      <p class="text-gray mt-3 mx-auto" style="max-width:640px;">A sample from every service I offer — real projects where available, and sample concepts where a client's work is still confidential.</p>
+    </div>
+    <div class="work-subnav reveal">
+      <a href="#work-websites">Websites</a>
+      <a href="#work-webapps">Web Apps</a>
+      <a href="#work-marketing">Digital Marketing</a>
+      <a href="#work-landing">Landing Pages</a>
+      <a href="#work-brochure">Brochure</a>
+      <a href="#work-content">Content Writing</a>
+      <a href="#work-ai">AI Automation</a>
+    </div>
+
+    <div class="work-group" id="work-websites">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">01 &middot; Websites</div>
+        <h3>Business websites built for Delhi NCR companies</h3>
+        <p class="text-gray small mb-0">Hover any preview to see more of the real page.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-58%;"><img src="./assets/prathamcapital.jpg" alt="Pratham Capital investment website built by Ayush in Delhi NCR" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Fintech / Wealth</div>
+              <div class="work-title">Pratham Capital</div>
+              <p class="work-desc">Investment & wealth management website with services, partners and lead capture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-70%;"><img src="./assets/hospital.jpg" alt="Hospital website design by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Healthcare</div>
+              <div class="work-title">Doctor Hospital</div>
+              <p class="work-desc">Appointment-focused hospital website with services, departments and booking form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-55%;"><img src="./assets/oraclesecure.jpg" alt="Oracle Secure e-commerce website by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">E-commerce</div>
+              <div class="work-title">Oracle Secure</div>
+              <p class="work-desc">Multi-category security equipment store with vendor management and offers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-60%;"><img src="./assets/sainath.jpg" alt="Sainath Facility Services website by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Facility Management</div>
+              <div class="work-title">Sainath Sales &amp; Services</div>
+              <p class="work-desc">Corporate facility management site with services, clientele and enquiry form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-62%;"><img src="./assets/wholesalio.jpg" alt="Wholesalio import export e-commerce website by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Import / Export</div>
+              <div class="work-title">Wholesalio</div>
+              <p class="work-desc">B2B import-export catalogue site with product categories and bulk enquiry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-webapps">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">02 &middot; Web Apps</div>
+        <h3>Custom dashboards &amp; web apps</h3>
+        <p class="text-gray small mb-0">Beyond static websites — tools your business actually runs on.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="work-window" style="--pan:0%;"><img src="./assets/dashboard2.jpg" alt="Savvy HRMS dashboard web app built by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Custom Web App</div>
+              <div class="work-title">Savvy HRMS Dashboard</div>
+              <p class="work-desc">Attendance, leave & employee-management dashboard built as a custom web app.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-15%;"><img src="./assets/portfolio.jpg" alt="Personal portfolio web app by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Personal Project</div>
+              <div class="work-title">MERN Stack Portfolio App</div>
+              <p class="work-desc">My own React.js / MERN portfolio app showcasing skills and past projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#1652F0,#5B84FF);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:60%;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:90%;"></div>
+                <div class="mock-bar accent" style="margin-top:8px;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Booking System</div>
+              <div class="work-title">Appointment &amp; Booking App</div>
+              <p class="work-desc">Concept for a calendar-based booking app for clinics, salons & service businesses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#0B1F3A,#26407A);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-person"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-key"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-grid"></i></div>
+              </div>
+              <div class="mock-bar light" style="width:75%;"></div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Membership</div>
+              <div class="work-title">Membership Portal</div>
+              <p class="work-desc">Concept for a login-protected portal for members, subscribers or employees.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#12B76A,#37D98B);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:40%;margin-bottom:10px;"></div>
+                <div class="mock-bar" style="width:80%;margin-bottom:6px;"></div>
+                <div class="mock-bar" style="width:65%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Lead Management</div>
+              <div class="work-title">Lead &amp; Enquiry Tracker</div>
+              <p class="work-desc">Concept for a lightweight CRM to track and follow up on incoming leads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-marketing">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">03 &middot; Digital Marketing</div>
+        <h3>SEO, SMM, Ads, Email &amp; Google Business Profile</h3>
+        <p class="text-gray small mb-0">Sample concepts across the channels I use to get Delhi NCR businesses found &amp; contacted.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#5B4BFF,#8B7CFF);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:55%;margin-bottom:10px;background:#1652F0;height:11px;"></div>
+                <div class="mock-bar" style="width:95%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:80%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Email Marketing</div>
+              <div class="work-title">Newsletter &amp; Campaign Design</div>
+              <p class="work-desc">Email campaigns designed to keep customers engaged and bring repeat business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#12B76A,#0E9A58);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-chart-bars">
+                <span style="height:30%;"></span><span style="height:45%;"></span><span style="height:60%;"></span>
+                <span style="height:80%;"></span><span style="height:100%;background:#fff;"></span>
+              </div>
+              <div class="mock-bar light" style="width:60%;"></div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">SEO</div>
+              <div class="work-title">Local SEO for Delhi NCR</div>
+              <p class="work-desc">On-page & local SEO to help businesses rank for searches in their city.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#E1306C,#F77737);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-grid-squares">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">SMM</div>
+              <div class="work-title">Social Media Content &amp; Growth</div>
+              <p class="work-desc">Content calendars & posting for Instagram, Facebook & LinkedIn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#F79009,#FDB022);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:30%;background:#12B76A;margin-bottom:8px;height:7px;"></div>
+                <div class="mock-bar" style="width:90%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:70%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Google &amp; Meta Ads</div>
+              <div class="work-title">Paid Search &amp; Social Ads</div>
+              <p class="work-desc">Targeted Google & Meta ad campaigns built to bring in qualified leads.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#1652F0,#12B76A);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-pin"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="mock-stars">★★★★★</div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Google Business Profile</div>
+              <div class="work-title">GBP Setup &amp; Optimization</div>
+              <p class="work-desc">Full Google Business Profile setup so customers find & call you directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-landing">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">04 &middot; Landing Page Design</div>
+        <h3>Focused, high-converting single pages</h3>
+        <p class="text-gray small mb-0">Landing sections from real client &amp; personal projects.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-65%;"><img src="./assets/research_agency.jpg" alt="Research Wise landing page design by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Think Tank / NGO</div>
+              <div class="work-title">The Research Wise</div>
+              <p class="work-desc">Event & research-driven landing page with a clear call-to-action.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-58%;"><img src="./assets/aaacaglobal.jpg" alt="A Agrawal Associates landing page by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Professional Services</div>
+              <div class="work-title">A. Agrawal &amp; Associates</div>
+              <p class="work-desc">Consultation-focused landing page for a Chartered Accountant firm.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-52%;"><img src="./assets/alpgroupindia.jpg" alt="ALP Group India landing page by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">HR Consulting</div>
+              <div class="work-title">ALP Group India</div>
+              <p class="work-desc">Lead-focused landing page for an HR business consulting firm.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-56%;"><img src="./assets/arvinternational.jpg" alt="ARV International landing page by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Sourcing / Logistics</div>
+              <div class="work-title">ARV International</div>
+              <p class="work-desc">Enquiry-driven landing page for a China-sourcing agency.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="work-window" style="--pan:-60%;"><img src="./assets/dm_agency.jpg" alt="WebSavvy marketing landing page by Ayush" loading="lazy"></div>
+            <div class="work-body">
+              <div class="work-tag">Marketing Agency</div>
+              <div class="work-title">WebSavvy</div>
+              <p class="work-desc">Services landing page built to convert visitors into enquiries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-brochure">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">05 &middot; Brochure Design</div>
+        <h3>Print &amp; digital brochures</h3>
+        <p class="text-gray small mb-0">Sample concepts for the kind of brochures I design for clients.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#B7791F,#F2A93B);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-fold">
+                <div class="panel"><div class="mock-bar" style="width:70%;"></div><div class="mock-bar" style="width:50%;"></div><div class="mock-bar" style="width:60%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:80%;"></div><div class="mock-bar" style="width:40%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:55%;"></div><div class="mock-bar" style="width:65%;"></div></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Corporate</div>
+              <div class="work-title">Company Profile Brochure</div>
+              <p class="work-desc">Tri-fold brochure introducing a company, its services and leadership.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#8B5CF6,#B794F4);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-fold">
+                <div class="panel"><div class="mock-bar" style="width:60%;"></div><div class="mock-bar" style="width:75%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:50%;"></div><div class="mock-bar" style="width:85%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:70%;"></div><div class="mock-bar" style="width:45%;"></div></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Catalogue</div>
+              <div class="work-title">Product Catalogue Brochure</div>
+              <p class="work-desc">Multi-page catalogue layout for showcasing a product range.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#0E7490,#22B8CF);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-fold">
+                <div class="panel"><div class="mock-bar" style="width:65%;"></div><div class="mock-bar" style="width:40%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:80%;"></div><div class="mock-bar" style="width:55%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:50%;"></div><div class="mock-bar" style="width:70%;"></div></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Services</div>
+              <div class="work-title">Service Brochure</div>
+              <p class="work-desc">Clean, scannable brochure laying out a service business's offerings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#166534,#4ADE80);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-fold">
+                <div class="panel"><div class="mock-bar" style="width:75%;"></div><div class="mock-bar" style="width:45%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:55%;"></div><div class="mock-bar" style="width:80%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:60%;"></div><div class="mock-bar" style="width:35%;"></div></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Real Estate</div>
+              <div class="work-title">Property Brochure</div>
+              <p class="work-desc">Visual-first brochure layout for showcasing a property listing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#B91C1C,#F87171);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-fold">
+                <div class="panel"><div class="mock-bar" style="width:50%;"></div><div class="mock-bar" style="width:70%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:85%;"></div><div class="mock-bar" style="width:40%;"></div></div>
+                <div class="panel"><div class="mock-bar" style="width:65%;"></div><div class="mock-bar" style="width:55%;"></div></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Menu / Hospitality</div>
+              <div class="work-title">Restaurant Menu Brochure</div>
+              <p class="work-desc">Appetite-driven layout for restaurant or café menu brochures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-content">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">06 &middot; Content Writing</div>
+        <h3>Copy that reads well &amp; ranks well</h3>
+        <p class="text-gray small mb-0">Sample content formats I write for clients — clear, SEO-aware and on-brand.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#0B1F3A,#1E3A6E);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:70%;background:#0B1F3A;height:11px;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:95%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:88%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:60%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Website Copy</div>
+              <div class="work-title">Homepage &amp; Services Copy</div>
+              <p class="work-desc">Clear, benefit-led website copy that explains what you do and why it matters.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#1652F0,#3B6BFF);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:80%;background:#1652F0;height:11px;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:90%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:70%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">SEO Blog</div>
+              <div class="work-title">SEO-Optimized Blog Articles</div>
+              <p class="work-desc">Keyword-aware articles written to bring organic traffic from Google.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#12B76A,#22C55E);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:55%;background:#12B76A;height:11px;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:75%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:65%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">E-commerce</div>
+              <div class="work-title">Product Descriptions</div>
+              <p class="work-desc">Persuasive, scannable product copy written to help visitors decide faster.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#E1306C,#C13584);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:65%;background:#E1306C;height:11px;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:85%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:50%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Social Media</div>
+              <div class="work-title">Captions &amp; Post Copy</div>
+              <p class="work-desc">Short, on-brand captions written to match your social media content calendar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#F79009,#F97316);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-card-white" style="max-width:220px;">
+                <div class="mock-bar" style="width:60%;background:#F79009;height:11px;margin-bottom:8px;"></div>
+                <div class="mock-bar" style="width:90%;margin-bottom:5px;"></div>
+                <div class="mock-bar" style="width:70%;"></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Email</div>
+              <div class="work-title">Newsletter Copy</div>
+              <p class="work-desc">Email content written to keep subscribers reading &amp; taking action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-group" id="work-ai">
+      <div class="work-group-head reveal">
+        <div class="eyebrow mb-2">07 &middot; AI Automation</div>
+        <h3>Automations that save you time</h3>
+        <p class="text-gray small mb-0">Sample concepts for automating the repetitive parts of running your business.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#0E9A58,#12B76A);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-whatsapp"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-cpu"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-reply"></i></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">WhatsApp</div>
+              <div class="work-title">WhatsApp Auto-Reply Bot</div>
+              <p class="work-desc">Automated first-response so no enquiry on WhatsApp goes unanswered.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#1652F0,#5B4BFF);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-window"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-chat-dots"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-check2"></i></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Website</div>
+              <div class="work-title">Website Chatbot Widget</div>
+              <p class="work-desc">A chatbot that answers common questions & captures leads while you're offline.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-3">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#7C3AED,#A78BFA);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-inbox"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-signpost-split"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-person-check"></i></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Lead Routing</div>
+              <div class="work-title">Automated Lead Routing</div>
+              <p class="work-desc">New enquiries automatically sorted & sent to the right person instantly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#F79009,#EAB308);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-envelope"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-clock-history"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-send"></i></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Email</div>
+              <div class="work-title">Automated Follow-Up Emails</div>
+              <p class="work-desc">Scheduled follow-ups sent automatically so no lead is forgotten.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+          <div class="work-card">
+            <div class="mock-tile" style="background:linear-gradient(150deg,#0B1F3A,#334E7A);">
+              <div class="mock-chip">SAMPLE CONCEPT</div>
+              <div class="mock-flow">
+                <div class="node"><i class="bi bi-receipt"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-gear"></i></div><div class="fline"></div>
+                <div class="node"><i class="bi bi-file-earmark-check"></i></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-tag">Back Office</div>
+              <div class="work-title">Report &amp; Invoice Automation</div>
+              <p class="work-desc">Recurring reports & invoices generated automatically, on schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 reveal">
+      <a href="https://wa.me/919971103293?text=Hi%20Ayush%2C%20I%20liked%20your%20portfolio%2C%20can%20you%20share%20more%20examples%3F" target="_blank" class="btn-primary-custom">
+        <i class="bi bi-whatsapp me-2"></i>See More Work on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section bg-tint" id="process">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center mb-3">How We'll Work Together</div>
+      <h2 class="section-title">A simple 5-step process</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-lg reveal reveal-delay-1">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <h5 class="mt-2">Discover &amp; Discuss</h5>
+          <p class="text-gray small">We talk on call/WhatsApp about your business and goals.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal reveal-delay-2">
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <h5 class="mt-2">Plan &amp; Design</h5>
+          <p class="text-gray small">You approve the structure and design direction first.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal reveal-delay-3">
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <h5 class="mt-2">Build &amp; Develop</h5>
+          <p class="text-gray small">I develop your website/app with regular progress updates.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal reveal-delay-4">
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <h5 class="mt-2">Test &amp; Launch</h5>
+          <p class="text-gray small">Thorough testing, then we go live on your domain.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg reveal reveal-delay-4">
+        <div class="process-step">
+          <div class="process-num">05</div>
+          <h5 class="mt-2">Support &amp; Grow</h5>
+          <p class="text-gray small">SEO, marketing & maintenance to keep growing after launch.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section bg-tint">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 order-lg-2">
+        <div class="position-relative reveal" style="max-width:380px;margin:0 auto;">
+          <div style="border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(11,31,58,.18);">
+            <img src="./assets/ayush-photo.jpg" alt="Ayush - Freelance Website Developer & Digital Marketer in Delhi NCR" style="width:100%;display:block;">
+          </div>
+          <div class="hero-chip" style="bottom:18px;left:-24px;padding:14px 18px;">
+            <span style="width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block;"></span>
+            <div style="line-height:1.25;">
+              <div style="font-size:.8rem;">Available for new projects</div>
+              <div class="text-gray" style="font-size:.7rem;font-weight:500;">Let's build something great together</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 order-lg-1">
+        <div class="eyebrow mb-3 reveal">Why Work With Me</div>
+        <h2 class="section-title mb-4 reveal">Your partner in digital growth</h2>
+        <p class="text-gray reveal" style="max-width:520px;">No account managers, no hand-offs between teams — you talk to me from the first message to post-launch support.</p>
+        <div class="row g-4 mt-3">
+          <div class="col-md-6 reveal reveal-delay-1">
+            <div class="d-flex gap-3"><i class="bi bi-shield-check fs-3 text-primary"></i>
+              <div><h6 class="mb-1">Clear Communication</h6><p class="text-gray small mb-0">Reach me anytime on WhatsApp — you're always in the loop.</p></div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal reveal-delay-2">
+            <div class="d-flex gap-3"><i class="bi bi-bullseye fs-3 text-primary"></i>
+              <div><h6 class="mb-1">Result Driven</h6><p class="text-gray small mb-0">Focused on leads, rankings & real business growth.</p></div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal reveal-delay-3">
+            <div class="d-flex gap-3"><i class="bi bi-clock-history fs-3 text-primary"></i>
+              <div><h6 class="mb-1">On-Time Delivery</h6><p class="text-gray small mb-0">I respect your timelines & keep projects on schedule.</p></div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal reveal-delay-4">
+            <div class="d-flex gap-3"><i class="bi bi-arrow-repeat fs-3 text-primary"></i>
+              <div><h6 class="mb-1">Long-Term Support</h6><p class="text-gray small mb-0">I grow with your business, well beyond launch.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="section bg-tint" id="blog">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="eyebrow justify-content-center mb-3">Insights</div>
+      <h2 class="section-title">From the blog</h2>
+      <p class="text-gray mt-3 mx-auto" style="max-width:600px;">Practical, no-fluff advice for Delhi &amp; Delhi NCR business owners on websites and digital marketing.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+        <div class="blog-card">
+          <div class="blog-cover"><i class="bi bi-building"></i></div>
+          <div class="p-4">
+            <div class="blog-cat">Web Development</div>
+            <h6 class="mt-2">5 Reasons Every Delhi NCR Business Needs a Professional Website in 2026</h6>
+            <p class="text-gray small">Why a DIY or outdated website could be costing you customers — and what to fix first.</p>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="blog-card">
+          <div class="blog-cover" style="background:linear-gradient(135deg,var(--accent),#37D98B);"><i class="bi bi-search"></i></div>
+          <div class="p-4">
+            <div class="blog-cat">SEO</div>
+            <h6 class="mt-2">Local SEO Checklist: How to Rank Your Delhi Business on Google</h6>
+            <p class="text-gray small">A practical checklist to improve local search visibility for Delhi &amp; NCR businesses.</p>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+        <div class="blog-card">
+          <div class="blog-cover"><i class="bi bi-geo-alt"></i></div>
+          <div class="p-4">
+            <div class="blog-cat">Google Business Profile</div>
+            <h6 class="mt-2">GBP Optimization: A Simple Guide for Delhi NCR Businesses</h6>
+            <p class="text-gray small">Turn your Google Business Profile into a steady source of calls and enquiries.</p>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+        <div class="blog-card">
+          <div class="blog-cover" style="background:linear-gradient(135deg,#0B1F3A,#26407A);"><i class="bi bi-layout-text-window"></i></div>
+          <div class="p-4">
+            <div class="blog-cat">Strategy</div>
+            <h6 class="mt-2">Website vs Landing Page: What Does Your Business Actually Need?</h6>
+            <p class="text-gray small">Choosing the right format so you don't overspend or under-deliver online.</p>
+            <a href="#" class="blog-read">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 reveal">
+        <div class="eyebrow mb-3">Common Questions</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="text-gray mt-3">Can't find your answer? Ask me directly on WhatsApp — I usually reply within a few hours.</p>
+        <a href="https://wa.me/919971103293" target="_blank" class="btn-whatsapp d-inline-flex align-items-center gap-2 mt-2">
+          <i class="bi bi-whatsapp"></i> Ask on WhatsApp
+        </a>
+      </div>
+      <div class="col-lg-8">
+        <div class="faq-item reveal">
+          <div class="faq-q"><i class="bi bi-question-circle"></i> Do you provide website development services in Delhi &amp; Delhi NCR?</div>
+          <div class="faq-a">Yes — I work with businesses across Delhi, Gurugram, Noida, Ghaziabad and Faridabad, both remotely and in person.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <div class="faq-q"><i class="bi bi-question-circle"></i> How much does a business website cost?</div>
+          <div class="faq-a">It depends on the pages, features and design you need. Share your requirement on WhatsApp and I'll give you a clear, honest quote.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <div class="faq-q"><i class="bi bi-question-circle"></i> Do you offer SEO along with web development?</div>
+          <div class="faq-a">Yes. I offer SEO, Google Business Profile optimization, social media marketing and paid ads — either alongside your website project or as a standalone service.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-3">
+          <div class="faq-q"><i class="bi bi-question-circle"></i> How long does it take to build a website?</div>
+          <div class="faq-a">Most business websites are ready in 1-3 weeks, depending on scope. Custom web apps and dashboards may take longer.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-4">
+          <div class="faq-q"><i class="bi bi-question-circle"></i> Do you provide support after the website is launched?</div>
+          <div class="faq-a">Yes — I offer ongoing maintenance, updates and marketing support so your website keeps performing after it goes live.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section bg-tint" id="contact">
+  <div class="container">
+    <div class="contact-panel reveal">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="eyebrow mb-3" style="color:var(--accent);">Let's Talk</div>
+          <h2 class="text-white section-title mb-3">Tell me about your project</h2>
+          <p style="color:#CFDBF3;">Fill this in and I'll message you on WhatsApp — or reach out directly using the details below.</p>
+          <div class="mt-4">
+            <div class="contact-info-item"><i class="bi bi-whatsapp"></i><div>WhatsApp<br><strong>+91 99711 03293</strong></div></div>
+            <div class="contact-info-item"><i class="bi bi-envelope"></i><div>Email<br><strong>ayushwebdev@gmail.com</strong></div></div>
+            <div class="contact-info-item"><i class="bi bi-geo-alt"></i><div>Location<br><strong>Delhi &amp; Delhi NCR</strong></div></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-custom" id="cf-name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control form-control-custom" id="cf-phone" placeholder="Phone / WhatsApp Number" required>
+              </div>
+              <div class="col-12">
+                <select class="form-select form-control-custom" id="cf-service">
+                  <option>Website Development</option>
+                  <option>Digital Marketing (SEO/SMM/Ads/GBP)</option>
+                  <option>Brochure / Content Writing</option>
+                  <option>Lead Generation / Booking App</option>
+                  <option>Membership / Subscription App</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control form-control-custom" id="cf-message" rows="3" placeholder="Tell me briefly about your project..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-whatsapp w-100"><i class="bi bi-whatsapp me-2"></i>Send via WhatsApp</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <span class="brand-word d-block text-white">AYUSH<span style="color:var(--accent);">.</span></span>
+        <p class="mt-3 small">Freelance website developer &amp; digital marketing partner helping Delhi NCR businesses build a stronger online presence and generate real leads.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://wa.me/919971103293" target="_blank" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h6>Services</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">SEO &amp; Digital Marketing</a></li>
+          <li><a href="#services">Brochure &amp; Content Writing</a></li>
+          <li><a href="#services">Lead-gen &amp; Booking Apps</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Get In Touch</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><i class="bi bi-whatsapp me-2"></i>+91 99711 03293</li>
+          <li><i class="bi bi-envelope me-2"></i>ayushwebdev@gmail.com</li>
+          <li><i class="bi bi-geo-alt me-2"></i>Delhi &amp; Delhi NCR, India</li>
+        </ul>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1);margin-top:40px;">
+    <div class="d-flex flex-wrap justify-content-between small">
+      <span>© <span id="year"></span> Ayush. All rights reserved.</span>
+      <span>Website Development &amp; Digital Marketing — Delhi NCR</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-stack">
+  <button class="fab fab-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <a class="fab fab-brochure" href="./assets/brochure.pdf" target="_blank" aria-label="Download Brochure">
+    <span class="fab-label">Download Brochure</span><i class="bi bi-file-earmark-arrow-down"></i>
+  </a>
+  <a class="fab fab-whatsapp" href="https://wa.me/919971103293?text=Hi%20Ayush%2C%20I%20found%20your%20website%20and%20want%20to%20know%20more." target="_blank" aria-label="Chat on WhatsApp">
+    <span class="fab-label">Chat on WhatsApp</span><i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
+<!-- LEAD MODAL -->
+<div class="modal fade" id="leadModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content modal-content-custom">
+      <div class="row g-0">
+        <div class="col-md-5 modal-lead-side d-none d-md-block">
+          <h5>Why businesses work with me</h5>
+          <ul class="list-unstyled mt-4">
+            <li><i class="bi bi-check-circle-fill"></i>Direct access — no middlemen</li>
+            <li><i class="bi bi-check-circle-fill"></i>Website + Marketing under one roof</li>
+            <li><i class="bi bi-check-circle-fill"></i>Fast replies on WhatsApp</li>
+            <li><i class="bi bi-check-circle-fill"></i>Based locally in Delhi NCR</li>
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <div class="modal-header border-0 px-4 pt-4 pb-0">
+            <h5 class="modal-title">Get a Free Consultation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body px-4 pb-4">
+            <p class="text-gray small">Tell me a bit about your business — I'll reply personally on WhatsApp.</p>
+            <form id="leadForm">
+              <input type="text" class="form-control mb-2" id="lm-name" placeholder="Your Name" required>
+              <input type="tel" class="form-control mb-2" id="lm-phone" placeholder="Phone / WhatsApp Number" required>
+              <select class="form-select mb-3" id="lm-service">
+                <option>Website Development</option>
+                <option>Digital Marketing (SEO/SMM/Ads/GBP)</option>
+                <option>Brochure / Content Writing</option>
+                <option>Lead Generation / Booking App</option>
+                <option>Membership / Subscription App</option>
+              </select>
+              <button type="submit" class="btn btn-primary-custom w-100"><i class="bi bi-whatsapp me-2"></i>Send on WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Navbar scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 40){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+    const toTop = document.getElementById('toTop');
+    if(window.scrollY > 500){ toTop.classList.add('visible'); } else { toTop.classList.remove('visible'); }
+  });
+  document.getElementById('toTop').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('show'); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el => observer.observe(el));
+
+  // Hero typing effect
+  const phrases = ["Building your website", "Optimizing for Google", "Bringing you leads"];
+  let pIndex = 0;
+  const typeLineEl = document.getElementById('typeLine');
+  function cycleType(){
+    typeLineEl.innerHTML = phrases[pIndex] + '<span class="cursor-blink"></span>';
+    pIndex = (pIndex + 1) % phrases.length;
+  }
+  setInterval(cycleType, 2600);
+
+  // Counters
+  const counters = document.querySelectorAll('.counter');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = +el.getAttribute('data-target');
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target/40));
+        const tick = setInterval(() => {
+          cur += step;
+          if(cur >= target){ cur = target; clearInterval(tick); }
+          el.textContent = cur;
+        }, 35);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, {threshold:0.4});
+  counters.forEach(c => counterObserver.observe(c));
+
+  // WhatsApp form helpers
+  function sendToWhatsApp(name, phone, service, message){
+    const text = `Hi Ayush, I'm ${name} (${phone}). I'm interested in: ${service}. ${message ? 'Details: ' + message : ''}`;
+    window.open('https://wa.me/919971103293?text=' + encodeURIComponent(text), '_blank');
+  }
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    sendToWhatsApp(
+      document.getElementById('cf-name').value,
+      document.getElementById('cf-phone').value,
+      document.getElementById('cf-service').value,
+      document.getElementById('cf-message').value
+    );
+  });
+
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    sendToWhatsApp(
+      document.getElementById('lm-name').value,
+      document.getElementById('lm-phone').value,
+      document.getElementById('lm-service').value,
+      ''
+    );
+    bootstrap.Modal.getInstance(document.getElementById('leadModal')).hide();
+  });
+
+  // Lead modal - show on first load (once per session) & on exit intent
+  const leadModalEl = document.getElementById('leadModal');
+  const leadModal = new bootstrap.Modal(leadModalEl);
+
+  window.addEventListener('load', () => {
+    if(!sessionStorage.getItem('leadShownLoad')){
+      setTimeout(() => {
+        leadModal.show();
+        sessionStorage.setItem('leadShownLoad','1');
+      }, 2500);
+    }
+  });
+
+  // Exit intent (desktop): mouse leaves near top of viewport
+  let exitShown = sessionStorage.getItem('leadShownExit') === '1';
+  document.addEventListener('mouseout', (e) => {
+    if(exitShown) return;
+    if(e.clientY <= 0){
+      leadModal.show();
+      exitShown = true;
+      sessionStorage.setItem('leadShownExit','1');
+    }
+  });
+</script>
+</body>
+</html>
