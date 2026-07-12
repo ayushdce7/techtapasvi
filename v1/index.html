@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechTapasvi | Digital Marketing & Web Development Agency in India — SEO, Ads, Websites</title>
+<meta name="description" content="TechTapasvi is a Pan-India digital marketing & web development agency. We deliver SEO, social media marketing, paid ads, content writing, landing pages, WordPress & custom websites for businesses across India — Delhi, Mumbai, Bengaluru, Hyderabad, Pune, Chennai and beyond.">
+<meta name="keywords" content="digital marketing agency India, SEO agency India, web development company India, PPC ads agency, social media marketing India, website design company, WordPress development India, content writing services, Pan India digital marketing">
+<meta name="author" content="TechTapasvi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.techtapasvi.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="TechTapasvi | Pan-India Digital Marketing & Web Development Agency">
+<meta property="og:description" content="Websites that convert. Marketing that scales. Trusted by growing brands across India.">
+<meta property="og:image" content="logo.png">
+<meta property="og:locale" content="en_IN">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- JSON-LD Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MarketingAgency",
+  "name": "TechTapasvi",
+  "image": "logo.png",
+  "description": "Pan-India digital marketing and web development agency offering SEO, social media marketing, paid ads, content writing, landing pages, WordPress and custom website development.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "priceRange": "₹₹",
+  "sameAs": []
+}
+</script>
+
+<style>
+:root{
+  --navy:#0A1128;
+  --navy-2:#101B3D;
+  --navy-3:#152352;
+  --blue:#2159FF;
+  --blue-2:#4B7BFF;
+  --cyan:#3FD3FF;
+  --orange:#FF6A1A;
+  --orange-2:#FFA24D;
+  --off-white:#F6F8FC;
+  --paper:#FFFFFF;
+  --slate:#5C6478;
+  --slate-2:#8A93A8;
+  --line:#E4E9F2;
+  --radius:16px;
+  --shadow-soft:0 20px 50px -20px rgba(10,17,40,.25);
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'JetBrains Mono', monospace;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font-body);
+  color:var(--navy);
+  background:var(--off-white);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,.display-font{font-family:var(--font-display);}
+.mono{font-family:var(--font-mono);}
+
+::selection{background:var(--orange);color:#fff;}
+
+a{text-decoration:none;}
+.text-orange{color:var(--orange);}
+.text-blue{color:var(--blue);}
+.text-cyan{color:var(--cyan);}
+.text-slate{color:var(--slate);}
+.bg-navy{background:var(--navy);}
+
+/* ===== Scrollbar / progress ===== */
+#scrollProgress{
+  position:fixed;top:0;left:0;height:4px;
+  background:linear-gradient(90deg,var(--orange),var(--cyan));
+  width:0%;z-index:2000;transition:width .1s linear;
+}
+
+/* ===== Reveal on scroll ===== */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.reveal-scale{opacity:0;transform:scale(.92);transition:opacity .6s ease,transform .6s ease;}
+.reveal-scale.in{opacity:1;transform:scale(1);}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-left.in{opacity:1;transform:translateX(0);}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease;}
+.reveal-right.in{opacity:1;transform:translateX(0);}
+.delay-1{transition-delay:.1s;}
+.delay-2{transition-delay:.2s;}
+.delay-3{transition-delay:.3s;}
+.delay-4{transition-delay:.4s;}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal,.reveal-scale,.reveal-left,.reveal-right{opacity:1!important;transform:none!important;transition:none!important;}
+  .drift-icon,.marquee-track{animation:none!important;}
+}
+
+/* ===== Section framing ===== */
+.section{position:relative;padding:110px 0;overflow:hidden;}
+.section-tight{padding:70px 0;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--orange);font-weight:600;display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;
+}
+.eyebrow::before{content:'';width:22px;height:2px;background:var(--orange);display:inline-block;}
+.section-title{font-size:clamp(1.9rem,3.2vw,2.75rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;}
+.section-sub{color:var(--slate);font-size:1.05rem;max-width:640px;}
+.on-dark .section-sub{color:#B9C2D9;}
+.on-dark{color:#fff;}
+.on-dark .text-slate{color:#B9C2D9;}
+
+/* ===== Drifting background icons ===== */
+.bg-drift-layer{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0;}
+.drift-icon{
+  position:absolute;color:var(--blue);opacity:.08;
+  animation:driftFloat linear infinite;
+  will-change:transform;
+}
+.on-dark .drift-icon{color:var(--cyan);opacity:.10;}
+@keyframes driftFloat{
+  0%{transform:translate(0,0) rotate(0deg);}
+  50%{transform:translate(18px,-26px) rotate(12deg);}
+  100%{transform:translate(0,0) rotate(0deg);}
+}
+.section > .container,.section > .container-fluid{position:relative;z-index:1;}
+
+/* ===== Nav ===== */
+.navbar{
+  padding:14px 0;transition:all .35s ease;background:rgba(10,17,40,.0);
+}
+.navbar.scrolled{background:rgba(10,17,40,.92);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.2);padding:10px 0;}
+.navbar-brand img{height:38px;transition:height .3s ease;}
+.navbar.scrolled .navbar-brand img{height:32px;}
+.nav-link{color:#EAF0FF!important;font-weight:500;font-size:.92rem;position:relative;margin:0 4px;padding:8px 4px!important;}
+.nav-link::after{content:'';position:absolute;left:4px;right:4px;bottom:3px;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1);}
+.nav-link:hover{color:#fff!important;}
+.btn-cta{
+  background:linear-gradient(135deg,var(--orange),var(--orange-2));
+  color:#fff;border:none;font-weight:600;padding:10px 22px;border-radius:50px;
+  box-shadow:0 8px 22px -6px rgba(255,106,26,.55);transition:all .3s ease;
+}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px -6px rgba(255,106,26,.7);color:#fff;}
+.btn-outline-light-cta{
+  border:1.5px solid rgba(255,255,255,.35);color:#fff;font-weight:600;padding:10px 22px;border-radius:50px;transition:all .3s ease;background:transparent;
+}
+.btn-outline-light-cta:hover{background:#fff;color:var(--navy);border-color:#fff;}
+.btn-navy{
+  background:var(--navy);color:#fff;font-weight:600;padding:10px 22px;border-radius:50px;border:none;transition:all .3s ease;
+}
+.btn-navy:hover{background:var(--blue);color:#fff;transform:translateY(-2px);}
+
+/* ===== Hero ===== */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  background:radial-gradient(1200px 700px at 15% -10%,#1a2a63 0%,var(--navy) 55%),var(--navy);
+  color:#fff;position:relative;padding-top:110px;padding-bottom:70px;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(circle at 30% 40%,black,transparent 75%);
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(63,211,255,.1);
+  border:1px solid rgba(63,211,255,.35);color:var(--cyan);padding:7px 16px;border-radius:50px;font-size:.82rem;font-weight:600;
+  font-family:var(--font-mono);
+}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(63,211,255,.7);animation:pulseDot 1.8s infinite;}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(63,211,255,.55);}70%{box-shadow:0 0 0 9px rgba(63,211,255,0);}100%{box-shadow:0 0 0 0 rgba(63,211,255,0);}}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);font-weight:700;line-height:1.08;letter-spacing:-.02em;}
+.hero h1 .grad{background:linear-gradient(90deg,var(--cyan),var(--orange-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:44px;}
+.hero-stats .num{font-family:var(--font-mono);font-size:1.7rem;font-weight:700;color:#fff;}
+.hero-stats .lbl{font-size:.8rem;color:#93A0C2;}
+.hero-visual{position:relative;}
+.hero-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;
+  backdrop-filter:blur(6px);padding:22px;position:absolute;box-shadow:0 20px 60px rgba(0,0,0,.35);
+  animation:floatCard 5s ease-in-out infinite;
+}
+@keyframes floatCard{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
+.hero-graphic{
+  width:100%;aspect-ratio:1/1;max-width:460px;margin:0 auto;position:relative;
+}
+.growth-line-wrap{position:relative;height:340px;}
+.scroll-cue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#93A0C2;text-align:center;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;}
+.scroll-cue .wheel{width:24px;height:38px;border:2px solid rgba(255,255,255,.4);border-radius:14px;margin:8px auto 0;position:relative;}
+.scroll-cue .wheel::before{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:4px;height:8px;border-radius:2px;background:var(--cyan);animation:scrollWheel 1.6s infinite;}
+@keyframes scrollWheel{0%{opacity:1;top:6px;}100%{opacity:0;top:20px;}}
+
+/* ===== Marquee (Trusted by) ===== */
+.marquee-wrap{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);}
+.marquee-track{display:flex;gap:60px;width:max-content;animation:marquee 26s linear infinite;}
+.marquee-wrap:hover .marquee-track{animation-play-state:paused;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.brand-chip{
+  font-family:var(--font-display);font-weight:600;font-size:1.25rem;color:var(--slate-2);
+  display:flex;align-items:center;gap:10px;white-space:nowrap;filter:grayscale(1);opacity:.65;transition:all .3s ease;
+}
+.brand-chip:hover{filter:none;opacity:1;color:var(--navy);}
+.brand-chip i{color:var(--orange);}
+
+/* ===== Cards general ===== */
+.card-lift{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);transition:all .35s cubic-bezier(.16,.84,.44,1);
+}
+.card-lift:hover{transform:translateY(-8px);box-shadow:var(--shadow-soft);border-color:transparent;}
+
+/* ===== About ===== */
+.about-photo-frame{
+  position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,var(--navy),var(--navy-3));
+  aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;
+}
+.about-photo-frame .glyph{font-size:6rem;color:rgba(255,255,255,.12);}
+.about-stat-float{
+  position:absolute;bottom:-26px;right:-26px;background:#fff;border-radius:18px;padding:20px 24px;box-shadow:var(--shadow-soft);
+}
+
+/* ===== Services ===== */
+.service-card{
+  padding:34px 28px;height:100%;position:relative;overflow:hidden;
+}
+.service-card .icon-box{
+  width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;margin-bottom:20px;transition:transform .35s ease;
+}
+.service-card:hover .icon-box{transform:rotate(-8deg) scale(1.08);}
+.service-card .num{position:absolute;top:18px;right:22px;font-family:var(--font-mono);color:var(--line);font-size:2.4rem;font-weight:700;transition:color .3s ease;}
+.service-card:hover .num{color:#EDF1FA;}
+.service-card ul{list-style:none;padding:0;margin:14px 0 0;}
+.service-card ul li{padding:4px 0;font-size:.9rem;color:var(--slate);display:flex;align-items:center;gap:8px;}
+.service-card ul li i{color:var(--orange);font-size:.85rem;}
+.pill-tag{display:inline-block;background:var(--off-white);border:1px solid var(--line);color:var(--slate);font-size:.72rem;font-family:var(--font-mono);padding:4px 12px;border-radius:50px;margin-bottom:14px;}
+
+/* ===== Why choose us ===== */
+.why-item{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.09);}
+.why-item .ic{width:46px;height:46px;flex:0 0 46px;border-radius:12px;background:rgba(63,211,255,.12);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+
+/* ===== Industries ===== */
+.industry-card{
+  padding:26px 18px;text-align:center;height:100%;
+}
+.industry-card i{font-size:1.9rem;color:var(--blue);transition:all .3s ease;}
+.industry-card:hover i{color:var(--orange);transform:scale(1.15);}
+
+/* ===== Process ===== */
+.process-track{position:relative;}
+.process-track::before{
+  content:'';position:absolute;top:34px;left:0;right:0;height:2px;
+  background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 16px);z-index:0;
+}
+.process-step{position:relative;z-index:1;text-align:center;}
+.process-step .step-num{
+  width:70px;height:70px;border-radius:50%;background:#fff;border:2px solid var(--line);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:var(--font-mono);font-weight:700;font-size:1.3rem;color:var(--navy);
+  transition:all .35s ease;
+}
+.process-step:hover .step-num{background:var(--orange);border-color:var(--orange);color:#fff;transform:scale(1.08);}
+
+/* ===== Portfolio ===== */
+.portfolio-card{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;}
+.portfolio-thumb{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;
+  transition:transform .5s ease;color:#fff;
+}
+.portfolio-card:hover .portfolio-thumb{transform:scale(1.08);}
+.portfolio-overlay{
+  position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,17,40,.92) 0%,rgba(10,17,40,.25) 55%,transparent 100%);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;opacity:0;transition:opacity .35s ease;color:#fff;
+}
+.portfolio-card:hover .portfolio-overlay{opacity:1;}
+.portfolio-tag{font-family:var(--font-mono);font-size:.72rem;color:var(--cyan);letter-spacing:.06em;}
+
+/* ===== Case Studies ===== */
+.case-card{padding:30px;height:100%;}
+.case-metric{text-align:center;padding:14px 8px;border-radius:12px;background:var(--off-white);}
+.case-metric .v{font-family:var(--font-mono);font-weight:700;font-size:1.35rem;color:var(--orange);}
+.case-metric .l{font-size:.72rem;color:var(--slate);}
+
+/* ===== Metrics ===== */
+.metric-box{text-align:center;padding:20px;}
+.metric-box .val{font-family:var(--font-mono);font-weight:700;font-size:clamp(2.2rem,4vw,3.2rem);color:#fff;}
+.metric-box .lbl{color:#93A0C2;font-size:.92rem;margin-top:6px;}
+
+/* ===== Pricing ===== */
+.price-card{padding:36px 30px;text-align:center;position:relative;}
+.price-card.featured{background:var(--navy);color:#fff;transform:scale(1.04);border:none;}
+.price-card.featured .price-sub,.price-card.featured .text-slate{color:#B9C2D9!important;}
+.price-card .ribbon{position:absolute;top:-1px;right:22px;background:var(--orange);color:#fff;font-size:.7rem;font-weight:700;padding:6px 14px;border-radius:0 0 8px 8px;font-family:var(--font-mono);}
+.price-amt{font-family:var(--font-mono);font-size:2.4rem;font-weight:700;}
+.price-card ul{list-style:none;padding:0;text-align:left;margin:24px 0;}
+.price-card ul li{padding:7px 0;display:flex;gap:10px;align-items:flex-start;font-size:.92rem;}
+.price-card ul li i{color:var(--orange);margin-top:3px;}
+.nav-pills-toggle .nav-link{border-radius:50px;color:var(--navy);font-weight:600;padding:9px 22px;}
+.nav-pills-toggle .nav-link.active{background:var(--navy);color:#fff;}
+
+/* ===== Testimonials ===== */
+.testi-card{padding:34px;height:100%;}
+.testi-card .stars i{color:var(--orange);font-size:.85rem;}
+.testi-avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:var(--font-display);}
+
+/* ===== Google reviews ===== */
+.g-review-card{padding:24px;}
+.g-stars i{color:#FBBC04;font-size:.85rem;}
+
+/* ===== Team ===== */
+.team-card{border-radius:18px;overflow:hidden;position:relative;}
+.team-photo{aspect-ratio:3/4;background:linear-gradient(150deg,var(--navy-2),var(--blue));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.team-photo .initials{font-family:var(--font-display);font-size:3rem;color:rgba(255,255,255,.85);font-weight:700;}
+.team-social{
+  position:absolute;inset:auto 0 0 0;display:flex;justify-content:center;gap:10px;padding:16px;
+  background:linear-gradient(0deg,rgba(10,17,40,.85),transparent);opacity:0;transform:translateY(10px);transition:all .35s ease;
+}
+.team-card:hover .team-social{opacity:1;transform:translateY(0);}
+.team-social a{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;color:#fff;transition:.3s;}
+.team-social a:hover{background:var(--orange);}
+
+/* ===== Tools ===== */
+.tool-chip{
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:26px 14px;
+  background:#fff;border:1px solid var(--line);border-radius:14px;transition:all .3s ease;height:100%;
+}
+.tool-chip:hover{transform:translateY(-6px);border-color:var(--blue);box-shadow:var(--shadow-soft);}
+.tool-chip i{font-size:1.8rem;color:var(--blue);}
+.tool-chip span{font-size:.78rem;color:var(--slate);font-weight:600;text-align:center;}
+
+/* ===== Blog ===== */
+.blog-card{overflow:hidden;height:100%;}
+.blog-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.blog-thumb i{font-size:2.6rem;color:rgba(255,255,255,.35);}
+.blog-cat{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.9);color:var(--navy);font-size:.68rem;font-weight:700;padding:5px 12px;border-radius:50px;font-family:var(--font-mono);}
+.blog-body{padding:22px;}
+.blog-body h5{transition:color .3s ease;}
+.blog-card:hover .blog-body h5{color:var(--orange);}
+
+/* ===== FAQ ===== */
+.accordion-button{font-weight:600;font-family:var(--font-display);}
+.accordion-button:not(.collapsed){background:var(--off-white);color:var(--orange);box-shadow:none;}
+.accordion-button:focus{box-shadow:none;border-color:var(--line);}
+
+/* ===== Free Audit CTA ===== */
+.audit-cta{
+  background:linear-gradient(120deg,var(--navy) 0%,var(--navy-3) 60%,var(--blue) 140%);
+  border-radius:28px;padding:60px;color:#fff;position:relative;overflow:hidden;
+}
+.audit-cta .form-control{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;padding:13px 16px;border-radius:10px;}
+.audit-cta .form-control::placeholder{color:#93A0C2;}
+.audit-cta .form-control:focus{background:rgba(255,255,255,.12);border-color:var(--cyan);box-shadow:none;color:#fff;}
+
+/* ===== Contact ===== */
+.contact-info-item{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line);}
+.contact-info-item .ic{width:44px;height:44px;flex:0 0 44px;border-radius:12px;background:var(--off-white);display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1.1rem;}
+.form-control-contact{border:1.5px solid var(--line);padding:13px 16px;border-radius:10px;transition:.25s;}
+.form-control-contact:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(33,89,255,.1);}
+
+/* ===== Footer ===== */
+footer{background:var(--navy);color:#B9C2D9;padding:70px 0 24px;}
+footer h6{color:#fff;font-family:var(--font-display);margin-bottom:18px;}
+footer a{color:#B9C2D9;transition:.25s;}
+footer a:hover{color:var(--cyan);padding-left:4px;}
+footer .social-ic{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff;transition:.3s;}
+footer .social-ic:hover{background:var(--orange);transform:translateY(-3px);}
+
+/* ===== Back to top ===== */
+#backToTop{
+  position:fixed;bottom:26px;right:26px;width:48px;height:48px;border-radius:50%;
+  background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;
+  border:none;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .3s ease;z-index:1500;box-shadow:0 10px 24px -6px rgba(255,106,26,.6);
+}
+#backToTop.show{opacity:1;visibility:visible;transform:translateY(0);}
+#backToTop:hover{transform:translateY(-4px);}
+
+/* ===== Sticky quick call bar (mobile) ===== */
+.mobile-cta-bar{
+  position:fixed;bottom:0;left:0;right:0;background:#fff;box-shadow:0 -8px 24px rgba(0,0,0,.1);
+  display:none;z-index:1400;padding:10px 14px;
+}
+@media (max-width:767px){.mobile-cta-bar{display:flex;gap:10px;}}
+
+@media (max-width:991px){
+  .hero{padding-top:130px;}
+  .about-stat-float{position:static;margin-top:20px;display:inline-block;}
+  .price-card.featured{transform:none;}
+}
+</style>
+</head>
+<body>
+
+<div id="scrollProgress"></div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+      <img src="logo.png" alt="TechTapasvi - Digital Marketing Agency India">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" style="border-color:rgba(255,255,255,.3);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="#audit" class="btn-cta">Free Audit <i class="bi bi-arrow-up-right"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero" data-drift='["bi-code-slash","bi-graph-up-arrow","bi-hash","bi-at","bi-search","bi-currency-rupee","bi-geo-alt","bi-megaphone"]'>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="hero-badge reveal in"><span class="dot"></span> PAN-INDIA DIGITAL PARTNER</div>
+        <h1 class="mt-4 reveal in delay-1">Websites that <span class="grad">convert.</span><br>Marketing that <span class="grad">compounds.</span></h1>
+        <p class="mt-4 fs-5 reveal in delay-2" style="color:#B9C2D9;max-width:520px;">TechTapasvi builds high-performing websites and runs full-funnel digital marketing for ambitious Indian businesses — from Kashmir to Kanyakumari.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4 reveal in delay-3">
+          <a href="#audit" class="btn-cta">Get Free Website & SEO Audit <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#portfolio" class="btn-outline-light-cta">See Our Work</a>
+        </div>
+        <div class="hero-stats reveal in delay-4">
+          <div><div class="num" data-count="500">0</div><div class="lbl">Projects Delivered</div></div>
+          <div><div class="num" data-count="18">0</div><div class="lbl">Indian States Served</div></div>
+          <div><div class="num" data-count="4.9" data-decimal="1">0</div><div class="lbl">Avg. Client Rating</div></div>
+          <div><div class="num" data-count="120">0</div><div class="lbl">Team Experts</div></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-graphic reveal-scale in">
+          <div class="growth-line-wrap">
+            <svg viewBox="0 0 460 340" width="100%" height="100%" style="overflow:visible;">
+              <defs>
+                <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#3FD3FF"/>
+                  <stop offset="100%" stop-color="#FF6A1A"/>
+                </linearGradient>
+              </defs>
+              <polyline points="10,300 90,260 150,275 210,190 270,210 330,110 400,60 450,30" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" id="growthPath"/>
+              <circle cx="450" cy="30" r="7" fill="#FF6A1A"><animate attributeName="r" values="6;10;6" dur="1.8s" repeatCount="indefinite"/></circle>
+            </svg>
+            <div class="hero-card" style="top:6%; left:0; width:190px;">
+              <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-graph-up-arrow text-cyan"></i><span class="mono" style="font-size:.72rem;color:#93A0C2;">ORGANIC TRAFFIC</span></div>
+              <div class="fw-bold fs-4">+248%</div>
+              <div class="mono" style="font-size:.7rem;color:#B9C2D9;">last 6 months</div>
+            </div>
+            <div class="hero-card" style="bottom:8%; right:0; width:190px; animation-delay:1.4s;">
+              <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-cursor-fill text-cyan"></i><span class="mono" style="font-size:.72rem;color:#93A0C2;">LEADS / MONTH</span></div>
+              <div class="fw-bold fs-4">1,240+</div>
+              <div class="mono" style="font-size:.7rem;color:#B9C2D9;">across clients</div>
+            </div>
+            <div class="hero-card" style="top:42%; left:36%; width:170px; animation-delay:.7s;">
+              <div class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-star-fill" style="color:#FBBC04;"></i><span class="mono" style="font-size:.72rem;color:#93A0C2;">GOOGLE RATING</span></div>
+              <div class="fw-bold fs-4">4.9/5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL<div class="wheel"></div></div>
+</section>
+
+<!-- ================= TRUSTED BY ================= -->
+<section class="section-tight bg-white" id="trusted">
+  <div class="container text-center mb-4">
+    <p class="mono text-slate reveal in" style="font-size:.8rem;letter-spacing:.1em;">TRUSTED BY GROWING BRANDS ACROSS INDIA</p>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- duplicated via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section bg-white" id="about" data-drift='["bi-diagram-3","bi-lightbulb","bi-rocket-takeoff","bi-award"]'>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="about-photo-frame">
+          <i class="bi bi-buildings glyph"></i>
+          <div class="about-stat-float">
+            <div class="mono text-slate" style="font-size:.72rem;">FOUNDED</div>
+            <div class="fw-bold fs-4">2016</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-title mb-3">A results-driven digital agency, built for India's next wave of growth.</h2>
+        <p class="section-sub">TechTapasvi began as a two-person WordPress studio in 2016 and has grown into a full-stack digital partner for founders, D2C brands, and enterprises across India. We combine engineering discipline with marketing craft — "tapasvi," meaning relentless focus, is baked into how we work.</p>
+        <div class="row g-4 mt-3">
+          <div class="col-sm-6">
+            <div class="d-flex gap-3">
+              <i class="bi bi-check2-circle text-orange fs-4"></i>
+              <div><strong>Pan-India delivery</strong><div class="text-slate small">Remote-first teams serving every state & UT</div></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3">
+              <i class="bi bi-check2-circle text-orange fs-4"></i>
+              <div><strong>In-house specialists</strong><div class="text-slate small">No outsourcing — designers, devs & marketers under one roof</div></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3">
+              <i class="bi bi-check2-circle text-orange fs-4"></i>
+              <div><strong>ROI-first strategy</strong><div class="text-slate small">Every campaign tied to leads, not vanity metrics</div></div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex gap-3">
+              <i class="bi bi-check2-circle text-orange fs-4"></i>
+              <div><strong>Transparent reporting</strong><div class="text-slate small">Live dashboards, not once-a-month PDFs</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section bg-navy on-dark" id="services" data-drift='["bi-code-slash","bi-window","bi-brush","bi-wordpress","bi-search","bi-share","bi-megaphone","bi-pencil-square"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">What We Do</div>
+      <h2 class="section-title reveal in delay-1">Two disciplines. One growth engine.</h2>
+      <p class="section-sub mx-auto reveal in delay-2">We build the asset (your website) and drive the demand (your marketing) — so nothing falls between the cracks.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card-lift service-card h-100 reveal-left" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);">
+          <span class="num">01</span>
+          <div class="pill-tag" style="background:rgba(63,211,255,.1);border-color:rgba(63,211,255,.3);color:var(--cyan);">WEB DEVELOPMENT</div>
+          <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+          <h4>Websites that do the selling for you</h4>
+          <p class="text-slate">Fast, mobile-first, SEO-ready websites engineered to convert visitors into leads.</p>
+          <ul>
+            <li><i class="bi bi-check-lg"></i>High-converting Landing Pages</li>
+            <li><i class="bi bi-check-lg"></i>WordPress Design & Development</li>
+            <li><i class="bi bi-check-lg"></i>Custom Web Applications</li>
+            <li><i class="bi bi-check-lg"></i>UI/UX Website Design</li>
+            <li><i class="bi bi-check-lg"></i>E-commerce Storefronts</li>
+            <li><i class="bi bi-check-lg"></i>Website Maintenance & Speed Optimization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-lift service-card h-100 reveal-right" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);">
+          <span class="num">02</span>
+          <div class="pill-tag" style="background:rgba(255,106,26,.1);border-color:rgba(255,106,26,.3);color:var(--orange-2);">DIGITAL MARKETING</div>
+          <div class="icon-box" style="background:linear-gradient(135deg,var(--orange),var(--orange-2));"><i class="bi bi-graph-up-arrow"></i></div>
+          <h4>Demand generation, engineered by data</h4>
+          <p class="text-slate">Full-funnel marketing that puts your brand in front of the right Indian audience, everywhere they look.</p>
+          <ul>
+            <li><i class="bi bi-check-lg"></i>SEO (Local, National & Technical)</li>
+            <li><i class="bi bi-check-lg"></i>Social Media Marketing (SMM)</li>
+            <li><i class="bi bi-check-lg"></i>Google & Meta Ads (PPC)</li>
+            <li><i class="bi bi-check-lg"></i>Content Writing & Copywriting</li>
+            <li><i class="bi bi-check-lg"></i>Email & WhatsApp Marketing</li>
+            <li><i class="bi bi-check-lg"></i>Conversion Rate Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="section bg-white" id="why" data-drift='["bi-shield-check","bi-clock-history","bi-graph-up","bi-people"]'>
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal-left">
+        <div class="eyebrow">Why TechTapasvi</div>
+        <h2 class="section-title mb-3">Agencies promise growth. We instrument it.</h2>
+        <p class="section-sub">No jargon, no lock-in contracts, no black-box reporting. Just a disciplined process built for measurable outcomes across every Indian market.</p>
+        <a href="#audit" class="btn-navy mt-3 d-inline-block">Talk To Our Strategists</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-0">
+          <div class="col-sm-6">
+            <div class="why-item reveal in"><div class="ic"><i class="bi bi-geo-alt"></i></div><div><strong>True Pan-India Reach</strong><div class="text-slate small">Localized SEO & ad strategy for every city and language</div></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-item reveal in delay-1"><div class="ic"><i class="bi bi-speedometer2"></i></div><div><strong>Speed-Obsessed Builds</strong><div class="text-slate small">Sub-2s load times as a non-negotiable standard</div></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-item reveal in delay-2"><div class="ic"><i class="bi bi-bar-chart-line"></i></div><div><strong>ROI Dashboards</strong><div class="text-slate small">Real-time visibility into leads, spend & conversions</div></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-item reveal in delay-3"><div class="ic"><i class="bi bi-headset"></i></div><div><strong>Dedicated Account Manager</strong><div class="text-slate small">One point of contact, zero communication gaps</div></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-item reveal in delay-4"><div class="ic"><i class="bi bi-file-earmark-lock"></i></div><div><strong>No Lock-In Contracts</strong><div class="text-slate small">Month-to-month flexibility, earned trust</div></div></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="why-item reveal in delay-4"><div class="ic"><i class="bi bi-award"></i></div><div><strong>Certified Specialists</strong><div class="text-slate small">Google & Meta certified marketers on every account</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section class="section" style="background:var(--off-white);" id="industries" data-drift='["bi-cart3","bi-heart-pulse","bi-house-door","bi-mortarboard","bi-cup-hot","bi-bank","bi-gear","bi-airplane"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Industries We Serve</div>
+      <h2 class="section-title reveal in delay-1">Built for every corner of the Indian economy</h2>
+    </div>
+    <div class="row g-3" id="industriesGrid">
+      <!-- injected -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR PROCESS ================= -->
+<section class="section bg-white" id="process">
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Our Process</div>
+      <h2 class="section-title reveal in delay-1">From audit to acquisition — a repeatable path</h2>
+    </div>
+    <div class="process-track row g-4">
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in">
+        <div class="step-num">01</div>
+        <h6>Discover</h6>
+        <p class="text-slate small">Audit your market, competitors & goals</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in delay-1">
+        <div class="step-num">02</div>
+        <h6>Strategize</h6>
+        <p class="text-slate small">Build a channel & content roadmap</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in delay-2">
+        <div class="step-num">03</div>
+        <h6>Design</h6>
+        <p class="text-slate small">Craft the website & creative assets</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in delay-3">
+        <div class="step-num">04</div>
+        <h6>Build</h6>
+        <p class="text-slate small">Develop, test & launch on schedule</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in delay-4">
+        <div class="step-num">05</div>
+        <h6>Promote</h6>
+        <p class="text-slate small">Run SEO, ads & content campaigns</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 process-step reveal in delay-4">
+        <div class="step-num">06</div>
+        <h6>Scale</h6>
+        <p class="text-slate small">Optimize monthly using live data</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="section bg-navy on-dark" id="portfolio" data-drift='["bi-window-stack","bi-phone","bi-laptop","bi-palette"]'>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
+      <div class="reveal in">
+        <div class="eyebrow">Portfolio</div>
+        <h2 class="section-title">Recent work, real outcomes</h2>
+      </div>
+      <a href="#contact" class="btn-outline-light-cta reveal in delay-1 mt-3 mt-md-0">Start Your Project</a>
+    </div>
+    <div class="row g-4" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section class="section" style="background:var(--off-white);" id="case-studies" data-drift='["bi-clipboard-data","bi-graph-up-arrow","bi-trophy"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Case Studies</div>
+      <h2 class="section-title reveal in delay-1">Numbers, not narratives</h2>
+    </div>
+    <div class="row g-4" id="caseGrid"></div>
+  </div>
+</section>
+
+<!-- ================= PERFORMANCE METRICS ================= -->
+<section class="section bg-navy on-dark" id="metrics" data-drift='["bi-bar-chart","bi-arrow-up-right","bi-percent"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">By The Numbers</div>
+      <h2 class="section-title reveal in delay-1">Impact delivered across India</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3 metric-box reveal in"><div class="val" data-count="12500">0</div><div class="lbl">Leads Generated / Month</div></div>
+      <div class="col-6 col-md-3 metric-box reveal in delay-1"><div class="val" data-count="98" data-suffix="%">0</div><div class="lbl">Client Retention Rate</div></div>
+      <div class="col-6 col-md-3 metric-box reveal in delay-2"><div class="val" data-count="35" data-suffix="M+"><span>0</span></div><div class="lbl">Ad Spend Managed (₹)</div></div>
+      <div class="col-6 col-md-3 metric-box reveal in delay-3"><div class="val" data-count="4.9" data-decimal="1">0</div><div class="lbl">Average Client Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section bg-white" id="pricing" data-drift='["bi-tag","bi-wallet2"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-4" style="max-width:640px;">
+      <div class="eyebrow reveal in">Pricing</div>
+      <h2 class="section-title reveal in delay-1">Simple plans. No surprises.</h2>
+      <p class="section-sub mx-auto reveal in delay-2">Custom scopes available — these starting packages cover most Pan-India businesses.</p>
+    </div>
+    <ul class="nav nav-pills nav-pills-toggle justify-content-center gap-2 mb-5 reveal in" id="pricingTabs" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-web" type="button">Web Development</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-dm" type="button">Digital Marketing</button></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="tab-web">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card-lift price-card h-100 reveal in">
+              <div class="pill-tag">STARTER</div>
+              <div class="price-amt">₹14,999</div>
+              <div class="text-slate small">one-time · landing page</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>1 high-converting landing page</li>
+                <li><i class="bi bi-check-lg"></i>Mobile responsive design</li>
+                <li><i class="bi bi-check-lg"></i>Basic on-page SEO</li>
+                <li><i class="bi bi-check-lg"></i>Contact form integration</li>
+                <li><i class="bi bi-check-lg"></i>7-day delivery</li>
+              </ul>
+              <a href="#contact" class="btn-navy w-100 d-block">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-lift price-card featured h-100 reveal in delay-1">
+              <div class="ribbon">MOST POPULAR</div>
+              <div class="pill-tag" style="background:rgba(63,211,255,.12);border-color:rgba(63,211,255,.3);color:var(--cyan);">GROWTH</div>
+              <div class="price-amt">₹49,999</div>
+              <div class="price-sub text-slate small">one-time · full website</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>Up to 8-page WordPress or custom site</li>
+                <li><i class="bi bi-check-lg"></i>Custom UI/UX design</li>
+                <li><i class="bi bi-check-lg"></i>Technical + on-page SEO setup</li>
+                <li><i class="bi bi-check-lg"></i>Speed & Core Web Vitals optimization</li>
+                <li><i class="bi bi-check-lg"></i>30-day post-launch support</li>
+              </ul>
+              <a href="#contact" class="btn-cta w-100 d-block">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-lift price-card h-100 reveal in delay-2">
+              <div class="pill-tag">ENTERPRISE</div>
+              <div class="price-amt">Custom</div>
+              <div class="text-slate small">for complex builds</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>Custom web applications</li>
+                <li><i class="bi bi-check-lg"></i>E-commerce & multi-vendor platforms</li>
+                <li><i class="bi bi-check-lg"></i>API & third-party integrations</li>
+                <li><i class="bi bi-check-lg"></i>Dedicated project manager</li>
+                <li><i class="bi bi-check-lg"></i>SLA-backed maintenance</li>
+              </ul>
+              <a href="#contact" class="btn-navy w-100 d-block">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab-dm">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card-lift price-card h-100 reveal in">
+              <div class="pill-tag">STARTER</div>
+              <div class="price-amt">₹19,999</div>
+              <div class="text-slate small">/month</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>Local SEO (1 city)</li>
+                <li><i class="bi bi-check-lg"></i>2 social platforms managed</li>
+                <li><i class="bi bi-check-lg"></i>4 blog posts / month</li>
+                <li><i class="bi bi-check-lg"></i>Monthly performance report</li>
+              </ul>
+              <a href="#contact" class="btn-navy w-100 d-block">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-lift price-card featured h-100 reveal in delay-1">
+              <div class="ribbon">MOST POPULAR</div>
+              <div class="pill-tag" style="background:rgba(63,211,255,.12);border-color:rgba(63,211,255,.3);color:var(--cyan);">GROWTH</div>
+              <div class="price-amt">₹49,999</div>
+              <div class="price-sub text-slate small">/month</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>Pan-India SEO (national keywords)</li>
+                <li><i class="bi bi-check-lg"></i>Google + Meta Ads management</li>
+                <li><i class="bi bi-check-lg"></i>4 platforms + content calendar</li>
+                <li><i class="bi bi-check-lg"></i>8 blog / landing content pieces</li>
+                <li><i class="bi bi-check-lg"></i>Live ROI dashboard</li>
+              </ul>
+              <a href="#contact" class="btn-cta w-100 d-block">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-lift price-card h-100 reveal in delay-2">
+              <div class="pill-tag">ENTERPRISE</div>
+              <div class="price-amt">Custom</div>
+              <div class="text-slate small">for multi-city brands</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i>Multi-city / multi-language SEO</li>
+                <li><i class="bi bi-check-lg"></i>Full-funnel paid media strategy</li>
+                <li><i class="bi bi-check-lg"></i>Dedicated content & design pod</li>
+                <li><i class="bi bi-check-lg"></i>Weekly strategy calls</li>
+              </ul>
+              <a href="#contact" class="btn-navy w-100 d-block">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" style="background:var(--off-white);" id="testimonials" data-drift='["bi-quote","bi-chat-heart"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Testimonials</div>
+      <h2 class="section-title reveal in delay-1">What our clients say</h2>
+    </div>
+    <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner" id="testiInner"></div>
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <button class="btn btn-light border rounded-circle" style="width:44px;height:44px;" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+        <button class="btn btn-light border rounded-circle" style="width:44px;height:44px;" type="button" data-bs-target="#testiCarousel" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOOGLE REVIEWS ================= -->
+<section class="section bg-white" id="google-reviews">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 reveal-left">
+        <div class="eyebrow">Google Reviews</div>
+        <h2 class="section-title mb-2">4.9 out of 5, from 320+ reviews</h2>
+        <div class="g-stars fs-4 mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+        <p class="text-slate">Verified reviews from businesses we've worked with across India.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end reveal-right">
+        <a href="#" class="btn-navy"><i class="bi bi-google me-2"></i>Read All Reviews on Google</a>
+      </div>
+    </div>
+    <div class="row g-4" id="googleReviewGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="section" style="background:var(--off-white);" id="team" data-drift='["bi-person-badge","bi-people"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Our Team</div>
+      <h2 class="section-title reveal in delay-1">The people behind the pixels & rankings</h2>
+    </div>
+    <div class="row g-4" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TOOLS WE USE ================= -->
+<section class="section bg-white" id="tools">
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Tools We Use</div>
+      <h2 class="section-title reveal in delay-1">Enterprise-grade stack, for every project</h2>
+    </div>
+    <div class="row g-3" id="toolsGrid"></div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section class="section" style="background:var(--off-white);" id="blog" data-drift='["bi-journal-text","bi-pencil"]'>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
+      <div class="reveal in">
+        <div class="eyebrow">Blog & Insights</div>
+        <h2 class="section-title">Fresh thinking on Indian digital growth</h2>
+      </div>
+      <a href="#" class="btn-navy mt-3 mt-md-0 reveal in delay-1">View All Articles</a>
+    </div>
+    <div class="row g-4" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section bg-white" id="faq">
+  <div class="row g-5 container mx-auto align-items-start">
+    <div class="col-lg-4 reveal-left">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title mb-3">Questions, answered</h2>
+      <p class="section-sub">Can't find what you're looking for? <a href="#contact" class="text-orange fw-semibold">Talk to our team →</a></p>
+    </div>
+    <div class="col-lg-8 reveal-right">
+      <div class="accordion" id="faqAccordion"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FREE AUDIT CTA ================= -->
+<section class="section-tight" id="audit" style="background:var(--off-white);">
+  <div class="container">
+    <div class="audit-cta reveal-scale in" data-drift='["bi-search","bi-graph-up-arrow","bi-check2-circle"]'>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="hero-badge mb-3"><span class="dot"></span> 100% FREE · NO OBLIGATION</div>
+          <h2 class="display-font fw-bold" style="font-size:clamp(1.7rem,3vw,2.4rem);">Get a free Website & SEO Audit worth ₹4,999</h2>
+          <p class="text-slate mt-2">Find out exactly what's stopping your website from ranking and converting — in under 24 hours.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>Technical SEO health check</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>Competitor gap analysis</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-cyan me-2"></i>Speed & mobile usability report</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <form class="row g-3" onsubmit="return false;">
+            <div class="col-12"><input type="text" class="form-control" placeholder="Your Name" required></div>
+            <div class="col-12"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
+            <div class="col-12"><input type="url" class="form-control" placeholder="Website URL (optional)"></div>
+            <div class="col-12"><input type="text" class="form-control" placeholder="City"></div>
+            <div class="col-12"><button class="btn-cta w-100 py-2" type="submit">Get My Free Audit <i class="bi bi-arrow-right ms-1"></i></button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section bg-white" id="contact" data-drift='["bi-envelope","bi-telephone","bi-geo-alt"]'>
+  <div class="container">
+    <div class="text-center mx-auto mb-5" style="max-width:640px;">
+      <div class="eyebrow reveal in">Contact</div>
+      <h2 class="section-title reveal in delay-1">Let's build your next growth chapter</h2>
+      <p class="section-sub mx-auto reveal in delay-2">Serving clients Pan-India — Delhi NCR, Mumbai, Bengaluru, Hyderabad, Pune, Chennai, Kolkata, Ahmedabad and everywhere in between.</p>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-5 reveal-left">
+        <div class="contact-info-item">
+          <div class="ic"><i class="bi bi-telephone"></i></div>
+          <div><strong>Call Us</strong><div class="text-slate">+91 98765 43210</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><i class="bi bi-envelope"></i></div>
+          <div><strong>Email Us</strong><div class="text-slate">hello@techtapasvi.com</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><i class="bi bi-geo-alt"></i></div>
+          <div><strong>Headquarters</strong><div class="text-slate">Gurugram, Haryana — serving clients Pan-India</div></div>
+        </div>
+        <div class="contact-info-item" style="border-bottom:none;">
+          <div class="ic"><i class="bi bi-whatsapp"></i></div>
+          <div><strong>WhatsApp</strong><div class="text-slate">+91 98765 43210</div></div>
+        </div>
+        <div class="d-flex gap-2 mt-4">
+          <a href="#" class="footer-social social-ic" style="background:var(--off-white);color:var(--navy);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-social social-ic" style="background:var(--off-white);color:var(--navy);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="footer-social social-ic" style="background:var(--off-white);color:var(--navy);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-social social-ic" style="background:var(--off-white);color:var(--navy);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <form class="row g-3" onsubmit="return false;">
+          <div class="col-md-6"><input class="form-control form-control-contact" placeholder="Full Name" required></div>
+          <div class="col-md-6"><input class="form-control form-control-contact" type="tel" placeholder="Phone Number" required></div>
+          <div class="col-md-6"><input class="form-control form-control-contact" type="email" placeholder="Email Address" required></div>
+          <div class="col-md-6"><input class="form-control form-control-contact" placeholder="City / State"></div>
+          <div class="col-12">
+            <select class="form-control form-control-contact">
+              <option>I'm interested in...</option>
+              <option>Web Development</option>
+              <option>Digital Marketing</option>
+              <option>Both</option>
+            </select>
+          </div>
+          <div class="col-12"><textarea class="form-control form-control-contact" rows="4" placeholder="Tell us about your project"></textarea></div>
+          <div class="col-12"><button class="btn-cta px-4 py-3" type="submit">Send Message <i class="bi bi-send ms-1"></i></button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <img src="logo.png" alt="TechTapasvi Logo" style="height:42px;filter:brightness(0) invert(1);" class="mb-3">
+        <p style="max-width:320px;">Pan-India digital marketing & web development agency helping businesses build, rank and grow online.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-ic"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-ic"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-ic"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-ic"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-ic"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Services</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">WordPress Development</a></li>
+          <li><a href="#services">SEO Services</a></li>
+          <li><a href="#services">Social Media Marketing</a></li>
+          <li><a href="#services">Google & Meta Ads</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Get Growth Tips</h6>
+        <p class="small">Monthly Pan-India marketing insights, no spam.</p>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <input type="email" class="form-control form-control-sm" placeholder="Email address" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;">
+          <button class="btn-cta btn-sm px-3" type="submit"><i class="bi bi-send"></i></button>
+        </form>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1);margin:40px 0 20px;">
+    <div class="d-flex flex-wrap justify-content-between gap-2 small">
+      <div>© <span id="year"></span> TechTapasvi. All rights reserved. Serving clients Pan-India.</div>
+      <div class="d-flex gap-3"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+<div class="mobile-cta-bar">
+  <a href="tel:+919876543210" class="btn-navy flex-fill text-center"><i class="bi bi-telephone me-1"></i>Call</a>
+  <a href="#audit" class="btn-cta flex-fill text-center">Free Audit</a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============ Scroll progress + navbar ============ */
+const progressBar = document.getElementById('scrollProgress');
+const nav = document.getElementById('mainNav');
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  progressBar.style.width = scrolled + '%';
+  if(h.scrollTop > 60){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');}
+  if(h.scrollTop > 500){backToTop.classList.add('show');}else{backToTop.classList.remove('show');}
+});
+backToTop.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ============ Scrollspy active nav link ============ */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const spyObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      navLinks.forEach(l=>l.classList.remove('active'));
+      const link = document.querySelector('.nav-link[href="#'+entry.target.id+'"]');
+      if(link) link.classList.add('active');
+    }
+  });
+},{rootMargin:'-45% 0px -50% 0px'});
+sections.forEach(s=>spyObserver.observe(s));
+
+/* ============ Reveal on scroll ============ */
+const revealEls = document.querySelectorAll('.reveal,.reveal-scale,.reveal-left,.reveal-right');
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ entry.target.classList.add('in'); }
+  });
+},{threshold:.15});
+revealEls.forEach(el=>revealObserver.observe(el));
+
+/* ============ Counters ============ */
+function animateCounter(el){
+  const target = parseFloat(el.dataset.count);
+  const decimals = parseInt(el.dataset.decimal || 0);
+  const suffix = el.dataset.suffix || '';
+  const isPlain = !el.dataset.suffix && target < 1000 && decimals === 0;
+  let start = 0;
+  const duration = 1600;
+  const startTime = performance.now();
+  function tick(now){
+    const p = Math.min((now-startTime)/duration,1);
+    const eased = 1 - Math.pow(1-p,3);
+    const val = start + (target-start)*eased;
+    if(decimals>0){ el.textContent = val.toFixed(decimals); }
+    else if(target >= 1000){ el.textContent = Math.floor(val).toLocaleString('en-IN') + suffix; }
+    else { el.textContent = Math.floor(val) + suffix; }
+    if(p<1){ requestAnimationFrame(tick); }
+  }
+  requestAnimationFrame(tick);
+}
+const counterEls = document.querySelectorAll('[data-count]');
+const counterObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ animateCounter(entry.target); counterObserver.unobserve(entry.target); }
+  });
+},{threshold:.5});
+counterEls.forEach(el=>counterObserver.observe(el));
+
+/* ============ Drifting background icons ============ */
+document.querySelectorAll('[data-drift]').forEach(section=>{
+  const icons = JSON.parse(section.dataset.drift);
+  const layer = document.createElement('div');
+  layer.className = 'bg-drift-layer';
+  const count = window.innerWidth < 768 ? 8 : 16;
+  for(let i=0;i<count;i++){
+    const span = document.createElement('i');
+    const icon = icons[Math.floor(Math.random()*icons.length)];
+    span.className = 'bi ' + icon + ' drift-icon';
+    span.style.left = Math.random()*96 + '%';
+    span.style.top = Math.random()*96 + '%';
+    span.style.fontSize = (14 + Math.random()*26) + 'px';
+    span.style.animationDuration = (6 + Math.random()*8) + 's';
+    span.style.animationDelay = (Math.random()*5) + 's';
+    layer.appendChild(span);
+  }
+  section.style.position = section.style.position || 'relative';
+  section.insertBefore(layer, section.firstChild);
+});
+
+/* ============ Trusted-by marquee content ============ */
+const brands = [
+  ['bi-shop','UrbanNest Retail'],['bi-cup-hot','Chai Point Co.'],['bi-heart-pulse','MedCare Clinics'],
+  ['bi-house-door','PropIndia Realty'],['bi-mortarboard','LearnSphere Edu'],['bi-airplane','TravelKart'],
+  ['bi-bank','FinEdge Capital'],['bi-cart3','ShopKaro D2C'],['bi-gear','IndusTech Mfg'],['bi-flower1','Ayur Roots']
+];
+const track = document.getElementById('marqueeTrack');
+[...brands, ...brands].forEach(([icon,name])=>{
+  const div = document.createElement('div');
+  div.className = 'brand-chip';
+  div.innerHTML = '<i class="bi '+icon+'"></i>'+name;
+  track.appendChild(div);
+});
+
+/* ============ Industries ============ */
+const industries = [
+  ['bi-cart3','E-commerce & D2C'],['bi-heart-pulse','Healthcare & Clinics'],['bi-house-door','Real Estate'],
+  ['bi-mortarboard','Education & EdTech'],['bi-cup-hot','Food & Hospitality'],['bi-bank','BFSI & Fintech'],
+  ['bi-gear','Manufacturing'],['bi-airplane','Travel & Tourism'],['bi-briefcase','B2B & SaaS'],
+  ['bi-flower1','Wellness & Ayurveda'],['bi-car-front','Automotive'],['bi-rocket-takeoff','Startups']
+];
+const indGrid = document.getElementById('industriesGrid');
+industries.forEach((it,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-6 col-md-4 col-lg-2';
+  col.innerHTML = `<div class="card-lift industry-card reveal delay-${(i%4)+1} in"><i class="bi ${it[0]} mb-2 d-block"></i><div class="small fw-semibold">${it[1]}</div></div>`;
+  indGrid.appendChild(col);
+});
+
+/* ============ Portfolio ============ */
+const portfolio = [
+  ['bi-cart-check','ShopKaro','E-commerce Website','+312% Online Sales'],
+  ['bi-heart-pulse','MedCare Clinics','Landing Page + SEO','+180% Appointments'],
+  ['bi-house-door','PropIndia','Custom Web App','+240% Qualified Leads'],
+  ['bi-mortarboard','LearnSphere','WordPress + PPC','+400% Enrollments'],
+  ['bi-cup-hot','Chai Point Co.','SMM + Content','2.1M Monthly Reach'],
+  ['bi-bank','FinEdge','SEO + Landing Pages','#1 Ranking, 40+ Keywords']
+];
+const pGrid = document.getElementById('portfolioGrid');
+portfolio.forEach((p,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-md-6 col-lg-4';
+  col.innerHTML = `
+  <div class="portfolio-card reveal-scale in delay-${(i%3)+1}">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,var(--navy-2),var(--blue));">
+      <i class="bi ${p[0]}" style="font-size:2.6rem;color:rgba(255,255,255,.5);"></i>
+    </div>
+    <div class="portfolio-overlay">
+      <div class="portfolio-tag">${p[2]}</div>
+      <h5 class="mb-1">${p[1]}</h5>
+      <div class="mono" style="font-size:.8rem;color:var(--orange-2);">${p[3]}</div>
+    </div>
+  </div>`;
+  pGrid.appendChild(col);
+});
+
+/* ============ Case Studies ============ */
+const cases = [
+  {name:'ShopKaro D2C', tag:'E-commerce', m:[['312%','Sales Growth'],['4.2x','ROAS'],['68%','Lower CAC']]},
+  {name:'PropIndia Realty', tag:'Real Estate', m:[['240%','Qualified Leads'],['52%','Cost per Lead ↓'],['18','Cities Covered']]},
+  {name:'LearnSphere Edu', tag:'EdTech', m:[['400%','Enrollments'],['3.6x','Traffic'],['91%','Retention']]}
+];
+const caseGrid = document.getElementById('caseGrid');
+cases.forEach((c,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-lg-4';
+  col.innerHTML = `
+  <div class="card-lift case-card reveal in delay-${i+1}">
+    <div class="pill-tag">${c.tag}</div>
+    <h4>${c.name}</h4>
+    <div class="row g-2 mt-3">
+      ${c.m.map(x=>`<div class="col-4"><div class="case-metric"><div class="v">${x[0]}</div><div class="l">${x[1]}</div></div></div>`).join('')}
+    </div>
+    <a href="#contact" class="d-inline-flex align-items-center gap-2 mt-4 fw-semibold text-orange">Read Full Story <i class="bi bi-arrow-right"></i></a>
+  </div>`;
+  caseGrid.appendChild(col);
+});
+
+/* ============ Testimonials ============ */
+const testimonials = [
+  ['Rohit Malhotra','Founder, ShopKaro','Delhi NCR','TechTapasvi rebuilt our store and tripled our conversion rate in three months. Their SEO team actually understands the Indian buyer.'],
+  ['Ayesha Khan','CEO, MedCare Clinics','Hyderabad','From zero online presence to fully booked appointment calendars — the ROI has been undeniable.'],
+  ['Karan Verma','CMO, LearnSphere','Bengaluru','Transparent reporting, fast execution, and a team that treats our budget like their own.'],
+  ['Priya Nair','Director, PropIndia','Pune','Their Pan-India local SEO strategy got us ranking in 12 cities within a quarter.']
+];
+const testiInner = document.getElementById('testiInner');
+testimonials.forEach((t,i)=>{
+  const item = document.createElement('div');
+  item.className = 'carousel-item' + (i===0 ? ' active' : '');
+  item.innerHTML = `
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card-lift testi-card text-center">
+        <div class="stars mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+        <p class="fs-5 fst-italic">"${t[3]}"</p>
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+          <div class="testi-avatar">${t[0].split(' ').map(x=>x[0]).join('')}</div>
+          <div class="text-start">
+            <div class="fw-bold">${t[0]}</div>
+            <div class="text-slate small">${t[1]} · ${t[2]}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+  testiInner.appendChild(item);
+});
+
+/* ============ Google reviews ============ */
+const gReviews = [
+  ['Suresh Iyer','2 weeks ago','Excellent SEO results within 60 days. Highly recommend for any Indian business serious about growth.'],
+  ['Neha Kapoor','1 month ago','Website design was stunning and delivered on time. Great communication throughout.'],
+  ['Vikram Singh','3 weeks ago','Their ad campaigns brought our cost-per-lead down by half. Solid team.']
+];
+const gGrid = document.getElementById('googleReviewGrid');
+gReviews.forEach((r,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-md-4';
+  col.innerHTML = `
+  <div class="card-lift g-review-card reveal in delay-${i+1}">
+    <div class="d-flex justify-content-between align-items-start mb-2">
+      <div class="d-flex align-items-center gap-2">
+        <div class="testi-avatar" style="width:38px;height:38px;font-size:.85rem;">${r[0].split(' ').map(x=>x[0]).join('')}</div>
+        <div><div class="fw-semibold small">${r[0]}</div><div class="text-slate" style="font-size:.72rem;">${r[1]}</div></div>
+      </div>
+      <i class="bi bi-google text-slate"></i>
+    </div>
+    <div class="g-stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+    <p class="small text-slate mb-0">${r[2]}</p>
+  </div>`;
+  gGrid.appendChild(col);
+});
+
+/* ============ Team ============ */
+const team = [
+  ['Aarav Sharma','Founder & CEO'],['Isha Patel','Head of Digital Marketing'],
+  ['Rahul Deshmukh','Lead Web Developer'],['Sanya Gupta','SEO Strategist'],
+  ['Devendra Rao','Performance Marketing Lead'],['Meera Joshi','Creative Director']
+];
+const teamGrid = document.getElementById('teamGrid');
+team.forEach((t,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-6 col-md-4 col-lg-2';
+  const initials = t[0].split(' ').map(x=>x[0]).join('');
+  col.innerHTML = `
+  <div class="team-card card-lift reveal in delay-${(i%4)+1}">
+    <div class="team-photo"><span class="initials">${initials}</span>
+      <div class="team-social">
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+    <div class="p-3 text-center">
+      <div class="fw-semibold">${t[0]}</div>
+      <div class="text-slate small">${t[1]}</div>
+    </div>
+  </div>`;
+  teamGrid.appendChild(col);
+});
+
+/* ============ Tools ============ */
+const tools = [
+  ['bi-wordpress','WordPress'],['bi-google','Google Ads'],['bi-facebook','Meta Ads'],
+  ['bi-graph-up','Google Analytics'],['bi-search','Search Console'],['bi-bar-chart-line','SEMrush'],
+  ['bi-link-45deg','Ahrefs'],['bi-palette2','Figma'],['bi-envelope-paper','Mailchimp'],
+  ['bi-whatsapp','WhatsApp Business'],['bi-code-square','VS Code'],['bi-kanban','ClickUp']
+];
+const toolsGrid = document.getElementById('toolsGrid');
+tools.forEach((t,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-4 col-md-3 col-lg-2';
+  col.innerHTML = `<div class="tool-chip reveal-scale in delay-${(i%4)+1}"><i class="bi ${t[0]}"></i><span>${t[1]}</span></div>`;
+  toolsGrid.appendChild(col);
+});
+
+/* ============ Blog ============ */
+const blogs = [
+  ['bi-search','SEO','Local SEO Checklist for Indian Businesses in 2026','12 practical steps to rank in your city — and beyond.'],
+  ['bi-graph-up-arrow','Ads','Google Ads vs Meta Ads: Where Should Your Budget Go?','A data-backed breakdown for Indian D2C brands.'],
+  ['bi-window','Web Dev','Why Website Speed Is Costing You Leads','How Core Web Vitals affect conversions & rankings.']
+];
+const blogGrid = document.getElementById('blogGrid');
+blogs.forEach((b,i)=>{
+  const col = document.createElement('div');
+  col.className = 'col-md-6 col-lg-4';
+  col.innerHTML = `
+  <div class="card-lift blog-card reveal in delay-${i+1}">
+    <div class="blog-thumb"><span class="blog-cat">${b[1]}</span><i class="bi ${b[0]}"></i></div>
+    <div class="blog-body">
+      <div class="text-slate small mb-2"><i class="bi bi-calendar3 me-1"></i>Updated 2026</div>
+      <h5>${b[2]}</h5>
+      <p class="text-slate small">${b[3]}</p>
+      <a href="#" class="fw-semibold text-orange">Read Article <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>`;
+  blogGrid.appendChild(col);
+});
+
+/* ============ FAQ ============ */
+const faqs = [
+  ['Do you serve businesses outside metro cities?','Yes — we work Pan-India, including Tier 2 and Tier 3 cities. Our local SEO and ad targeting are built to work for any Indian market, not just metros.'],
+  ['How long until I see SEO results?','Most clients see meaningful ranking movement within 60–90 days, with compounding growth from month 4 onward. We share transparent progress reports monthly.'],
+  ['Do you offer both website and marketing services together?','Yes — most clients bundle web development and digital marketing so the site and campaigns are built to work together from day one.'],
+  ['What is included in the free audit?','A full technical SEO check, competitor gap analysis, and a mobile speed report — delivered within 24 hours, no strings attached.'],
+  ['Is there a minimum contract period?','No long-term lock-in. Our plans are month-to-month, though most clients stay because of results, not contracts.']
+];
+const faqAcc = document.getElementById('faqAccordion');
+faqs.forEach((f,i)=>{
+  const item = document.createElement('div');
+  item.className = 'accordion-item';
+  item.innerHTML = `
+    <h2 class="accordion-header">
+      <button class="accordion-button ${i!==0?'collapsed':''}" type="button" data-bs-toggle="collapse" data-bs-target="#faq${i}">${f[0]}</button>
+    </h2>
+    <div id="faq${i}" class="accordion-collapse collapse ${i===0?'show':''}" data-bs-parent="#faqAccordion">
+      <div class="accordion-body text-slate">${f[1]}</div>
+    </div>`;
+  faqAcc.appendChild(item);
+});
+</script>
+</body>
+</html>
