@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTapasvi | High-Converting Websites, Growth Marketing & Automation Agency India</title>
+  <meta name="description" content="TechTapasvi - Premium digital agency offering custom web design, SEO, lead generation, automation, courses & white-label partnerships across India. Serving Delhi, Mumbai, Bangalore, Hyderabad, Chennai & pan-India clients.">
+  <meta name="keywords" content="web design agency India, SEO services Delhi, lead generation Mumbai, website development Bangalore, digital marketing Hyderabad, white label agency Chennai, automation systems India, TechTapasvi">
+  <meta name="author" content="TechTapasvi">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://techtapasvi.com/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="TechTapasvi | High-Converting Websites & Growth Systems">
+  <meta property="og:description" content="Custom web development, end-to-end lead generation, workflow automation & digital masterclasses for businesses across India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://techtapasvi.com/">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts - Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #0d5c56;
+      --primary-light: #14b8a6;
+      --accent: #c9a227;
+      --accent-light: #e8c547;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light-gray: #f8fafc;
+      --white: #ffffff;
+      --shadow: 0 10px 40px rgba(15, 118, 110, 0.08);
+      --shadow-lg: 0 25px 50px rgba(15, 118, 110, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--white);
+      color: var(--dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .section-eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .section-sub {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+      font-weight: 400;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 20px rgba(0,0,0,0.04);
+      padding: 0.9rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      padding: 0.6rem 0;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    }
+
+    .navbar-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.45rem;
+      color: var(--dark) !important;
+      letter-spacing: -0.5px;
+    }
+
+    .navbar-brand span {
+      color: var(--primary);
+    }
+
+    .nav-link {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--dark) !important;
+      margin: 0 0.35rem;
+      transition: color 0.25s;
+    }
+
+    .nav-link:hover {
+      color: var(--primary) !important;
+    }
+
+    .btn-primary-custom {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(15, 118, 110, 0.25);
+    }
+
+    .btn-primary-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(15, 118, 110, 0.35);
+      color: white;
+    }
+
+    .btn-outline-custom {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 600;
+      padding: 0.6rem 1.35rem;
+      border-radius: 8px;
+      background: transparent;
+      transition: all 0.3s;
+    }
+
+    .btn-outline-custom:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-accent {
+      background: linear-gradient(135deg, var(--accent), #b8860b);
+      border: none;
+      color: #1a1a1a;
+      font-weight: 600;
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .btn-accent:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(201, 162, 39, 0.35);
+      color: #1a1a1a;
+    }
+
+    /* Hero Carousel */
+    .hero-section {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .carousel-item {
+      min-height: 92vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .carousel-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(15, 118, 110, 0.65) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      padding: 4rem 0;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.45rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: #e2e8f0;
+    }
+
+    .status-badge .dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .hero-headline {
+      font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      max-width: 620px;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .trust-bar {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .carousel-indicators {
+      bottom: 30px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.4);
+      border: none;
+    }
+
+    .carousel-indicators .active {
+      background-color: var(--accent);
+    }
+
+    /* Sections */
+    section {
+      padding: 5.5rem 0;
+    }
+
+    .section-light {
+      background: var(--light-gray);
+    }
+
+    /* Service Cards */
+    .service-card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      height: 100%;
+      box-shadow: var(--shadow);
+      transition: all 0.35s ease;
+      border: 1px solid rgba(15, 118, 110, 0.06);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-card h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--dark);
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .category-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 2.5rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .category-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--primary-light), transparent);
+    }
+
+    /* Course Cards */
+    .course-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 100%;
+      transition: all 0.35s;
+      border: 1px solid rgba(15, 118, 110, 0.06);
+    }
+
+    .course-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course-body {
+      padding: 1.75rem;
+    }
+
+    .course-level {
+      display: inline-block;
+      background: rgba(15, 118, 110, 0.1);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 50px;
+      margin-bottom: 0.75rem;
+    }
+
+    .course-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Product Table */
+    .product-table {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .product-table thead {
+      background: var(--primary);
+      color: white;
+    }
+
+    .product-table th {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 1rem 1.25rem;
+      border: none;
+    }
+
+    .product-table td {
+      padding: 1.15rem 1.25rem;
+      vertical-align: middle;
+      border-color: #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .product-table tbody tr:hover {
+      background: rgba(15, 118, 110, 0.03);
+    }
+
+    /* Partner Section */
+    .partner-card {
+      background: white;
+      border-radius: 14px;
+      padding: 1.75rem;
+      height: 100%;
+      border-left: 4px solid var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .why-partner {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      border-radius: 16px;
+      padding: 2.5rem;
+    }
+
+    .why-partner li {
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .why-partner i {
+      color: var(--accent);
+      margin-top: 0.2rem;
+    }
+
+    /* Process */
+    .process-step {
+      text-align: center;
+      position: relative;
+      padding: 1.5rem;
+    }
+
+    .process-number {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 8px 25px rgba(15, 118, 110, 0.3);
+    }
+
+    .process-step h5 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .process-step p {
+      color: var(--gray);
+      font-size: 0.92rem;
+    }
+
+    /* Portfolio */
+    .portfolio-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 280px;
+      box-shadow: var(--shadow);
+      transition: all 0.4s;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .portfolio-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .portfolio-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .portfolio-overlay h5 {
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .portfolio-overlay span {
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+
+    /* Ad Banner */
+    .ad-banner {
+      background: linear-gradient(135deg, #0f172a, #0f766e);
+      border-radius: 16px;
+      padding: 2.5rem;
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin: 1rem 0;
+    }
+
+    .ad-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: rgba(201, 162, 39, 0.15);
+      border-radius: 50%;
+    }
+
+    .ad-banner h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .ad-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Blog */
+    .blog-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 100%;
+      transition: all 0.35s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .blog-body {
+      padding: 1.5rem;
+    }
+
+    .blog-meta {
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 0.6rem;
+    }
+
+    .blog-card h5 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .blog-card p {
+      color: var(--gray);
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+
+    /* FAQ */
+    .faq-item {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15, 118, 110, 0.06);
+    }
+
+    .faq-item h5 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: var(--dark);
+    }
+
+    .faq-item p {
+      color: var(--gray);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    /* Contact Form */
+    .contact-section {
+      background: linear-gradient(135deg, #0f172a 0%, #0d5c56 100%);
+      color: white;
+    }
+
+    .contact-form {
+      background: white;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    }
+
+    .contact-form label {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-form .form-control,
+    .contact-form .form-select {
+      border: 1.5px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      transition: border-color 0.25s;
+    }
+
+    .contact-form .form-control:focus,
+    .contact-form .form-select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 4rem 0 1.5rem;
+    }
+
+    footer h5 {
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.92rem;
+      transition: color 0.25s;
+    }
+
+    footer a:hover {
+      color: var(--primary-light);
+    }
+
+    footer .footer-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    footer .footer-brand span {
+      color: var(--primary-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    /* Floating Elements */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      color: white;
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .goto-top {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      box-shadow: 0 6px 20px rgba(15, 118, 110, 0.35);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .goto-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .goto-top:hover {
+      background: var(--primary-dark);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Modal */
+    .modal-content {
+      border-radius: 16px;
+      border: none;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      border: none;
+      padding: 1.5rem 1.75rem;
+    }
+
+    .modal-header .btn-close {
+      filter: brightness(0) invert(1);
+    }
+
+    .modal-body {
+      padding: 1.75rem;
+    }
+
+    /* Location Links SEO */
+    .location-links a {
+      display: inline-block;
+      background: rgba(15, 118, 110, 0.08);
+      color: var(--primary);
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      margin: 0.25rem;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .location-links a:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .hero-section, .carousel-item {
+        min-height: 80vh;
+      }
+      section {
+        padding: 4rem 0;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .floating-whatsapp {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+        font-size: 1.5rem;
+      }
+      .goto-top {
+        bottom: 85px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== LEAD MODAL (Page Load) ========== -->
+  <div class="modal fade" id="leadModal" tabindex="-1" aria-labelledby="leadModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="leadModalLabel" style="font-family:'Space Grotesk',sans-serif;">Get Your Free Strategy Call</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-3" style="font-size:0.95rem;">Tell us about your project and we'll respond within 24 hours.</p>
+          <form id="leadFormModal" onsubmit="handleLeadSubmit(event, 'modal')">
+            <div class="mb-3">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" name="name" required placeholder="Your full name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Work Email *</label>
+              <input type="email" class="form-control" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Phone / WhatsApp</label>
+              <input type="tel" class="form-control" name="phone" placeholder="+91 98XXXXXX">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Engagement Type</label>
+              <select class="form-select" name="type">
+                <option value="Services">Services</option>
+                <option value="Agency Partnership">Agency Partnership</option>
+                <option value="Courses & Products">Courses & Products</option>
+                <option value="General Inquiry">General Inquiry</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100">Send Inquiry →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== EXIT INTENT MODAL ========== -->
+  <div class="modal fade" id="exitModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-family:'Space Grotesk',sans-serif;">Wait! Before You Go...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-3">Get a free 15-min strategy session + growth checklist. No obligation.</p>
+          <form id="exitForm" onsubmit="handleLeadSubmit(event, 'exit')">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" required placeholder="Full Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" required placeholder="Work Email">
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Claim Free Strategy Call</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tech<span>Tapasvi</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Our Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Digital Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#partner">Partner With Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary-custom btn-sm" href="#contact">Book a Strategy Call</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO CAROUSEL (5 Slides Loop) ========== -->
+  <section class="hero-section" id="home">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80');">
+          <div class="container hero-content">
+            <div class="row align-items-center min-vh-75">
+              <div class="col-lg-8">
+                <div class="status-badge"><span class="dot"></span> Open for Client Projects & White-Label Partnerships</div>
+                <h1 class="hero-headline">High-Converting Websites, Growth Marketing & Automated Systems Built to Scale.</h1>
+                <p class="hero-sub">We help businesses scale through custom web development, end-to-end lead generation, workflow automation, and actionable digital masterclasses.</p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="#services" class="btn btn-primary-custom">Explore Our Services →</a>
+                  <a href="#courses" class="btn btn-outline-light">Browse Courses & Products</a>
+                </div>
+                <div class="trust-bar">Trusted by 50+ businesses, agencies, and learners worldwide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80');">
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="status-badge"><span class="dot"></span> Pan-India Digital Agency</div>
+                <h1 class="hero-headline">SEO, Ads & Lead Systems That Deliver Qualified Pipeline.</h1>
+                <p class="hero-sub">From technical SEO to high-ROI Meta & Google campaigns — we build acquisition engines that scale your revenue across India.</p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="#services" class="btn btn-primary-custom">View Growth Services</a>
+                  <a href="#contact" class="btn btn-outline-light">Book Strategy Call</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80');">
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="status-badge"><span class="dot"></span> White-Label Partner Ready</div>
+                <h1 class="hero-headline">Scale Your Agency Without the Payroll Overhead.</h1>
+                <p class="hero-sub">Reliable white-label web design, development, ads & automation delivered under your brand with strict NDAs.</p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="#partner" class="btn btn-primary-custom">Apply for Partnership →</a>
+                  <a href="#contact" class="btn btn-outline-light">Request Partner Deck</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=80');">
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="status-badge"><span class="dot"></span> Academy & Education</div>
+                <h1 class="hero-headline">Practical Masterclasses Built for Real Results.</h1>
+                <p class="hero-sub">Learn modern web design, full-funnel lead generation and automation through hands-on, step-by-step training.</p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="#courses" class="btn btn-primary-custom">Explore Courses</a>
+                  <a href="#products" class="btn btn-outline-light">Digital Products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&q=80');">
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="status-badge"><span class="dot"></span> End-to-End Delivery</div>
+                <h1 class="hero-headline">From Strategy to Launch — Structured 4-Step Process.</h1>
+                <p class="hero-sub">Discovery, design, development & optimization. Transparent timelines and measurable outcomes every step of the way.</p>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="#process" class="btn btn-primary-custom">See Our Process</a>
+                  <a href="#portfolio" class="btn btn-outline-light">View Portfolio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Core Capabilities</div>
+        <h2 class="section-title">End-to-End Digital Solutions for Growth-Focused Brands</h2>
+        <p class="section-sub">From design and development to targeted marketing and automated systems.</p>
+      </div>
+
+      <div class="category-title" data-aos="fade-up">Design & Creative</div>
+      <div class="row g-4 mb-2">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Website Design - UI/UX Figma">
+            <h4>Website Design</h4>
+            <p>Custom, user-focused UI/UX layouts in Figma designed with clear conversion pathways and intuitive user journeys.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c8199c8c6d1d?w=600&q=80" alt="Website Development">
+            <h4>Website Development</h4>
+            <p>High-performance, clean-coded, responsive websites built on modern CMS platforms and frameworks for ultra-fast loading speeds.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80" alt="Brochure & Collateral Design">
+            <h4>Brochure & Collateral Design</h4>
+            <p>Print-ready and digital marketing materials, company profiles, sales decks, and e-brochures that align with your brand identity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-title" data-aos="fade-up">Growth & Acquisition</div>
+      <div class="row g-4 mb-2">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80" alt="SEO Services">
+            <h4>Search Engine Optimization</h4>
+            <p>On-page, technical, and local SEO strategies to build lasting organic visibility and capture high-intent search traffic.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb495c?w=600&q=80" alt="Social Media Management">
+            <h4>Social Media Management</h4>
+            <p>Audience engagement, content scheduling, and community building across key channels to grow brand authority.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80" alt="Paid Advertising">
+            <h4>Paid Advertising (Ads)</h4>
+            <p>Targeted ad campaigns across Meta (Facebook & Instagram) and Google Search to reduce acquisition costs and maximize ROI.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Lead Generation">
+            <h4>Lead Generation</h4>
+            <p>Inbound and outbound conversion funnels, custom landing pages, and lead-capture architectures that deliver qualified sales opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-title" data-aos="fade-up">Systems & Efficiency</div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Workflow & Marketing Automation">
+            <h4>Workflow & Marketing Automation</h4>
+            <p>Connecting CRM tools, email marketing sequences, and lead capture systems to run your business operations smoothly on autopilot.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card d-flex flex-column justify-content-center" style="min-height:100%;">
+            <h4 class="mb-3">Ready to Scale Your Digital Presence?</h4>
+            <p class="mb-4">Whether you need a complete website rebuild, a predictable lead engine, or white-label support — we deliver with clarity and speed.</p>
+            <a href="#contact" class="btn btn-primary-custom align-self-start">Book a Strategy Call →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD BANNER 1 -->
+  <div class="container my-4" data-aos="fade-up">
+    <div class="ad-banner">
+      <div class="ad-label">Sponsored · Featured Offer</div>
+      <h3>Free Website Performance Audit + Growth Roadmap</h3>
+      <p class="mb-3 opacity-75">Limited slots this month for businesses looking to improve conversion rates and organic traffic.</p>
+      <a href="#contact" class="btn btn-accent">Claim Free Audit →</a>
+    </div>
+  </div>
+
+  <!-- ========== COURSES ========== -->
+  <section id="courses">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Academy & Education</div>
+        <h2 class="section-title">Practical, Hands-On Masterclasses Built for Real Results</h2>
+        <p class="section-sub">Master modern web design, performance marketing, and automation through step-by-step training.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" alt="Modern Web Design Bootcamp">
+            <div class="course-body">
+              <span class="course-level">Beginner to Intermediate</span>
+              <h4>Modern Web Design & Development Bootcamp</h4>
+              <p class="text-muted mb-3">Figma UI/UX principles, responsive web development, CMS configuration, and client handoff workflows.</p>
+              <p class="small mb-3"><strong>Includes:</strong> 10+ hours of video lessons, project templates, design assets.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="course-price">$149</span>
+                <a href="#contact" class="btn btn-primary-custom btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="course-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Lead Generation Mastery">
+            <div class="course-body">
+              <span class="course-level">Intermediate to Advanced</span>
+              <h4>Full-Funnel Lead Generation & Automation Mastery</h4>
+              <p class="text-muted mb-3">Setting up targeted ad campaigns, high-converting landing pages, and automated email/CRM sequences.</p>
+              <p class="small mb-3"><strong>Includes:</strong> Plug-and-play workflow blueprints, cold outreach copy frameworks.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="course-price">$199</span>
+                <a href="#contact" class="btn btn-primary-custom btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DIGITAL PRODUCTS ========== -->
+  <section id="products" class="section-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Digital Assets & Toolkits</div>
+        <h2 class="section-title">Ready-to-Deploy Assets to Streamline Your Growth</h2>
+        <p class="section-sub">Save hours of production with our curated templates, frameworks, and operating kits.</p>
+      </div>
+      <div class="table-responsive product-table" data-aos="fade-up">
+        <table class="table mb-0">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Format</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>High-Converting Landing Page UI Kit</strong></td>
+              <td>Web Design</td>
+              <td>Figma & HTML/CSS</td>
+              <td>Pre-built, responsive sections optimized for SaaS and service conversions.</td>
+              <td><strong>$49</strong></td>
+              <td><a href="#contact" class="btn btn-sm btn-outline-custom">Get Template</a></td>
+            </tr>
+            <tr>
+              <td><strong>Complete Freelance Operations System</strong></td>
+              <td>Operations</td>
+              <td>Notion</td>
+              <td>All-in-one workspace for client management, invoices, project trackers, and pipelines.</td>
+              <td><strong>$29</strong></td>
+              <td><a href="#contact" class="btn btn-sm btn-outline-custom">Download OS</a></td>
+            </tr>
+            <tr>
+              <td><strong>B2B Brochure & Pitch Deck Suite</strong></td>
+              <td>Print / Digital</td>
+              <td>Canva & PDF</td>
+              <td>20-page customizable corporate deck and brochure template.</td>
+              <td><strong>$25</strong></td>
+              <td><a href="#contact" class="btn btn-sm btn-outline-custom">Instant Access</a></td>
+            </tr>
+            <tr>
+              <td><strong>Cold Outreach & Lead Gen Playbook</strong></td>
+              <td>Marketing Guide</td>
+              <td>Notion Doc / PDF</td>
+              <td>35+ tested email templates, LinkedIn scripts, and follow-up sequences.</td>
+              <td><strong>$19</strong></td>
+              <td><a href="#contact" class="btn btn-sm btn-outline-custom">Get Playbook</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD BANNER 2 -->
+  <div class="container my-4" data-aos="fade-up">
+    <div class="ad-banner" style="background: linear-gradient(135deg, #1e3a5f, #0f766e);">
+      <div class="ad-label">Limited Time · Agency Offer</div>
+      <h3>White-Label Partnership Program — Open Applications</h3>
+      <p class="mb-3 opacity-75">Expand capacity, protect margins, deliver under your brand. Strict NDA & wholesale pricing.</p>
+      <a href="#partner" class="btn btn-accent">Apply Now →</a>
+    </div>
+  </div>
+
+  <!-- ========== PARTNER WITH US ========== -->
+  <section id="partner">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Agency & B2B Collaboration</div>
+        <h2 class="section-title">Expand Your Agency’s Production Capacity Without the Payroll Overhead</h2>
+        <p class="section-sub">A dependable, behind-the-scenes execution partner delivering custom web design, marketing, and automations under your agency's brand.</p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="partner-card">
+            <h5 class="mb-3">White-Label Web Design & Development</h5>
+            <p class="text-muted mb-0">We design and code responsive websites that you present directly to your clients under your brand.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="partner-card">
+            <h5 class="mb-3">White-Label Growth & Ad Management</h5>
+            <p class="text-muted mb-0">Turnkey setup for Meta/Google Ads, SEO management, and lead tracking that integrates with your reporting tools.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="partner-card">
+            <h5 class="mb-3">On-Demand Overflow Support</h5>
+            <p class="text-muted mb-0">Reliable bandwidth to handle project spikes, tight delivery dates, and technical tasks without hiring full-time staff.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-partner" data-aos="fade-up">
+        <h4 class="mb-4" style="font-family:'Space Grotesk',sans-serif;">Why Agencies Partner With Us</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-shield-check"></i> <span><strong>Strict Non-Disclosure:</strong> 100% white-label with signed NDAs—your clients remain exclusively yours.</span></li>
+              <li><i class="bi bi-diagram-3"></i> <span><strong>Workflow Alignment:</strong> Direct integration with your team's tools (Slack, ClickUp, Asana, Notion).</span></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-currency-dollar"></i> <span><strong>Partner-First Pricing:</strong> Transparent wholesale rates to maintain healthy agency profit margins.</span></li>
+              <li><i class="bi bi-lightning-charge"></i> <span><strong>Fast Turnaround:</strong> Structured process and dedicated capacity for predictable delivery.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-accent">Apply for Agency Partnership →</a>
+          <a href="#contact" class="btn btn-outline-light">Request Partner Deck & Wholesale Rates</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section id="process" class="section-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Our Process</div>
+        <h2 class="section-title">A Structured, 4-Step Roadmap to Delivery</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="process-step">
+            <div class="process-number">01</div>
+            <h5>Discovery & Strategy</h5>
+            <p>Aligning on your goals, target audience, and project scope to create a structured timeline and execution plan.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="80">
+          <div class="process-step">
+            <div class="process-number">02</div>
+            <h5>Design & Prototyping</h5>
+            <p>Crafting responsive UI layouts, marketing collateral, and wireframes for review and approval.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="160">
+          <div class="process-step">
+            <div class="process-number">03</div>
+            <h5>Development & Integration</h5>
+            <p>Building the website, setting up tracking pixels, configuring ad campaigns, and connecting automated workflows.</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="240">
+          <div class="process-step">
+            <div class="process-number">04</div>
+            <h5>QA, Launch & Scaling</h5>
+            <p>Conducting full performance testing, deploying the deliverables, and running data-driven optimization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Featured Work</div>
+        <h2 class="section-title">Portfolio & Case Studies</h2>
+        <p class="section-sub">A selection of high-converting websites, growth systems and creative projects delivered for clients across industries.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&q=80" alt="SaaS Landing Page Project">
+            <div class="portfolio-overlay">
+              <h5>SaaS Conversion Landing System</h5>
+              <span>Web Design · Development · CRO</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=700&q=80" alt="E-commerce Growth">
+            <div class="portfolio-overlay">
+              <h5>E-commerce Lead Engine</h5>
+              <span>SEO · Meta Ads · Automation</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=700&q=80" alt="Agency White Label">
+            <div class="portfolio-overlay">
+              <h5>White-Label Agency Delivery</h5>
+              <span>Full Stack · Multiple Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80" alt="Corporate Website">
+            <div class="portfolio-overlay">
+              <h5>B2B Corporate Website Redesign</h5>
+              <span>UI/UX · Development · Brand</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="130">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&q=80" alt="Analytics Dashboard">
+            <div class="portfolio-overlay">
+              <h5>Marketing Automation Suite</h5>
+              <span>CRM · Email · Workflow</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="210">
+          <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=700&q=80" alt="Startup Branding">
+            <div class="portfolio-overlay">
+              <h5>Startup Brand & Pitch System</h5>
+              <span>Collateral · Deck · Landing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD BANNER 3 -->
+  <div class="container my-4" data-aos="fade-up">
+    <div class="ad-banner" style="background: linear-gradient(135deg, #0f172a, #134e4a);">
+      <div class="ad-label">Digital Products</div>
+      <h3>Save 20+ Hours with Ready-to-Use Templates & Playbooks</h3>
+      <p class="mb-3 opacity-75">Landing page kits, Notion systems, pitch decks & cold outreach frameworks — instant access.</p>
+      <a href="#products" class="btn btn-accent">Browse Products →</a>
+    </div>
+  </div>
+
+  <!-- ========== BLOG ========== -->
+  <section id="blog" class="section-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">Insights & Resources</div>
+        <h2 class="section-title">Latest from the TechTapasvi Blog</h2>
+        <p class="section-sub">Practical strategies on web design, growth marketing, SEO and automation for Indian businesses.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80" alt="Local SEO Guide India">
+            <div class="blog-body">
+              <div class="blog-meta">SEO · 8 min read</div>
+              <h5>Local SEO Playbook for Indian Businesses in 2026</h5>
+              <p>How to dominate Google Maps and local search across Delhi, Mumbai, Bangalore and tier-2 cities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Marketing Automation">
+            <div class="blog-body">
+              <div class="blog-meta">Automation · 6 min read</div>
+              <h5>5 Workflow Automations Every Service Business Needs</h5>
+              <p>From lead capture to follow-up sequences — tools and setups that run on autopilot.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="High Converting Websites">
+            <div class="blog-body">
+              <div class="blog-meta">Web Design · 7 min read</div>
+              <h5>What Makes a Website Truly High-Converting?</h5>
+              <p>UI patterns, speed metrics and persuasion frameworks we use on client projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-eyebrow">FAQ</div>
+        <h2 class="section-title">Answers to Common Questions</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="faq-item" data-aos="fade-up">
+            <h5>How does the "Partner With Us" agency arrangement work?</h5>
+            <p>We operate strictly white-label under an NDA. We communicate via your internal Slack or project management tools, ensuring all client-facing materials reflect your brand identity.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+            <h5>How long does a full website design and development project take?</h5>
+            <p>Standard web projects typically take 3 to 6 weeks, depending on the scope, number of custom pages, and asset readiness.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h5>Are courses and digital products delivered instantly?</h5>
+            <p>Yes. Access to courses, Notion templates, and Figma assets is delivered immediately via email upon purchase with lifetime access.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+            <h5>Can we bundle services like Web Design, SEO, and Ads together?</h5>
+            <p>Yes. We create customized monthly retainers that combine development, ongoing SEO, and paid ad management into one unified package.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / FINAL CTA ========== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="section-eyebrow" style="color:var(--accent);">Get Started</div>
+          <h2 class="section-title text-white mb-3">Ready to Build, Automate, and Scale Your Online Presence?</h2>
+          <p class="opacity-85 mb-4">Let’s discuss your upcoming project, training needs, or an agency partnership.</p>
+          <div class="mb-4">
+            <p class="mb-2"><i class="bi bi-whatsapp me-2"></i> <a href="https://wa.me/919971103293" class="text-white text-decoration-none">+91 9971103293</a></p>
+            <p class="mb-2"><i class="bi bi-envelope me-2"></i> <a href="mailto:techtapasvi@gmail.com" class="text-white text-decoration-none">techtapasvi@gmail.com</a></p>
+            <p class="mb-0"><i class="bi bi-geo-alt me-2"></i> Pan-India · Remote First</p>
+          </div>
+          <div class="location-links mt-4">
+            <p class="small opacity-75 mb-2">Serving clients across:</p>
+            <a href="#services">Delhi NCR</a>
+            <a href="#services">Mumbai</a>
+            <a href="#services">Bangalore</a>
+            <a href="#services">Hyderabad</a>
+            <a href="#services">Chennai</a>
+            <a href="#services">Pune</a>
+            <a href="#services">Ahmedabad</a>
+            <a href="#services">Kolkata</a>
+            <a href="#services">Jaipur</a>
+            <a href="#services">Chandigarh</a>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form">
+            <h4 class="mb-4" style="font-family:'Space Grotesk',sans-serif; color:var(--dark);">Send Inquiry & Get Started</h4>
+            <form id="mainContactForm" onsubmit="handleLeadSubmit(event, 'main')">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" name="name" required placeholder="Your full name">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Work Email *</label>
+                  <input type="email" class="form-control" name="email" required placeholder="you@company.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Engagement Type</label>
+                  <select class="form-select" name="type">
+                    <option value="Services">Services</option>
+                    <option value="Agency Partnership">Agency Partnership</option>
+                    <option value="Courses & Products">Courses & Products</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Project Budget Range</label>
+                  <select class="form-select" name="budget">
+                    <option value="Under $1,000">Under $1,000</option>
+                    <option value="$1,000–$3,000">$1,000–$3,000</option>
+                    <option value="$3,000–$5,000">$3,000–$5,000</option>
+                    <option value="$5,000+">$5,000+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Brief Project Details</label>
+                  <textarea class="form-control" name="details" rows="4" placeholder="Tell us about your goals, timeline or any specific requirements..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3">Send Inquiry & Get Started →</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">Tech<span>Tapasvi</span></div>
+          <p class="mb-3" style="font-size:0.95rem;">Delivering conversion-focused web design, growth marketing, workflow automation, and digital education across India.</p>
+          <p class="small mb-1"><i class="bi bi-whatsapp me-1"></i> +91 9971103293</p>
+          <p class="small"><i class="bi bi-envelope me-1"></i> techtapasvi@gmail.com</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5>Solutions</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#services">Our Services</a></li>
+            <li class="mb-2"><a href="#courses">Our Courses</a></li>
+            <li class="mb-2"><a href="#products">Digital Products</a></li>
+            <li class="mb-2"><a href="#partner">Partner With Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#portfolio">Portfolio</a></li>
+            <li class="mb-2"><a href="#process">Process</a></li>
+            <li class="mb-2"><a href="#blog">Blog</a></li>
+            <li class="mb-2"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Service Locations (Pan India)</h5>
+          <div class="location-links">
+            <a href="#services">Web Design Delhi</a>
+            <a href="#services">SEO Mumbai</a>
+            <a href="#services">Digital Marketing Bangalore</a>
+            <a href="#services">Lead Gen Hyderabad</a>
+            <a href="#services">Website Development Chennai</a>
+            <a href="#services">Automation Pune</a>
+            <a href="#services">Agency Partner India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <span>© 2026 TechTapasvi. All Rights Reserved.</span>
+        <div>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919971103293?text=Hi%20TechTapasvi%2C%20I%20would%20like%20to%20discuss%20a%20project." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Go to Top -->
+  <button class="goto-top" id="gotoTop" aria-label="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // AOS Init
+    AOS.init({
+      duration: 700,
+      once: true,
+      offset: 80,
+      easing: 'ease-out-cubic'
+    });
+
+    // Navbar scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      // Go to top visibility
+      const btn = document.getElementById('gotoTop');
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+
+    // Go to top
+    document.getElementById('gotoTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Lead form on page load (after 2.5s delay)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if (!sessionStorage.getItem('leadModalShown')) {
+          const modal = new bootstrap.Modal(document.getElementById('leadModal'));
+          modal.show();
+          sessionStorage.setItem('leadModalShown', 'true');
+        }
+      }, 2500);
+    });
+
+    // Exit intent / before unload style form
+    let exitShown = false;
+    document.addEventListener('mouseout', (e) => {
+      if (e.clientY < 10 && !exitShown && !sessionStorage.getItem('exitModalShown')) {
+        exitShown = true;
+        const modal = new bootstrap.Modal(document.getElementById('exitModal'));
+        modal.show();
+        sessionStorage.setItem('exitModalShown', 'true');
+      }
+    });
+
+    // Also trigger on beforeunload attempt (limited by browsers)
+    window.addEventListener('beforeunload', (e) => {
+      if (!sessionStorage.getItem('exitFormSubmitted')) {
+        // Modern browsers ignore custom messages
+      }
+    });
+
+    // Form submit handler (demo - shows alert)
+    function handleLeadSubmit(e, source) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const name = data.get('name');
+      // In production: send to backend / email service / WhatsApp API
+      alert('Thank you, ' + (name || 'there') + '! Your inquiry has been received. We will contact you shortly at techtapasvi@gmail.com or WhatsApp +91 9971103293.');
+      form.reset();
+      if (source === 'modal') {
+        bootstrap.Modal.getInstance(document.getElementById('leadModal')).hide();
+      }
+      if (source === 'exit') {
+        sessionStorage.setItem('exitFormSubmitted', 'true');
+        bootstrap.Modal.getInstance(document.getElementById('exitModal')).hide();
+      }
+    }
+  </script>
+</body>
+</html>
