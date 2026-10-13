@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush — Website &amp; Digital Marketing Expert | Founder, TechTapasvi</title>
+<meta name="description" content="Ayush is a website and digital marketing expert and founder of TechTapasvi. Websites, SEO, brochures, social media, ads, lead generation and automation for businesses across India. Open to agency collaboration.">
+<meta name="keywords" content="Ayush website developer, digital marketing expert India, website design, SEO expert, lead generation, marketing automation, agency collaboration, TechTapasvi founder">
+<meta name="author" content="Ayush">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ayush — Website &amp; Digital Marketing Expert | TechTapasvi">
+<meta property="og:description" content="Helping businesses grow online with websites, SEO, social media, ads, lead generation and automation.">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.css" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ayush",
+  "jobTitle": "Website & Digital Marketing Expert",
+  "worksFor": { "@type": "Organization", "name": "TechTapasvi" },
+  "email": "techtapasvi@gmail.com",
+  "telephone": "+91-9971103293",
+  "knowsAbout": ["Website design", "Website development", "SEO", "Social media marketing", "Paid advertising", "Lead generation", "Marketing automation"],
+  "sameAs": ["https://www.instagram.com/ayushtechlab/"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#15181c; --ink-soft:#4b4f55;
+  --paper:#ffffff; --paper-alt:#f6f3ec; --line:#e5e1d6;
+  --amber:#c9840f; --amber-deep:#a3690a;
+  --teal:#1f6f63; --teal-deep:#175349;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:70px;}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.65;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;color:var(--ink);letter-spacing:-0.01em;}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--ink-soft);}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--amber-deep);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem;}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--amber-deep);display:inline-block;}
+.section-title{font-size:clamp(1.7rem,3vw,2.6rem);font-weight:500;max-width:720px;margin-bottom:.7rem;}
+.section-sub{color:var(--ink-soft);max-width:620px;font-size:1.02rem;}
+section{padding:5rem 0;}
+.bg-alt{background:var(--paper-alt);}
+a{color:var(--teal-deep);text-decoration:none;}
+a:hover{color:var(--amber-deep);}
+
+@media (min-width:992px){
+  .vh-section{min-height:100vh;display:flex;align-items:center;padding:2.6rem 0;}
+  .vh-section .container{width:100%;}
+  .vh-section .section-title{font-size:clamp(1.6rem,2.4vw,2.2rem);margin-bottom:.5rem;}
+  .vh-section .section-sub{font-size:.95rem;}
+  .vh-section .eyebrow{margin-bottom:.6rem;}
+}
+
+/* NAV */
+.navbar{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:.8rem 0;transition:box-shadow .3s;}
+.navbar.scrolled{box-shadow:0 6px 24px rgba(21,24,28,.06);}
+.navbar-brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.35rem;color:var(--ink)!important;}
+.navbar-brand small{font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:400;color:var(--amber-deep);margin-left:.5rem;}
+.nav-link{color:var(--ink)!important;font-size:.92rem;font-weight:500;margin:0 .45rem;}
+.nav-link:hover{color:var(--amber-deep)!important;}
+.btn-primary-brand{background:var(--ink);border:1px solid var(--ink);color:#fff;padding:.6rem 1.35rem;font-weight:500;font-size:.92rem;border-radius:2px;transition:all .25s;}
+.btn-primary-brand:hover{background:var(--amber-deep);border-color:var(--amber-deep);color:#fff;}
+.btn-amber{background:var(--amber);border:1px solid var(--amber);color:#fff;padding:.6rem 1.35rem;font-weight:500;font-size:.92rem;border-radius:2px;transition:all .25s;}
+.btn-amber:hover{background:#fff;color:var(--ink);border-color:#fff;}
+.btn-outline-brand{border:1px solid var(--ink);color:var(--ink);padding:.6rem 1.35rem;font-weight:500;font-size:.92rem;border-radius:2px;background:transparent;transition:all .25s;}
+.btn-outline-brand:hover{border-color:var(--teal-deep);color:#fff;background:var(--teal-deep);}
+
+/* HERO */
+.hero{padding:7.5rem 0 4rem;position:relative;overflow:hidden;}
+.hero::before{ /* blueprint grid */
+  content:"";position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;opacity:.45;
+  -webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);
+}
+.hero .container{position:relative;z-index:1;}
+@media (min-width:992px){.hero{min-height:100vh;display:flex;align-items:center;padding:6rem 0 2.5rem;}}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);background:#fff;padding:.4rem .9rem;border-radius:30px;font-family:'IBM Plex Mono',monospace;font-size:.76rem;margin-bottom:1.3rem;color:var(--ink-soft);}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);display:inline-block;}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.7rem);font-weight:500;line-height:1.08;margin-bottom:1rem;}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--amber-deep);}
+.hero .role{font-family:'IBM Plex Mono',monospace;font-size:.9rem;color:var(--teal-deep);margin-bottom:1rem;}
+.hero-points{list-style:none;padding:0;margin:0 0 1.6rem;}
+.hero-points li{display:flex;gap:.6rem;align-items:flex-start;color:var(--ink-soft);font-size:1rem;padding:.12rem 0;}
+.hero-points i{color:var(--amber-deep);margin-top:.2rem;}
+.social-row a{display:inline-flex;align-items:center;gap:.4rem;font-size:.88rem;border:1px solid var(--line);padding:.35rem .8rem;border-radius:30px;color:var(--ink);margin-right:.5rem;background:#fff;}
+.social-row a:hover{border-color:var(--amber-deep);color:var(--amber-deep);}
+.portrait-wrap{position:relative;width:min(380px,78vw);aspect-ratio:1;margin:0 auto;}
+.portrait-wrap::before{content:"";position:absolute;inset:-14px;border:1px solid var(--amber-deep);border-radius:50%;opacity:.6;}
+.portrait-wrap::after{content:"";position:absolute;inset:-30px;border:1px dashed var(--line);border-radius:50%;}
+.portrait{width:100%;height:100%;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 20px 50px rgba(21,24,28,.15);position:relative;z-index:1;}
+.chip-float{position:absolute;z-index:2;background:#fff;border:1px solid var(--line);padding:.45rem .85rem;font-family:'IBM Plex Mono',monospace;font-size:.74rem;box-shadow:0 10px 24px rgba(21,24,28,.08);}
+.chip-float i{color:var(--amber-deep);margin-right:.3rem;}
+.chip-1{top:8%;right:-6%;} .chip-2{bottom:20%;left:-10%;} .chip-3{bottom:2%;right:4%;}
+@media (max-width:575px){.chip-1{right:-2%;}.chip-2{left:-2%;}}
+
+/* FACT STRIP */
+.fact-strip{background:var(--ink);color:#f0ead9;padding:1.1rem 0;}
+.fact-strip .item{font-family:'IBM Plex Mono',monospace;font-size:.8rem;display:flex;align-items:center;gap:.55rem;justify-content:center;padding:.25rem 0;}
+.fact-strip i{color:var(--amber);}
+
+/* SERVICES */
+.service-card-eq{border:1px solid var(--line);padding:1.35rem 1.2rem;height:100%;background:#fff;transition:border-color .25s,transform .25s;}
+.service-card-eq:hover{border-color:var(--amber-deep);transform:translateY(-4px);}
+.service-icon{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.15rem;color:var(--amber-deep);margin-bottom:.9rem;}
+.service-card-eq h4{font-size:1.05rem;font-weight:600;font-family:'Inter';margin-bottom:.35rem;}
+.service-card-eq p{color:var(--ink-soft);font-size:.88rem;margin:0;}
+
+/* WORK PANELS */
+.work-panel{position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.9rem;color:#fff;height:100%;}
+.work-panel .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s;}
+.work-panel:hover .bg{transform:scale(1.06);}
+.work-panel::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(21,24,28,.1) 15%,rgba(21,24,28,.9) 100%);}
+.work-panel > *:not(.bg){position:relative;z-index:2;}
+.work-panel .tag{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:#f0d9a8;margin-bottom:.4rem;}
+.work-panel h3{color:#fff;font-size:1.65rem;font-weight:500;margin-bottom:.4rem;}
+.work-panel p{color:#e3dfd3;font-size:.92rem;max-width:460px;margin-bottom:1.1rem;}
+.work-chips{display:flex;flex-wrap:wrap;gap:.6rem;}
+.work-chips a{border:1px solid var(--ink);color:var(--ink);padding:.4rem .95rem;font-size:.85rem;font-family:'IBM Plex Mono',monospace;border-radius:30px;background:#fff;}
+.work-chips a:hover{background:var(--ink);color:#fff;}
+
+/* LEARN CARDS */
+.learn-card{border:1px solid var(--line);background:#fff;height:100%;transition:transform .3s,box-shadow .3s;}
+.learn-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(21,24,28,.08);}
+.learn-card img{width:100%;height:150px;object-fit:cover;display:block;}
+.learn-card .body{padding:1.1rem 1.2rem 1.3rem;}
+.learn-card .num{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--amber-deep);}
+.learn-card h4{font-size:1.12rem;font-weight:500;margin:.2rem 0 .45rem;}
+.learn-card p{font-size:.88rem;color:var(--ink-soft);margin:0;}
+.learn-card .tip{margin-top:.7rem;font-size:.8rem;border-top:1px dashed var(--line);padding-top:.6rem;color:var(--teal-deep);}
+
+/* WORKING TOGETHER */
+.step-row{display:flex;gap:1.2rem;padding:1rem 0;border-top:1px solid var(--line);}
+.step-row:last-child{border-bottom:1px solid var(--line);}
+.step-no{font-family:'Fraunces',serif;font-size:2rem;font-weight:300;color:var(--amber-deep);min-width:56px;line-height:1.1;}
+.step-row h5{font-weight:600;font-size:1.05rem;margin-bottom:.2rem;font-family:'Inter';}
+.step-row p{margin:0;color:var(--ink-soft);font-size:.92rem;}
+.need-box{border:1px solid var(--line);background:#fff;padding:1.6rem;height:100%;}
+.need-box h4{font-size:1.25rem;font-weight:500;margin-bottom:1rem;}
+.need-box li{list-style:none;display:flex;gap:.6rem;padding:.4rem 0;font-size:.93rem;color:var(--ink-soft);border-bottom:1px solid var(--line);}
+.need-box li:last-child{border:none;}
+.need-box ul{padding:0;margin:0;}
+.need-box i{color:var(--teal);margin-top:.2rem;}
+
+/* COLLAB */
+.partner-section{background:var(--teal-deep);color:#f0ead9;}
+.partner-section .section-title{color:#fff;}
+.partner-section .eyebrow{color:#c9e6de;} .partner-section .eyebrow::before{background:#c9e6de;}
+.partner-section .section-sub{color:#d3e3dd;}
+.why-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);padding:1.2rem;height:100%;}
+.why-box h6{color:#fff;font-weight:600;margin-bottom:.35rem;}
+.why-box p{color:#cddfd8;font-size:.88rem;margin:0;}
+
+/* FAQ */
+.faq-item{border-top:1px solid var(--line);padding:1.1rem 0;}
+.faq-item:last-child{border-bottom:1px solid var(--line);}
+.faq-item h5{font-weight:600;font-size:1.05rem;margin-bottom:.35rem;font-family:'Inter';}
+.faq-item p{color:var(--ink-soft);margin:0;font-size:.95rem;}
+
+/* CONTACT */
+.contact-section{background:var(--ink);color:#fff;}
+.contact-section .section-title{color:#fff;} .contact-section .section-sub{color:#c9c5b8;}
+.contact-section .eyebrow{color:#e0c68a;} .contact-section .eyebrow::before{background:#e0c68a;}
+.form-control,.form-select{background:transparent;border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:2px;padding:.7rem .9rem;}
+.form-control::placeholder{color:#8f9298;}
+.form-control:focus,.form-select:focus{background:transparent;color:#fff;border-color:var(--amber);box-shadow:0 0 0 .15rem rgba(201,132,15,.25);}
+.form-select option{color:#000;}
+.contact-info-item{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:1.3rem;}
+.contact-info-item i{font-size:1.2rem;color:var(--amber);}
+.contact-info-item span{color:#cfcbbd;}
+.form-error{color:#b3261e;font-size:.85rem;margin:0 0 .6rem;}
+.form-error:empty{display:none;}
+.contact-section .form-error{color:#ffb4a2;}
+
+/* FOOTER */
+footer{background:#0e1013;color:#a8acb4;padding:3rem 0 1.4rem;}
+footer a{color:#9a9da3;font-size:.9rem;} footer a:hover{color:var(--amber);}
+footer p{color:#8a8d92;font-size:.9rem;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.3rem;margin-top:2rem;font-size:.82rem;color:#75787d;}
+
+/* FLOATING */
+.floating-wa{position:fixed;bottom:26px;left:26px;z-index:1050;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 10px 26px rgba(0,0,0,.25);animation:pulse 2.4s infinite;}
+.floating-wa:hover{color:#fff;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+.back-to-top{position:fixed;bottom:26px;right:26px;z-index:1050;width:50px;height:50px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;border:none;box-shadow:0 10px 26px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(10px);transition:all .3s;}
+.back-to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+
+/* LEAD POPUP */
+.lead-popup{position:fixed;inset:0;z-index:2000;background:rgba(14,16,19,.65);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;}
+.lead-popup.open{opacity:1;visibility:visible;}
+.lead-popup-card{background:#fff;width:100%;max-width:820px;display:flex;overflow:hidden;border-radius:2px;box-shadow:0 30px 80px rgba(0,0,0,.35);transform:translateY(20px);transition:transform .35s;max-height:96vh;}
+.lead-popup.open .lead-popup-card{transform:translateY(0);}
+.lead-popup-visual{flex:0 0 40%;background:url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=60') center/cover;}
+.lead-popup-body{flex:1;padding:2rem;position:relative;overflow-y:auto;}
+.lead-popup-body h4{font-family:'Fraunces',serif;font-weight:500;}
+.lead-popup-close{position:absolute;top:10px;right:14px;border:none;background:none;font-size:1.8rem;line-height:1;color:var(--ink-soft);cursor:pointer;}
+.lead-popup .form-control{background:#fff;color:var(--ink);border:1px solid #cfcabd;}
+.lead-popup .form-control::placeholder{color:#8a8d92;}
+.lead-popup .form-control:focus{background:#fff;color:var(--ink);border-color:var(--amber);}
+.no-aos [data-aos]{opacity:1!important;transform:none!important;}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Ayush<small>@ TechTapasvi</small></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu"><i class="bi bi-list fs-2"></i></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#what-i-do">What I do</a></li>
+        <li class="nav-item"><a class="nav-link" href="#my-work">My work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#learn">Learn</a></li>
+        <li class="nav-item"><a class="nav-link" href="#working-together">Working together</a></li>
+        <li class="nav-item"><a class="nav-link" href="#collaborate">Agencies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" data-link="mainSite" href="index.html">TechTapasvi</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-primary-brand" href="#contact">Book a Strategy Call</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="top" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7" data-aos="fade-up">
+        <span class="hero-badge"><span class="dot"></span>Open for client projects &amp; agency collaboration</span>
+        <h1>Hi, I'm Ayush — I help businesses <em>grow online.</em></h1>
+        <p class="role">Website &amp; Digital Marketing Expert · Founder, TechTapasvi</p>
+        <ul class="hero-points">
+          <li><i class="bi bi-check2-circle"></i>Websites, SEO &amp; brochure design</li>
+          <li><i class="bi bi-check2-circle"></i>Social media management &amp; paid ads</li>
+          <li><i class="bi bi-check2-circle"></i>Lead generation &amp; marketing automation</li>
+          <li><i class="bi bi-check2-circle"></i>Open to agency collaboration (white-label)</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <a href="#my-work" class="btn btn-primary-brand">View my work →</a>
+          <a data-link="portfolioTechTapasvi" href="techtapasvi-portfolio.html" class="btn btn-outline-brand">TechTapasvi portfolio</a>
+          <a href="https://wa.me/919971103293" target="_blank" rel="noopener" class="btn btn-outline-brand"><i class="bi bi-whatsapp me-1"></i>WhatsApp me</a>
+        </div>
+        <div class="social-row">
+          <a data-link="instagram" href="https://www.instagram.com/ayushtechlab/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i>@ayushtechlab</a>
+          <a data-link="facebook" href="#" target="_blank" rel="noopener"><i class="bi bi-facebook"></i>Ayush – Web Development &amp; Marketing</a>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+        <div class="portrait-wrap">
+          <img class="portrait" src="data:image/jpeg;base64,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" alt="Ayush, website and digital marketing expert and founder of TechTapasvi">
+          <span class="chip-float chip-1"><i class="bi bi-window-stack"></i>Websites · SEO</span>
+          <span class="chip-float chip-2"><i class="bi bi-megaphone"></i>Ads · Social</span>
+          <span class="chip-float chip-3"><i class="bi bi-diagram-3"></i>Leads · Automation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="fact-strip">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-6 col-md-3"><div class="item"><i class="bi bi-patch-check"></i>Website &amp; marketing expert</div></div>
+      <div class="col-6 col-md-3"><div class="item"><i class="bi bi-geo-alt"></i>Serving clients Pan India</div></div>
+      <div class="col-6 col-md-3"><div class="item"><i class="bi bi-people"></i>Open to agency collaboration</div></div>
+      <div class="col-6 col-md-3"><div class="item"><i class="bi bi-lightning-charge"></i>Reply within one business day</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WHAT I DO ================= -->
+<section id="what-i-do" class="vh-section">
+  <div class="container">
+    <div class="row mb-4" data-aos="fade-up">
+      <div class="col-lg-8">
+        <div class="eyebrow">What I do</div>
+        <h2 class="section-title">One expert for your website, traffic and leads</h2>
+        <p class="section-sub">Instead of juggling a designer, an SEO freelancer and an ads agency, work with one person who understands how it all connects.</p>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-layout-text-window"></i></div><h4>Websites</h4><p>Fast, mobile-first websites designed to turn visitors into enquiries.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="40"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div><h4>SEO</h4><p>Be found on Google by people already searching for what you sell.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-file-earmark-richtext"></i></div><h4>Brochure &amp; Collateral</h4><p>Company profiles, brochures and decks that look like your brand.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-share"></i></div><h4>Social Media</h4><p>Consistent content and community building on the right channels.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-megaphone"></i></div><h4>Ads</h4><p>Meta and Google campaigns focused on cost per lead, not vanity clicks.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="40"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-funnel"></i></div><h4>Lead Generation</h4><p>Landing pages and funnels built to capture qualified enquiries.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-diagram-3"></i></div><h4>Automation</h4><p>CRM, email and WhatsApp follow-ups that run without manual effort.</p></div></div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120"><div class="service-card-eq"><div class="service-icon"><i class="bi bi-people"></i></div><h4>Agency Collaboration</h4><p>White-label design, development and ads for agencies, under NDA.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MY WORK ================= -->
+<section id="my-work" class="bg-alt vh-section">
+  <div class="container">
+    <div class="row mb-4" data-aos="fade-up">
+      <div class="col-lg-8">
+        <div class="eyebrow">My work</div>
+        <h2 class="section-title">See what I've built — pick the portfolio you want to explore</h2>
+        <p class="section-sub">Two separate portfolios: agency projects delivered under TechTapasvi, and my own personal work.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="work-panel">
+          <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=65')" role="img" aria-label="TechTapasvi agency projects"></div>
+          <span class="tag">Portfolio 01 · Agency</span>
+          <h3>TechTapasvi Portfolio</h3>
+          <p>Websites, lead-generation funnels and automations delivered for businesses and partner agencies.</p>
+          <div><a data-link="portfolioTechTapasvi" href="techtapasvi-portfolio.html" class="btn btn-amber">View TechTapasvi work →</a></div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="work-panel">
+          <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=65')" role="img" aria-label="Ayush personal projects"></div>
+          <span class="tag">Portfolio 02 · Personal</span>
+          <h3>Ayush's Personal Portfolio</h3>
+          <p>Client work, e-commerce builds and marketing creatives I've personally designed and run.</p>
+          <div><a data-link="portfolioAyush" href="ayush-portfolio.html" class="btn btn-amber">View my personal work →</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 d-flex flex-wrap align-items-center gap-3" data-aos="fade-up">
+      <span class="mono">Jump straight to:</span>
+      <div class="work-chips">
+        <a data-link="portfolioAyush" data-hash="#websites" href="ayush-portfolio.html#websites">Websites</a>
+        <a data-link="portfolioAyush" data-hash="#ecommerce" href="ayush-portfolio.html#ecommerce">E-commerce</a>
+        <a data-link="portfolioAyush" data-hash="#marketing" href="ayush-portfolio.html#marketing">Marketing</a>
+        <a data-link="portfolioAyush" data-hash="#client-work" href="ayush-portfolio.html#client-work">Client work</a>
+        <a data-link="instagram" href="https://www.instagram.com/ayushtechlab/" target="_blank" rel="noopener"><i class="bi bi-instagram me-1"></i>Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEARN ================= -->
+<section id="learn" class="vh-section">
+  <div class="container">
+    <div class="row mb-4" data-aos="fade-up">
+      <div class="col-lg-8">
+        <div class="eyebrow">Client guide</div>
+        <h2 class="section-title">Know before you invest: four things every business should understand</h2>
+        <p class="section-sub">A quick, jargon-free primer so you can make confident decisions — whether you work with me or not.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up">
+        <div class="learn-card">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=60" alt="Website on a laptop" loading="lazy">
+          <div class="body"><span class="num">01</span><h4>Your website is a salesperson</h4>
+            <p>A good site explains your offer in seconds, loads fast on mobile, builds trust and gives one clear next step.</p>
+            <div class="tip">Check: can a stranger tell what you do within five seconds?</div></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="60">
+        <div class="learn-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=60" alt="Analytics dashboard" loading="lazy">
+          <div class="body"><span class="num">02</span><h4>SEO vs ads</h4>
+            <p>Ads bring visitors quickly but stop when the budget stops. SEO takes longer to build but keeps compounding.</p>
+            <div class="tip">Most businesses do best with a mix of both.</div></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120">
+        <div class="learn-card">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=60" alt="Automation workflow" loading="lazy">
+          <div class="body"><span class="num">03</span><h4>Leads need follow-up</h4>
+            <p>Enquiries go cold fast. Automated replies and reminders make sure no lead is forgotten.</p>
+            <div class="tip">Reply quickly — speed often decides who wins the customer.</div></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="180">
+        <div class="learn-card">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=60" alt="Social media planning" loading="lazy">
+          <div class="body"><span class="num">04</span><h4>Social builds trust</h4>
+            <p>Social media shows you're active and credible. Consistency matters more than going viral.</p>
+            <div class="tip">Pick one or two channels where your customers are, and do them well.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORKING TOGETHER ================= -->
+<section id="working-together" class="bg-alt vh-section">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-7" data-aos="fade-up">
+        <div class="eyebrow">Working together</div>
+        <h2 class="section-title mb-4">How a project with me works</h2>
+        <div class="step-row"><div class="step-no">01</div><div><h5>Discovery call</h5><p>We talk about your business, goals, audience and budget, then agree on scope and timeline.</p></div></div>
+        <div class="step-row"><div class="step-no">02</div><div><h5>Design &amp; plan</h5><p>You review layouts, brochures or campaign plans and approve before anything is built.</p></div></div>
+        <div class="step-row"><div class="step-no">03</div><div><h5>Build &amp; connect</h5><p>Development, tracking, ad setup and automations are built and tested.</p></div></div>
+        <div class="step-row"><div class="step-no">04</div><div><h5>Launch &amp; grow</h5><p>We go live, then review results and keep improving what's working.</p></div></div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="need-box">
+          <h4>What I'll need from you</h4>
+          <ul>
+            <li><i class="bi bi-check-circle"></i>Logo and brand colours (if you have them)</li>
+            <li><i class="bi bi-check-circle"></i>A list of your services or products</li>
+            <li><i class="bi bi-check-circle"></i>Who your ideal customer is</li>
+            <li><i class="bi bi-check-circle"></i>2–3 websites you like for reference</li>
+            <li><i class="bi bi-check-circle"></i>Photos, testimonials and key content</li>
+            <li><i class="bi bi-check-circle"></i>Access to your domain, hosting or ad accounts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENCY COLLAB ================= -->
+<section id="collaborate" class="partner-section vh-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="eyebrow">Agency collaboration</div>
+        <h2 class="section-title">Run an agency? Let's work together.</h2>
+        <p class="section-sub mb-4">I act as your behind-the-scenes production partner for web design, development, ads and automation — delivered under your brand.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contact" class="btn btn-amber">Start a collaboration →</a>
+          <a data-link="mainSite" href="index.html#partner" class="btn btn-outline-brand" style="border-color:#fff;color:#fff;">See partnership models</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+          <div class="col-6"><div class="why-box"><h6>White-label</h6><p>Your clients stay yours, always.</p></div></div>
+          <div class="col-6"><div class="why-box"><h6>NDA-protected</h6><p>Signed NDA before any project.</p></div></div>
+          <div class="col-6"><div class="why-box"><h6>Fits your tools</h6><p>Slack, ClickUp, Asana, Notion.</p></div></div>
+          <div class="col-6"><div class="why-box"><h6>Partner pricing</h6><p>Wholesale rates that protect your margin.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="vh-section">
+  <div class="container">
+    <div class="row mb-3" data-aos="fade-up">
+      <div class="col-lg-8"><div class="eyebrow">FAQ</div><h2 class="section-title">Questions clients often ask</h2></div>
+    </div>
+    <div class="row"><div class="col-lg-10">
+      <div class="faq-item" data-aos="fade-up"><h5>How long does a website take?</h5><p>Typically 3 to 6 weeks, depending on the number of pages, custom features and how quickly content is ready.</p></div>
+      <div class="faq-item" data-aos="fade-up"><h5>How much will it cost?</h5><p>It depends on scope — pages, features, and whether you also want SEO, ads or automation. Share your requirements and I'll send a clear quote.</p></div>
+      <div class="faq-item" data-aos="fade-up"><h5>Can I see your past work first?</h5><p>Yes — use the portfolio buttons above to browse TechTapasvi's projects or my personal work.</p></div>
+      <div class="faq-item" data-aos="fade-up"><h5>Do you support me after launch?</h5><p>Yes. I offer ongoing SEO, ad management, social media and maintenance as monthly packages.</p></div>
+      <div class="faq-item" data-aos="fade-up"><h5>Do you work with agencies?</h5><p>Yes, on a white-label basis under NDA, so your end clients only ever see your brand.</p></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section vh-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-up">
+        <div class="eyebrow">Get in touch</div>
+        <h2 class="section-title">Let's talk about your next project</h2>
+        <p class="section-sub mb-4">Tell me what you're trying to achieve and I'll get back with the best way forward.</p>
+        <div class="contact-info-item"><i class="bi bi-whatsapp"></i><span>WhatsApp: <a href="https://wa.me/919971103293" style="color:#fff;" target="_blank" rel="noopener">+91 99711 03293</a></span></div>
+        <div class="contact-info-item"><i class="bi bi-envelope"></i><span>Email: <a href="mailto:techtapasvi@gmail.com" style="color:#fff;">techtapasvi@gmail.com</a></span></div>
+        <div class="contact-info-item"><i class="bi bi-instagram"></i><span>Instagram: <a data-link="instagram" href="https://www.instagram.com/ayushtechlab/" style="color:#fff;" target="_blank" rel="noopener">@ayushtechlab</a></span></div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+        <form id="mainContactForm" data-form-name="Ayush Page - Contact Form">
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
+            <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Email"></div>
+            <div class="col-md-6"><input type="tel" name="phone" class="form-control" placeholder="Phone / WhatsApp" pattern="[0-9+\s\-\(\)]{7,18}" title="Digits, spaces, + ( ) - only"></div>
+            <div class="col-md-6 d-flex align-items-center"><span class="mono" style="color:#e0c68a;">Email or phone — at least one is required</span></div>
+            <div class="col-md-6">
+              <select name="engagement" class="form-select" required>
+                <option value="" selected disabled>I'm interested in</option>
+                <option>Website</option><option>SEO</option><option>Social Media &amp; Ads</option><option>Lead Gen &amp; Automation</option><option>Agency Collaboration</option><option>Something else</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select name="budget" class="form-select" required>
+                <option value="" selected disabled>Budget Range</option>
+                <option>Under $1,000</option><option>$1,000–$3,000</option><option>$3,000–$5,000</option><option>$5,000+</option>
+              </select>
+            </div>
+            <div class="col-12"><textarea name="message" class="form-control" rows="4" placeholder="Tell me about your project" required></textarea></div>
+            <div class="col-12"><p class="form-error" role="alert"></p><button type="submit" class="btn btn-amber w-100 py-2">Send message →</button></div>
+          </div>
+        </form>
+        <p class="mono mt-3 mb-0" id="formStatus" style="color:#c9e6de;display:none;">Thanks — your message has been received. I'll reply within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <div class="navbar-brand d-inline-block mb-2" style="color:#fff!important;">Ayush<small>@ TechTapasvi</small></div>
+        <p class="mb-0">Website &amp; digital marketing expert helping businesses grow online — Pan India.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a data-link="mainSite" href="index.html" class="me-3">TechTapasvi</a>
+        <a data-link="portfolioTechTapasvi" href="techtapasvi-portfolio.html" class="me-3">Agency portfolio</a>
+        <a data-link="portfolioAyush" href="ayush-portfolio.html" class="me-3">My portfolio</a>
+        <a data-link="instagram" href="https://www.instagram.com/ayushtechlab/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between">
+      <span>© 2026 Ayush · TechTapasvi. All Rights Reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919971103293" class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- ================= LEAD POPUP ================= -->
+<div class="lead-popup" id="leadPopup" role="dialog" aria-modal="true" aria-labelledby="leadTitle" aria-hidden="true">
+  <div class="lead-popup-card">
+    <div class="lead-popup-visual d-none d-md-block"></div>
+    <div class="lead-popup-body">
+      <button type="button" class="lead-popup-close" id="leadClose" aria-label="Close">&times;</button>
+      <div id="leadFormWrap">
+        <p class="mono mb-2" style="color:var(--amber-deep);">Free consultation</p>
+        <h4 id="leadTitle" class="mb-2">Let's plan your growth together</h4>
+        <p class="text-secondary mb-3" style="font-size:.93rem;">Share your details and I'll get back within one business day.</p>
+        <form id="leadForm" data-form-name="Ayush Page - Popup Lead Form">
+          <div class="mb-3"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
+          <div class="mb-2"><input type="email" name="email" class="form-control" placeholder="Email"></div>
+          <div class="text-center mono mb-2" style="font-size:.72rem;">— enter email or phone (either one) —</div>
+          <div class="mb-3"><input type="tel" name="phone" class="form-control" placeholder="Phone / WhatsApp Number" pattern="[0-9+\s\-\(\)]{7,18}" title="Digits, spaces, + ( ) - only"></div>
+          <p class="form-error" role="alert"></p>
+          <button type="submit" class="btn btn-primary-brand w-100">Request Free Consultation →</button>
+        </form>
+      </div>
+      <div id="leadThanks" style="display:none;text-align:center;padding:2rem 0;">
+        <h4 class="mb-2">Thank you!</h4>
+        <p class="text-secondary mb-0">I've received your details and will contact you shortly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+<script>
+/* =====================================================================
+   SETTINGS — edit these links in ONE place
+   ===================================================================== */
+const LINKS = {
+  portfolioTechTapasvi: 'techtapasvi-portfolio.html', // common TechTapasvi portfolio page
+  portfolioAyush:       'ayush-portfolio.html',       // Ayush's own portfolio page
+  mainSite:             'index.html',                 // TechTapasvi main website
+  instagram:            'https://www.instagram.com/ayushtechlab/',
+  facebook:             ''                            // paste your Facebook page URL (hidden if empty)
+};
+// Same Google Apps Script Web App URL used on the main site (all forms → one sheet)
+const SCRIPT_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
+document.querySelectorAll('[data-link]').forEach(el => {
+  const url = LINKS[el.dataset.link];
+  if (!url){ el.style.display = 'none'; return; }
+  el.setAttribute('href', url + (el.dataset.hash || ''));
+});
+
+/* ---------- Lead storage (Google Sheet via Apps Script) ---------- */
+const QUEUE_KEY = 'tt_pending_leads';
+const scriptConfigured = () => SCRIPT_URL && SCRIPT_URL.indexOf('PASTE_') === -1;
+function readQueue(){ try { return JSON.parse(localStorage.getItem(QUEUE_KEY) || '[]'); } catch(e){ return []; } }
+function writeQueue(q){ try { localStorage.setItem(QUEUE_KEY, JSON.stringify(q)); } catch(e){} }
+async function postToSheet(payload){ await fetch(SCRIPT_URL, { method:'POST', mode:'no-cors', body:new URLSearchParams(payload) }); }
+async function sendToSheet(fields){
+  const payload = Object.assign({}, fields, { page_url:location.href, referrer:document.referrer||'', user_agent:navigator.userAgent, submitted_at:new Date().toISOString() });
+  if (!scriptConfigured()){ console.warn('[Ayush page] SCRIPT_URL not set — lead kept only in this browser.'); const q=readQueue(); q.push(payload); writeQueue(q); return false; }
+  try { await postToSheet(payload); return true; } catch(e){ const q=readQueue(); q.push(payload); writeQueue(q); return false; }
+}
+async function flushQueue(){
+  if (!scriptConfigured()) return;
+  const q = readQueue(); if (!q.length) return;
+  const left = [];
+  for (const p of q){ try { await postToSheet(p); } catch(e){ left.push(p); } }
+  writeQueue(left);
+}
+
+/* ---------- Animations (never hide content if AOS fails) ---------- */
+try { if (window.AOS) AOS.init({ duration:700, once:true, offset:80 }); else document.documentElement.classList.add('no-aos'); }
+catch(e){ document.documentElement.classList.add('no-aos'); }
+
+/* ---------- Nav + back to top ---------- */
+const nav = document.getElementById('mainNav'), toTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+  toTop.classList.toggle('show', window.scrollY > 500);
+});
+toTop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+/* ---------- Lead popup: on load + on exit ---------- */
+const popup = document.getElementById('leadPopup');
+let leadSubmitted = false, exitShown = false;
+const popupOpen = () => popup.classList.contains('open');
+function openPopup(){ if (popupOpen()) return; popup.classList.add('open'); popup.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+function closePopup(){ popup.classList.remove('open'); popup.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+document.getElementById('leadClose').addEventListener('click', closePopup);
+popup.addEventListener('click', e => { if (e.target === popup) closePopup(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+setTimeout(openPopup, 1000);
+function triggerExit(){ if (exitShown || leadSubmitted || popupOpen()) return; exitShown = true; openPopup(); }
+document.documentElement.addEventListener('mouseleave', e => { if (e.clientY <= 0) triggerExit(); });
+document.addEventListener('mouseout', e => { if (!e.relatedTarget && e.clientY <= 0) triggerExit(); });
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') triggerExit(); });
+window.addEventListener('beforeunload', e => { if (!leadSubmitted){ triggerExit(); e.preventDefault(); e.returnValue=''; } });
+
+/* ---------- Forms (email OR phone required; every submission → sheet) ---------- */
+function bindForm(form, onSuccess){
+  const err = form.querySelector('.form-error');
+  form.addEventListener('submit', async e => {
+    e.preventDefault(); err.textContent = '';
+    if (!form.checkValidity()){ form.reportValidity(); return; }
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.name = (data.name||'').trim(); data.email = (data.email||'').trim(); data.phone = (data.phone||'').trim();
+    if (!data.email && !data.phone){ err.textContent = 'Please enter your email or your phone number (at least one) so I can contact you.'; return; }
+    if (data.phone && data.phone.replace(/\D/g,'').length < 7){ err.textContent = 'Please enter a valid phone number.'; return; }
+    data.form = form.dataset.formName;
+    const btn = form.querySelector('button[type=submit]'), label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    await sendToSheet(data);
+    leadSubmitted = true; btn.disabled = false; btn.textContent = label; form.reset(); onSuccess();
+  });
+}
+bindForm(document.getElementById('leadForm'), () => {
+  document.getElementById('leadFormWrap').style.display = 'none';
+  document.getElementById('leadThanks').style.display = 'block';
+  setTimeout(closePopup, 3000);
+});
+bindForm(document.getElementById('mainContactForm'), () => { document.getElementById('formStatus').style.display = 'block'; });
+flushQueue();
+</script>
+</body>
+</html>
