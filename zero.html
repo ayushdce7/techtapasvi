@@ -27,7 +27,7 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Bootstrap & Icons -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
@@ -68,10 +68,10 @@
   --ink:#15181c;
   --ink-soft:#4b4f55;
   --paper:#ffffff;
-  --paper-alt:#fbf6e6;
-  --line:#ece3c6;
-  --amber:#22396F;
-  --amber-deep:#22396F;
+  --paper-alt:#f6f3ec;
+  --line:#e5e1d6;
+  --amber:#c9840f;
+  --amber-deep:#a3690a;
   --teal:#1f6f63;
   --teal-deep:#175349;
 }
@@ -213,7 +213,7 @@ a:hover{color:var(--amber-deep);}
   font-size:.78rem;
   width:fit-content;
   margin-bottom:1.6rem;
-  color:#FCF1D0;
+  color:#f0ead9;
 }
 .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:inline-block;}
 .hero-headline{
@@ -223,11 +223,11 @@ a:hover{color:var(--amber-deep);}
   line-height:1.08;
   margin-bottom:1.3rem;
 }
-.hero-headline em{font-style:italic;font-weight:300;color:#FCF1D0;}
+.hero-headline em{font-style:italic;font-weight:300;color:#f0ead9;}
 .hero-sub{
   font-size:1.15rem;
   max-width:560px;
-  color:#efe6c8;
+  color:#e7e3d8;
   margin-bottom:2.1rem;
 }
 .hero-trust{
@@ -236,7 +236,7 @@ a:hover{color:var(--amber-deep);}
   backdrop-filter:blur(6px);
   border-top:1px solid rgba(255,255,255,.15);
   padding:.9rem 0;
-  color:#FCF1D0;
+  color:#f0ead9;
   font-family:'IBM Plex Mono',monospace;
   font-size:.85rem;
   text-align:center;
@@ -337,11 +337,11 @@ a:hover{color:var(--amber-deep);}
 .showcase-tile::before{z-index:1;}
 .showcase-tile.tile-lg{grid-column:span 2;grid-row:span 2;padding:1.8rem;}
 .showcase-tile .tile-tag{
-  font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#FCF1D0;margin-bottom:.35rem;
+  font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:#f0d9a8;margin-bottom:.35rem;
 }
 .showcase-tile h3{color:#fff;font-size:1.25rem;font-weight:500;margin-bottom:.3rem;}
 .showcase-tile.tile-lg h3{font-size:1.9rem;}
-.showcase-tile p{color:#efe6c8;font-size:.86rem;margin-bottom:.6rem;max-width:420px;}
+.showcase-tile p{color:#e3dfd3;font-size:.86rem;margin-bottom:.6rem;max-width:420px;}
 .showcase-tile .tile-link{
   font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:#fff;
   border-bottom:1px solid var(--amber);width:fit-content;padding-bottom:2px;
@@ -424,7 +424,7 @@ a:hover{color:var(--amber-deep);}
   position:relative;
   overflow:hidden;
 }
-.ad-banner .mono{color:#d9d2b8;}
+.ad-banner .mono{color:#cfc9b8;}
 .ad-banner h3{color:#fff;font-size:1.7rem;font-weight:500;}
 .ad-banner .btn-primary-brand{background:var(--amber);border-color:var(--amber);}
 .ad-banner .btn-primary-brand:hover{background:#fff;color:var(--ink);border-color:#fff;}
@@ -459,19 +459,19 @@ a:hover{color:var(--amber-deep);}
 /* PARTNER SECTION */
 .partner-section{
   background:var(--teal-deep);
-  color:#FCF1D0;
+  color:#f0ead9;
 }
 .partner-section .section-title{color:#fff;}
-.partner-section .eyebrow{color:#FCF1D0;}
-.partner-section .eyebrow::before{background:#FCF1D0;}
-.partner-section .section-sub{color:#efe6c8;}
+.partner-section .eyebrow{color:#c9e6de;}
+.partner-section .eyebrow::before{background:#c9e6de;}
+.partner-section .section-sub{color:#d3e3dd;}
 .partner-list-item{
   border-top:1px solid rgba(255,255,255,.18);
   padding:1.2rem 0;
 }
 .partner-list-item:last-child{border-bottom:1px solid rgba(255,255,255,.18);}
 .partner-list-item h5{color:#fff;font-weight:600;font-size:1.05rem;margin-bottom:.3rem;}
-.partner-list-item p{color:#efe6c8;margin:0;font-size:.93rem;}
+.partner-list-item p{color:#cddfd8;margin:0;font-size:.93rem;}
 .why-box{
   background:rgba(255,255,255,.06);
   border:1px solid rgba(255,255,255,.15);
@@ -479,7 +479,7 @@ a:hover{color:var(--amber-deep);}
   height:100%;
 }
 .why-box h6{color:#fff;font-weight:600;margin-bottom:.4rem;}
-.why-box p{color:#efe6c8;font-size:.9rem;margin:0;}
+.why-box p{color:#cddfd8;font-size:.9rem;margin:0;}
 
 /* PROCESS */
 .process-step{padding:2rem 0;border-top:1px solid var(--line);}
@@ -527,9 +527,9 @@ a:hover{color:var(--amber-deep);}
 /* CONTACT */
 .contact-section{background:var(--ink);color:#fff;}
 .contact-section .section-title{color:#fff;}
-.contact-section .section-sub{color:#d9d2b8;}
-.contact-section .eyebrow{color:#FCF1D0;}
-.contact-section .eyebrow::before{background:#FCF1D0;}
+.contact-section .section-sub{color:#c9c5b8;}
+.contact-section .eyebrow{color:#e0c68a;}
+.contact-section .eyebrow::before{background:#e0c68a;}
 .form-control, .form-select{
   background:transparent;
   border:1px solid rgba(255,255,255,.28);
@@ -546,7 +546,7 @@ a:hover{color:var(--amber-deep);}
 .form-select option{color:#000;}
 .contact-info-item{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:1.5rem;}
 .contact-info-item i{font-size:1.2rem;color:var(--amber);}
-.contact-info-item span{color:#d9d2b8;}
+.contact-info-item span{color:#cfcbbd;}
 
 /* FOOTER */
 footer{background:#0e1013;color:#a8acb4;padding:4rem 0 1.5rem;}
@@ -621,7 +621,7 @@ footer p{color:#8a8d92;font-size:.9rem;}
   font-size:1.8rem;line-height:1;color:var(--ink-soft);cursor:pointer;
 }
 .lead-popup-close:hover{color:var(--ink);}
-.lead-popup .form-control{background:#fff;color:var(--ink);border:1px solid #d8d0b0;}
+.lead-popup .form-control{background:#fff;color:var(--ink);border:1px solid #cfcabd;}
 .lead-popup .form-control::placeholder{color:#8a8d92;}
 .lead-popup .form-control:focus{background:#fff;color:var(--ink);border-color:var(--amber);}
 .form-error{color:#b3261e;font-size:.85rem;min-height:0;margin:0 0 .6rem;}
@@ -629,315 +629,124 @@ footer p{color:#8a8d92;font-size:.9rem;}
 .contact-section .form-error{color:#ffb4a2;}
 /* If the AOS library fails to load, never leave content hidden */
 .no-aos [data-aos]{opacity:1 !important;transform:none !important;}
-
-/* =====================================================================
-   THEME OVERRIDE — Deep green + lime (Digital Marketing look)
-   ===================================================================== */
-:root{
-  --ink:#010736;
-  --ink-soft:#4a5577;
-  --paper:#ffffff;
-  --paper-alt:#fbf6e6;
-  --line:#ece3c6;
-  --amber:#FCF1D0;          /* lime accent */
-  --amber-deep:#22396F;     /* readable green for text accents */
-  --teal:#22396F;
-  --teal-deep:#22396F;
-  --green:#22396F;
-  --green-dark:#0D1C42;
-  --lime:#FCF1D0;
-}
-body{font-family:'Inter',system-ui,sans-serif;background:#fff;color:var(--ink);padding-top:0;}
-h1,h2,h3,h4,h5,.display-font{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:-0.02em;color:var(--ink);}
-.mono{font-family:'Inter',sans-serif;font-size:.82rem;color:var(--ink-soft);}
-section{padding:5rem 0;}
-a{color:var(--green);} a:hover{color:var(--green-dark);}
-
-/* Eyebrow: lime + green overlapping dots like the reference */
-.eyebrow{font-family:'Inter',sans-serif;font-size:.95rem;font-weight:500;color:var(--ink);gap:.55rem;}
-.eyebrow::before{content:"";width:34px;height:16px;background:
-  radial-gradient(circle at 8px 8px,var(--lime) 8px,transparent 8.5px),
-  radial-gradient(circle at 22px 8px,var(--green) 8px,transparent 8.5px);
-  display:inline-block;}
-.section-title{font-weight:600;font-size:clamp(1.9rem,3.2vw,2.7rem);line-height:1.18;}
-.hero-text .eyebrow, .on-dark .eyebrow{color:#fff;}
-.bg-alt{background:#fbf6e6;}
-
-/* Buttons: pill, green with lime text */
-.btn-primary-brand{background:var(--green);border:1px solid var(--green);color:var(--lime);border-radius:50px;padding:.7rem 1.6rem;font-weight:500;}
-.btn-primary-brand:hover{background:var(--green-dark);border-color:var(--green-dark);color:#fff;}
-.btn-outline-brand{border:1px solid var(--green);color:var(--green);border-radius:50px;padding:.7rem 1.6rem;}
-.btn-outline-brand:hover{background:var(--green);color:var(--lime);border-color:var(--green);}
-.link-underline{color:var(--ink);text-decoration:underline;text-underline-offset:4px;font-size:.92rem;}
-
-/* ---------- TOP BAR ---------- */
-.topbar{background:var(--green);color:#fff;font-size:.82rem;position:relative;z-index:1031;}
-.topbar .container{display:flex;align-items:center;justify-content:space-between;min-height:44px;}
-.topbar-info{display:flex;gap:1.8rem;flex-wrap:wrap;align-items:center;padding:.4rem 0;}
-.topbar-info a,.topbar-info span{color:#fff;display:inline-flex;align-items:center;gap:.5rem;}
-.topbar-info i{color:var(--lime);}
-.topbar-social{background:var(--lime);align-self:stretch;display:flex;align-items:center;gap:.6rem;
-  padding:0 2.2rem 0 3rem;margin-right:-.75rem;clip-path:polygon(9% 0,100% 0,100% 100%,0 100%);}
-.topbar-social a{color:var(--green);font-size:.95rem;}
-.topbar-social a:hover{color:#000;}
-
-/* ---------- NAV ---------- */
-.navbar{position:sticky !important;top:0;background:#fff;backdrop-filter:none;border-bottom:none;padding:.9rem 0;}
-.navbar.scrolled{box-shadow:0 6px 24px rgba(1,7,54,.08);}
-.navbar-brand{font-family:'Inter',sans-serif;font-weight:600;font-size:1.15rem;display:flex;align-items:center;gap:.6rem;}
-.brand-mark{width:34px;height:34px;border-radius:50%;background:var(--lime);display:inline-flex;align-items:center;justify-content:center;}
-.brand-mark::after{content:"";width:12px;height:14px;background:var(--green);border-radius:2px 7px 7px 2px;}
-.navbar-brand span{color:var(--ink);}
-.nav-link{font-size:.86rem;font-weight:400;color:var(--ink-soft) !important;margin:0 .6rem;}
-.nav-link:hover,.nav-link.active{color:var(--ink) !important;}
-.nav-link.active{text-decoration:underline;text-underline-offset:5px;font-weight:500;}
-.navbar .btn-primary-brand{padding:.6rem 1.5rem;font-size:.85rem;font-weight:600;}
-
-/* ---------- HERO ---------- */
-.hero-new{background:#fbf6e6;position:relative;overflow:hidden;padding:5rem 0 6rem;}
-.hero-new::before,.hero-new::after{content:"";position:absolute;width:150px;height:60px;opacity:.5;
-  background-image:radial-gradient(#e0d5ae 3px,transparent 3.5px);background-size:20px 20px;}
-.hero-new::before{top:0;left:44%;} .hero-new::after{bottom:10px;left:25%;}
-.hero-new h1{font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1.15;margin:.8rem 0 1.3rem;font-weight:600;}
-.hero-new p.lead-text{color:var(--ink-soft);max-width:460px;font-size:.98rem;margin-bottom:2rem;}
-.hero-actions{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
-
-.hero-collage{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin-left:auto;padding:0 0 0 20px;}
-.hero-collage .pic{overflow:hidden;background:#ccc;}
-.hero-collage .pic img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);display:block;}
-.hero-collage .p1{grid-row:span 2;border-radius:28px;height:290px;align-self:center;}
-.hero-collage .stack{display:grid;gap:12px;}
-.hero-collage .p2{border-radius:34px 70px 20px 20px;height:150px;}
-.hero-collage .p3{border-radius:20px 20px 20px 70px;height:150px;}
-.hero-collage .p4{grid-column:2;border-radius:20px 20px 70px 20px;height:150px;}
-.hire-badge{position:absolute;left:-26px;bottom:60px;width:96px;height:96px;border-radius:50%;background:var(--green);
-  display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 4px #fbf6e6;z-index:3;}
-.hire-badge::before{content:"HIRE US • HIRE US • HIRE US • HIRE US •";position:absolute;inset:6px;
-  font-size:8.5px;font-weight:700;letter-spacing:1.4px;color:#fff;text-align:center;line-height:84px;overflow:hidden;white-space:nowrap;
-  border-radius:50%;border:1px dashed rgba(255,255,255,.35);}
-.hire-badge i{background:var(--lime);color:var(--green);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;}
-.sparkle{position:absolute;right:-14px;bottom:30px;color:var(--lime);font-size:2.6rem;text-shadow:0 0 0 #000;z-index:3;filter:drop-shadow(0 0 1px #0D1C42);}
-
-/* ---------- MARQUEE ---------- */
-.marquee{background:var(--green);color:#fff;overflow:hidden;padding:1.15rem 0;}
-.marquee-track{display:flex;width:max-content;animation:marq 32s linear infinite;}
-.marquee-item{display:inline-flex;align-items:center;gap:2.6rem;padding-right:2.6rem;font-size:1.45rem;font-weight:500;white-space:nowrap;}
-.marquee-item i{color:var(--lime);font-size:1.5rem;}
-@keyframes marq{to{transform:translateX(-50%);}}
-
-/* ---------- ABOUT ---------- */
-.about-sec{background:#fff;padding:5.5rem 0 4.5rem;}
-.about-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative;}
-.about-imgs img{width:100%;object-fit:cover;filter:grayscale(1);border-radius:22px;display:block;}
-.about-imgs .a1{height:185px;grid-column:1 / span 2;width:75%;}
-.about-imgs .a2{height:185px;grid-column:1 / span 2;}
-.about-imgs .hire-badge{left:auto;right:0;top:75px;bottom:auto;width:90px;height:90px;box-shadow:0 0 0 4px #fff;}
-.skill{margin-bottom:1.15rem;}
-.skill-head{display:flex;justify-content:space-between;font-size:.8rem;font-weight:600;margin-bottom:.45rem;}
-.skill-bar{height:5px;background:#ece3c6;border-radius:5px;position:relative;}
-.skill-bar span{display:block;height:100%;background:var(--green);border-radius:5px;position:relative;}
-.skill-bar span::after{content:"";position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:16px;height:16px;border:3px solid var(--lime);border-radius:50%;background:#fff;}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem;}
-.stat{display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;position:relative;padding-right:1.2rem;}
-.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:-4px;height:68px;border-right:1px solid #333;}
-.stat h3{font-size:2.1rem;font-weight:500;margin:0;}
-.stat p{margin:0;color:var(--ink-soft);}
-.stat .dots{width:30px;height:16px;flex:0 0 30px;margin-top:2.5rem;background:
-  radial-gradient(circle at 8px 8px,var(--lime) 8px,transparent 8.5px),
-  radial-gradient(circle at 22px 8px,var(--green) 8px,transparent 8.5px);}
-
-/* ---------- SERVICES → dark green band ---------- */
-#services{background:var(--green);color:#fff;position:relative;padding-top:6rem;}
-#services::before{content:"";position:absolute;top:0;left:0;right:0;height:26px;
-  background:repeating-linear-gradient(135deg,rgba(255,255,255,.22) 0 1px,transparent 1px 7px);}
-#services .eyebrow{color:#fff;}
-#services .section-title,#services h4{color:#fff;}
-#services .section-sub{color:#efe6c8;}
-#services .service-card-eq{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:1.5rem 1.3rem;}
-#services .service-card-eq:hover{background:var(--lime);border-color:var(--lime);transform:translateY(-4px);}
-#services .service-card-eq:hover h4,#services .service-card-eq:hover p,#services .service-card-eq:hover .service-tag{color:var(--green) !important;}
-#services .service-icon{border-color:rgba(255,255,255,.25);color:var(--lime);border-radius:50%;}
-#services .service-card-eq:hover .service-icon{border-color:var(--green);color:var(--green);}
-#services .service-tag{color:#d9d2b8;}
-#services .service-card-eq p:last-child{color:#efe6c8;}
-
-/* ---------- Cards, banners, sections ---------- */
-.course-card,.product-card,.blog-card,.location-card{border-radius:22px;overflow:hidden;border:1px solid var(--line);}
-.course-card:hover,.product-card:hover,.blog-card:hover{box-shadow:0 18px 40px rgba(1,7,54,.12);}
-.badge-level{border-radius:50px;background:#fbf6e6;border:none;font-family:'Inter';}
-.price-tag{font-family:'Inter';font-weight:700;color:var(--green);}
-.ad-banner{background:var(--green);}
-.ad-banner .btn-primary-brand{background:var(--lime);border-color:var(--lime);color:var(--green);font-weight:600;}
-.ad-banner .btn-primary-brand:hover{background:#fff;border-color:#fff;color:var(--green);}
-.ad-banner .mono{color:#d9d2b8;}
-.partner-section{background:var(--green-dark);}
-.partner-section .eyebrow{color:#fff;}
-.partner-section .eyebrow::before{background:
-  radial-gradient(circle at 8px 8px,var(--lime) 8px,transparent 8.5px),
-  radial-gradient(circle at 22px 8px,#fff 8px,transparent 8.5px);}
-.partner-section .btn-primary-brand{background:var(--lime);color:var(--green);border-color:var(--lime);}
-.why-box{border-radius:20px;}
-.step-number{font-family:'Inter';font-weight:600;color:var(--green);}
-.service-icon{border-radius:50%;}
-.showcase-tile{border-radius:22px;}
-.showcase-bar{border-radius:50px;background:#fbf6e6;border:none;padding:.9rem 1.6rem;}
-.tile-price{background:var(--lime);color:var(--green);font-family:'Inter';font-weight:600;border-radius:50px;}
-.showcase-tile .tile-tag{color:var(--lime);font-family:'Inter';}
-.showcase-tile .tile-link{border-bottom-color:var(--lime);font-family:'Inter';}
-.showcase-tile:hover .tile-link{color:var(--lime);}
-.portfolio-item img{border-radius:22px;}
-.portfolio-caption .tag{color:var(--green);font-family:'Inter';font-weight:500;}
-.portfolio-caption .btn-know-more{border-radius:50px;border-color:var(--green);color:var(--green);font-family:'Inter';}
-.portfolio-caption .btn-know-more:hover{background:var(--green);color:var(--lime);}
-.logo-wordmark{font-family:'Inter';font-weight:700;}
-.testimonial-card p.quote{font-family:'Inter';font-weight:500;}
-.testimonial-stars{color:#f5b301;}
-.testimonial-card .client-logo{color:var(--green);border-radius:50px;font-family:'Inter';}
-#testimonialCarousel .carousel-control-prev:hover,#testimonialCarousel .carousel-control-next:hover{background:var(--green);}
-.location-links{font-family:'Inter';}
-.contact-section{background:var(--green);}
-.contact-section .eyebrow{color:#fff;}
-.contact-section .eyebrow::before{background:
-  radial-gradient(circle at 8px 8px,var(--lime) 8px,transparent 8.5px),
-  radial-gradient(circle at 22px 8px,#fff 8px,transparent 8.5px);}
-.contact-section .btn-primary-brand,.contact-section button[type=submit]{background:var(--lime);border-color:var(--lime);color:var(--green);font-weight:600;}
-.form-control,.form-select{border-radius:14px;}
-.form-control:focus,.form-select:focus{border-color:var(--lime);box-shadow:0 0 0 .15rem rgba(252,241,208,.30);}
-.contact-info-item i{color:var(--lime);}
-.lead-popup-card{border-radius:24px;}
-.lead-popup .form-control:focus{border-color:var(--green);}
-.lead-popup-body h4{font-family:'Inter';font-weight:600;}
-footer{background:#010736;}
-footer h6{font-family:'Inter';}
-footer a:hover{color:var(--lime);}
-.footer-bottom{border-top-color:rgba(255,255,255,.1);}
-.back-to-top{background:var(--green);color:var(--lime);}
-.carousel-indicators .active{background-color:var(--lime);}
-
-@media (max-width:991px){
-  .topbar-social{display:none;}
-  .hero-collage{margin:3rem auto 0;}
-  .stats{grid-template-columns:repeat(2,1fr);}
-  .stat:nth-child(2)::after{display:none;}
-  .nav-link{margin:.2rem 0;}
-}
-@media (max-width:575px){
-  .hero-new{padding:3rem 0 4rem;}
-  .stats{grid-template-columns:1fr;}
-  .stat::after{display:none;}
-  .marquee-item{font-size:1.15rem;}
-}
 </style>
 </head>
 <body>
 
-<!-- ================= TOP BAR ================= -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-info">
-      <a href="tel:+919971103293"><i class="bi bi-telephone-fill"></i>+91 99711 03293</a>
-      <a href="mailto:techtapasvi@gmail.com"><i class="bi bi-envelope-fill"></i>techtapasvi@gmail.com</a>
-      <span class="d-none d-md-inline-flex"><i class="bi bi-geo-alt-fill"></i>Serving Pan India · Delhi NCR, Mumbai, Bangalore &amp; more</span>
-    </div>
-    <div class="topbar-social">
-      <a href="https://wa.me/919971103293" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-    </div>
-  </div>
-</div>
-
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="#top"><i class="brand-mark"></i><span>TechTapasvi</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
+    <a class="navbar-brand" href="#top">Tech<span>Tapasvi</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <i class="bi bi-list fs-2"></i>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav mx-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="#top">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
         <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="#partner">Partner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-primary-brand" href="#contact">Book a Strategy Call</a></li>
       </ul>
-      <a class="btn btn-primary-brand mt-2 mt-lg-0" href="#contact">Get A Quote</a>
     </div>
   </div>
 </nav>
 
 <!-- ================= HERO ================= -->
-<header id="top" class="hero-new">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6 hero-text" data-aos="fade-right">
-        <div class="eyebrow" style="color:var(--ink);">Elevate Your Brand With Us</div>
-        <h1>Empowering Your Success with Digital Expertise</h1>
-        <p class="lead-text">Custom websites, growth marketing and automation for businesses across Delhi NCR, Mumbai, Bangalore and beyond — built to convert and designed to scale.</p>
-        <div class="hero-actions">
-          <a href="#services" class="btn btn-primary-brand">Explore More <i class="bi bi-arrow-right ms-1"></i></a>
-          <a href="#services" class="link-underline">View All Services</a>
-        </div>
-      </div>
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="hero-collage">
-          <div class="pic p1"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=65" alt="Team collaborating at a desk"></div>
-          <div class="pic p2"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=65" alt="Marketing consultant smiling"></div>
-          <div class="pic p3"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=65" alt="Business leader in discussion"></div>
-          <div class="pic p4"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=65" alt="Developer working on laptop"></div>
-          <a href="#contact" class="hire-badge" aria-label="Hire us"><i class="bi bi-arrow-right"></i></a>
-          <i class="bi bi-stars sparkle"></i>
-        </div>
-      </div>
+<header id="top" class="hero-carousel">
+  <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
     </div>
+    <div class="carousel-inner h-100">
+
+      <div class="carousel-item active h-100">
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=70')" role="img" aria-label="Web design team working on a laptop">
+          <div class="container hero-content">
+            <span class="hero-badge"><span class="dot"></span>Open for client projects &amp; white-label partnerships — Pan India</span>
+            <h1 class="hero-headline">High-converting websites, <em>built to scale.</em></h1>
+            <p class="hero-sub">Custom UI/UX and clean-coded development for businesses across Delhi NCR, Mumbai, Bangalore and beyond.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#services" class="btn btn-primary-brand">Explore our services</a>
+              <a href="#courses" class="btn btn-outline-brand" style="border-color:#fff;color:#fff;">Browse courses &amp; products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100">
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=70')" role="img" aria-label="Marketing analytics dashboard on screen">
+          <div class="container hero-content">
+            <span class="hero-badge"><span class="dot"></span>SEO · Paid Ads · Lead Generation</span>
+            <h1 class="hero-headline">Growth marketing that <em>earns its keep.</em></h1>
+            <p class="hero-sub">Targeted campaigns and conversion funnels engineered to lower acquisition cost and lift qualified leads.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#services" class="btn btn-primary-brand">See growth services</a>
+              <a href="#contact" class="btn btn-outline-brand" style="border-color:#fff;color:#fff;">Get a free audit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100">
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=70')" role="img" aria-label="Automated workflow dashboard">
+          <div class="container hero-content">
+            <span class="hero-badge"><span class="dot"></span>Workflow &amp; marketing automation</span>
+            <h1 class="hero-headline">Systems that run your <em>business on autopilot.</em></h1>
+            <p class="hero-sub">CRM, email sequences and lead-capture, connected so your operations move without manual follow-up.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#services" class="btn btn-primary-brand">Automate my business</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100">
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=1600&q=70')" role="img" aria-label="Students learning web design online">
+          <div class="container hero-content">
+            <span class="hero-badge"><span class="dot"></span>Academy &amp; education</span>
+            <h1 class="hero-headline">Learn the exact playbooks <em>we use for clients.</em></h1>
+            <p class="hero-sub">Hands-on masterclasses in web design and full-funnel lead generation, with templates you can reuse immediately.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#courses" class="btn btn-primary-brand">View courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item h-100">
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70')" role="img" aria-label="Agency team collaborating on a partnership project">
+          <div class="container hero-content">
+            <span class="hero-badge"><span class="dot"></span>Agency &amp; B2B collaboration</span>
+            <h1 class="hero-headline">Extra production capacity, <em>without payroll overhead.</em></h1>
+            <p class="hero-sub">A white-label execution partner for agencies who need reliable bandwidth under NDA.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#partner" class="btn btn-primary-brand">Apply for partnership</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  <div class="hero-trust">Trusted by 50+ businesses, agencies and learners across India</div>
 </header>
-
-<!-- ================= MARQUEE ================= -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-item">Website Design <i class="bi bi-asterisk"></i> SEO <i class="bi bi-asterisk"></i> Content Marketing <i class="bi bi-asterisk"></i> Social Media Marketing <i class="bi bi-asterisk"></i> Paid Advertising <i class="bi bi-asterisk"></i> Lead Generation <i class="bi bi-asterisk"></i> Workflow Automation <i class="bi bi-asterisk"></i></div>
-    <div class="marquee-item">Website Design <i class="bi bi-asterisk"></i> SEO <i class="bi bi-asterisk"></i> Content Marketing <i class="bi bi-asterisk"></i> Social Media Marketing <i class="bi bi-asterisk"></i> Paid Advertising <i class="bi bi-asterisk"></i> Lead Generation <i class="bi bi-asterisk"></i> Workflow Automation <i class="bi bi-asterisk"></i></div>
-  </div>
-</div>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about-sec">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <div class="eyebrow justify-content-center">About Us</div>
-      <h2 class="section-title mx-auto">Empowering Your Success<br>with Digital Expertise</h2>
-    </div>
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-6" data-aos="fade-up">
-        <div class="about-imgs">
-          <img class="a1" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=65" alt="Team meeting with laptop">
-          <img class="a2" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=65" alt="Colleagues reviewing a project">
-          <a href="#contact" class="hire-badge" aria-label="Hire us"><i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <p class="text-secondary">TechTapasvi is a Pan-India digital agency delivering high-converting website design, SEO, paid ads, lead generation and workflow automation. We pair clean craft with measurable growth, and also offer practical courses and white-label partnerships for agencies.</p>
-        <div class="skill"><div class="skill-head"><span>Marketing &amp; Business Growth</span><span>85%</span></div><div class="skill-bar"><span style="width:85%"></span></div></div>
-        <div class="skill"><div class="skill-head"><span>Creativity &amp; Innovation</span><span>80%</span></div><div class="skill-bar"><span style="width:80%"></span></div></div>
-        <div class="skill"><div class="skill-head"><span>Web Development &amp; Automation</span><span>95%</span></div><div class="skill-bar"><span style="width:95%"></span></div></div>
-        <a href="#services" class="btn btn-primary-brand mt-3">About Us <i class="bi bi-arrow-right ms-1"></i></a>
-      </div>
-    </div>
-    <div class="stats" data-aos="fade-up">
-      <div class="stat"><div><h3>50+</h3><p>Successful Projects</p></div><i class="dots"></i></div>
-      <div class="stat"><div><h3>8+</h3><p>Indian Metros Served</p></div><i class="dots"></i></div>
-      <div class="stat"><div><h3>3</h3><p>Masterclasses</p></div><i class="dots"></i></div>
-      <div class="stat"><div><h3>4</h3><p>Ready-made Toolkits</p></div><i class="dots"></i></div>
-    </div>
-  </div>
-</section>
 
 <!-- ================= OFFER SHOWCASE ================= -->
 <section id="showcase" class="vh-section">
@@ -1000,12 +809,12 @@ footer a:hover{color:var(--lime);}
 </section>
 
 <!-- ================= SERVICES ================= -->
-<section id="services">
+<section id="services" class="vh-section">
   <div class="container">
     <div class="row mb-4" data-aos="fade-up">
       <div class="col-lg-8">
-        <div class="eyebrow">Our Services</div>
-        <h2 class="section-title">Boost Your Brand<br>with Our Expertise</h2>
+        <div class="eyebrow">Core capabilities</div>
+        <h2 class="section-title">End-to-end digital solutions for growth-focused brands</h2>
         <p class="section-sub">From design and development to targeted marketing and automated systems — one team, one accountable partner.</p>
       </div>
     </div>
@@ -1568,7 +1377,7 @@ footer a:hover{color:var(--lime);}
             <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Full Name" required></div>
             <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Work Email"></div>
             <div class="col-md-6"><input type="tel" name="phone" class="form-control" placeholder="Phone / WhatsApp" pattern="[0-9+\s\-\(\)]{7,18}" title="Digits, spaces, + ( ) - only"></div>
-            <div class="col-md-6 d-flex align-items-center"><span class="mono" style="color:#FCF1D0;">Email or phone — at least one is required</span></div>
+            <div class="col-md-6 d-flex align-items-center"><span class="mono" style="color:#e0c68a;">Email or phone — at least one is required</span></div>
             <div class="col-md-6">
               <select name="engagement" class="form-select" required>
                 <option value="" selected disabled>Engagement Type</option>
@@ -1585,7 +1394,7 @@ footer a:hover{color:var(--lime);}
             <div class="col-12"><p class="form-error" role="alert"></p><button type="submit" class="btn btn-primary-brand w-100 py-2">Send Inquiry &amp; Get Started →</button></div>
           </div>
         </form>
-        <p class="mono mt-3 mb-0" id="formStatus" style="color:#FCF1D0;display:none;">Thanks — your inquiry has been received. We'll reply within one business day.</p>
+        <p class="mono mt-3 mb-0" id="formStatus" style="color:#c9e6de;display:none;">Thanks — your inquiry has been received. We'll reply within one business day.</p>
       </div>
     </div>
   </div>
@@ -1802,16 +1611,6 @@ bindForm(document.getElementById('mainContactForm'), () => {
 });
 
 flushQueue();
-
-/* ---------- Active nav link on scroll ---------- */
-(function(){
-  const links=[...document.querySelectorAll('#navMenu .nav-link')];
-  const map=links.map(l=>({l,s:document.querySelector(l.getAttribute('href'))})).filter(x=>x.s);
-  const onScroll=()=>{const y=window.scrollY+140;let cur=map[0];
-    map.forEach(x=>{if(x.s.offsetTop<=y)cur=x;});
-    links.forEach(l=>l.classList.remove('active'));cur&&cur.l.classList.add('active');};
-  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
-})();
 </script>
 </body>
 </html>
