@@ -1759,7 +1759,7 @@ document.documentElement.addEventListener('mouseleave', e => { if (e.clientY <= 
 document.addEventListener('mouseout', e => { if (!e.relatedTarget && e.clientY <= 0) triggerExit(); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') triggerExit(); });
 window.addEventListener('beforeunload', e => {
-  if (!leadSubmitted){ triggerExit(); e.preventDefault(); e.returnValue = ''; }
+  if (!leadSubmitted){ triggerExit();  e.returnValue = ''; }
 });
 
 /* ---------- Form handling (all forms → Sheet; email OR phone required) ---------- */
