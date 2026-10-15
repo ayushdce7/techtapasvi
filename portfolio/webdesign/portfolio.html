@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Work by Niche | TechTapasvi</title>
+<meta name="description" content="Browse TechTapasvi's work by niche: websites, e-commerce, real estate, education, healthcare and marketing campaigns. Click any project for the full case study.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--n1:#010736;--n2:#0D1C42;--n3:#22396F;--cream:#FCF1D0;--soft:#fbf6e6;--line:#ece3c6;--mute:#4a5577;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--soft);color:var(--n1);line-height:1.6}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+.dots{display:inline-block;width:34px;height:16px;vertical-align:middle;background:radial-gradient(circle at 8px 8px,var(--cream) 8px,transparent 8.5px),radial-gradient(circle at 22px 8px,var(--n3) 8px,transparent 8.5px)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.5rem;border-radius:50px;font-weight:600;font-size:.92rem;transition:.25s}
+.btn-cream{background:var(--cream);color:var(--n1)} .btn-cream:hover{background:#fff}
+.btn-navy{background:var(--n3);color:var(--cream)} .btn-navy:hover{background:var(--n1)}
+.btn-ghost{border:1px solid rgba(252,241,208,.5);color:var(--cream)} .btn-ghost:hover{background:var(--cream);color:var(--n1)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+.brand i{width:32px;height:32px;border-radius:50%;background:radial-gradient(circle,var(--n3) 0 7px,var(--cream) 7.5px)}
+.links{display:flex;gap:1.5rem;font-size:.88rem;color:var(--mute)}
+.links a:hover{color:var(--n1);text-decoration:underline;text-underline-offset:5px}
+@media(max-width:760px){.links{display:none}}
+
+/* HERO */
+.hero{background:var(--n1);color:var(--cream);padding:4.5rem 0 3.5rem;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(252,241,208,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(252,241,208,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 80% 30%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 80% 30%,#000,transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:end}
+.hero .eb{font-size:.95rem;display:flex;gap:.6rem;align-items:center;margin-bottom:.9rem}
+.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.12;font-weight:600;color:#fff;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--cream)}
+.hero p{color:#d9d2b8;max-width:520px;margin-top:1rem}
+.hstats{display:flex;gap:2rem;justify-self:end}
+.hstats b{display:block;font-size:2rem;font-weight:600;color:#fff;line-height:1.1}
+.hstats span{font-size:.82rem;color:#d9d2b8}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hstats{justify-self:start}}
+
+/* FILTER */
+.filters{position:sticky;top:68px;z-index:40;background:var(--soft);border-bottom:1px solid var(--line);padding:.9rem 0}
+.filters .wrap{display:flex;gap:.55rem;overflow-x:auto;scrollbar-width:none}
+.chip{flex:0 0 auto;padding:.5rem 1.1rem;border-radius:50px;border:1px solid var(--n3);color:var(--n3);font-size:.86rem;font-weight:500;background:#fff;transition:.2s;display:flex;align-items:center;gap:.45rem}
+.chip small{opacity:.6;font-size:.75rem}
+.chip:hover{background:var(--cream)}
+.chip.on{background:var(--n3);color:var(--cream);border-color:var(--n3)}
+
+/* GRID */
+.sec{padding:2.5rem 0 4.5rem}
+.count{color:var(--mute);font-size:.9rem;margin-bottom:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.4rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;text-align:left;display:flex;flex-direction:column;transition:.3s;animation:in .45s both}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(1,7,54,.16);border-color:var(--n3)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.cover{height:190px;position:relative;display:flex;align-items:center;justify-content:center;color:var(--cream);overflow:hidden}
+.cover::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(252,241,208,.09) 0 1px,transparent 1px 9px)}
+.cover::after{content:"";position:absolute;right:-40px;bottom:-60px;width:180px;height:180px;border-radius:50%;background:rgba(252,241,208,.1)}
+.cover i{font-size:3.6rem;position:relative;z-index:1;transition:.4s}
+.card:hover .cover i{transform:scale(1.15) rotate(-4deg)}
+.g0{background:linear-gradient(135deg,#010736,#22396F)}
+.g1{background:linear-gradient(135deg,#0D1C42,#3a559b)}
+.g2{background:linear-gradient(135deg,#22396F,#010736)}
+.g3{background:linear-gradient(135deg,#FCF1D0,#e8d79c);color:var(--n1)}
+.g3.cover::before{background:repeating-linear-gradient(135deg,rgba(1,7,54,.07) 0 1px,transparent 1px 9px)}
+.cover .yr{position:absolute;top:14px;right:16px;font-size:.74rem;font-weight:600;background:rgba(1,7,54,.35);color:var(--cream);padding:.15rem .7rem;border-radius:50px;z-index:1}
+.g3 .yr{background:rgba(1,7,54,.12);color:var(--n1)}
+.cbody{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.tag{align-self:flex-start;font-size:.72rem;font-weight:600;background:var(--cream);color:var(--n1);padding:.15rem .75rem;border-radius:50px}
+.card h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:.88rem;color:var(--mute)}
+.more{margin-top:auto;padding-top:.7rem;font-size:.86rem;font-weight:600;color:var(--n3);display:flex;gap:.4rem;align-items:center}
+.card:hover .more i{transform:translateX(4px)} .more i{transition:.2s}
+
+/* DETAIL PANE */
+.scrim{position:fixed;inset:0;background:rgba(1,7,54,.6);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:.3s;z-index:90}
+.pane{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:#fff;z-index:100;transform:translateX(102%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(1,7,54,.3)}
+body.open .scrim{opacity:1;visibility:visible} body.open .pane{transform:none} body.open{overflow:hidden}
+.pane .cover{height:230px;flex:0 0 auto}
+.pane .cover i{font-size:4.6rem}
+.x{position:absolute;top:14px;left:14px;z-index:5;width:40px;height:40px;border-radius:50%;background:var(--cream);color:var(--n1);font-size:1.3rem;display:flex;align-items:center;justify-content:center}
+.x:hover{background:#fff}
+.pscroll{overflow-y:auto;padding:1.6rem 1.7rem 1rem;flex:1}
+.pscroll h2{font-size:1.65rem;font-weight:600;line-height:1.2;margin:.5rem 0 .4rem;letter-spacing:-.02em}
+.pscroll .lead{color:var(--mute);margin-bottom:1.2rem}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:1.4rem}
+.meta div{background:var(--soft);border-radius:14px;padding:.65rem .8rem}
+.meta small{display:block;font-size:.7rem;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}
+.meta b{font-size:.88rem;font-weight:600}
+.pscroll h5{font-size:.95rem;font-weight:600;margin:1.2rem 0 .35rem;display:flex;align-items:center;gap:.5rem}
+.pscroll h5 i{color:var(--n3)}
+.pscroll p{font-size:.92rem;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:.6rem}
+.kpis div{background:var(--n2);color:var(--cream);border-radius:16px;padding:.9rem .6rem;text-align:center}
+.kpis b{display:block;font-size:1.45rem;font-weight:600;color:#fff;line-height:1.1}
+.kpis span{font-size:.72rem;color:#d9d2b8}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.4rem}
+.chips span{font-size:.78rem;border:1px solid var(--n3);color:var(--n3);padding:.2rem .8rem;border-radius:50px}
+.pfoot{display:flex;gap:.7rem;align-items:center;padding:1rem 1.7rem;border-top:1px solid var(--line);background:#fff}
+.pfoot .btn{flex:1;justify-content:center}
+.nav2{width:44px;height:44px;border-radius:50%;border:1px solid var(--n3);color:var(--n3);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex:0 0 auto}
+.nav2:hover{background:var(--n3);color:var(--cream)}
+
+/* CTA + FOOT */
+.cta{background:var(--n2);color:var(--cream);text-align:center;padding:4rem 0;position:relative}
+.cta::before{content:"";position:absolute;top:0;left:0;right:0;height:22px;background:repeating-linear-gradient(135deg,rgba(252,241,208,.2) 0 1px,transparent 1px 7px)}
+.cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;margin:.6rem 0 1.4rem}
+footer{background:var(--n1);color:#aab3cc;text-align:center;padding:1.3rem 0;font-size:.84rem}
+.empty{display:none;text-align:center;color:var(--mute);padding:3rem 0}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i>TechTapasvi</a>
+    <div class="links"><a href="index.html">Home</a><a href="ayush.html">Ayush</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></div>
+    <a class="btn btn-navy" href="#contact">Get a Quote</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eb"><span class="dots"></span>Our Portfolio</div>
+      <h1>Work built for every niche, <em>designed to convert.</em></h1>
+      <p>Pick an industry to see how we approach websites, stores and campaigns. Click any project to open its full case study.</p>
+    </div>
+    <div class="hstats">
+      <div><b id="sP">0</b><span>Projects</span></div>
+      <div><b id="sN">0</b><span>Niches</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="filters" id="work"><div class="wrap" id="chips"></div></div>
+
+<main class="sec">
+  <div class="wrap">
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty">No projects in this niche yet.</p>
+  </div>
+</main>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="dots"></div>
+    <h2>Have a project in your niche?</h2>
+    <a class="btn btn-cream" href="https://wa.me/919971103293" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Chat on WhatsApp</a>
+    <a class="btn btn-ghost" href="mailto:techtapasvi@gmail.com"><i class="bi bi-envelope"></i>Email us</a>
+  </div>
+</section>
+<footer>© <span id="yr"></span> TechTapasvi · Serving clients Pan India</footer>
+
+<!-- DETAIL PANE -->
+<div class="scrim" id="scrim"></div>
+<aside class="pane" id="pane" role="dialog" aria-modal="true" aria-label="Project details" aria-hidden="true">
+  <div class="cover" id="pCover"><button class="x" id="pClose" aria-label="Close"><i class="bi bi-x"></i></button><i id="pIcon"></i></div>
+  <div class="pscroll" id="pBody"></div>
+  <div class="pfoot">
+    <button class="nav2" id="pPrev" aria-label="Previous project"><i class="bi bi-arrow-left"></i></button>
+    <a class="btn btn-navy" href="#" id="pCta"><i class="bi bi-box-arrow-up-right"></i>Full case study</a>
+    <button class="nav2" id="pNext" aria-label="Next project"><i class="bi bi-arrow-right"></i></button>
+  </div>
+</aside>
+
+<script src="projects-data.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const hashMap = {websites:'websites',ecommerce:'ecommerce',marketing:'marketing','client-work':'all'};
+let current = 'all', visible = [], idx = -1, lastFocus = null;
+
+function buildChips(){
+  const total = PROJECTS.length;
+  let html = `<button class="chip on" data-n="all"><i class="bi bi-grid"></i>All <small>${total}</small></button>`;
+  for(const k in NICHES){
+    const c = PROJECTS.filter(p=>p.niche===k).length;
+    if(c) html += `<button class="chip" data-n="${k}"><i class="bi ${NICHES[k].icon}"></i>${NICHES[k].label} <small>${c}</small></button>`;
+  }
+  $('chips').innerHTML = html;
+  $('sP').textContent = total;
+  $('sN').textContent = new Set(PROJECTS.map(p=>p.niche)).size;
+}
+function render(){
+  visible = PROJECTS.filter(p => current==='all' || p.niche===current);
+  $('grid').innerHTML = visible.map((p,i)=>`
+    <button class="card" style="animation-delay:${i*50}ms" data-id="${p.id}">
+      <div class="cover g${p.g}"><span class="yr">${p.year}</span><i class="bi ${p.icon}"></i></div>
+      <div class="cbody">
+        <span class="tag">${NICHES[p.niche].label}</span>
+        <h3>${p.title}</h3><p>${p.lead}</p>
+        <span class="more">View case study <i class="bi bi-arrow-right"></i></span>
+      </div>
+    </button>`).join('');
+  $('count').textContent = `Showing ${visible.length} project${visible.length!==1?'s':''}` + (current==='all'?'':` in ${NICHES[current].label}`);
+  $('empty').style.display = visible.length ? 'none' : 'block';
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on', c.dataset.n===current));
+}
+function setNiche(n){ current = n; render(); }
+
+function openPane(id){
+  idx = visible.findIndex(p=>p.id===id); if(idx<0) return;
+  const p = visible[idx];
+  lastFocus = document.activeElement;
+  $('pCover').className = 'cover g'+p.g;
+  $('pIcon').className = 'bi '+p.icon;
+  $('pBody').innerHTML = `
+    <span class="tag">${NICHES[p.niche].label}</span>
+    <h2>${p.title}</h2><p class="lead">${p.lead}</p>
+    <div class="meta"><div><small>Client</small><b>${p.client}</b></div><div><small>Timeline</small><b>${p.timeline}</b></div><div><small>Our role</small><b>${p.role}</b></div></div>
+    <h5><i class="bi bi-exclamation-circle"></i>The challenge</h5><p>${p.challenge}</p>
+    <h5><i class="bi bi-lightbulb"></i>Our solution</h5><p>${p.solution}</p>
+    <h5><i class="bi bi-graph-up-arrow"></i>Results</h5>
+    <div class="kpis">${p.kpis.map(k=>`<div><b>${k[0]}</b><span>${k[1]}</span></div>`).join('')}</div>
+    <h5><i class="bi bi-tools"></i>Tools &amp; services</h5>
+    <div class="chips">${p.tools.map(t=>`<span>${t}</span>`).join('')}</div>`;
+  $('pBody').scrollTop = 0;
+  $('pCta').href = 'case-study.html?id=' + p.id;
+  $('pPrev').style.visibility = visible.length>1 ? 'visible':'hidden';
+  $('pNext').style.visibility = visible.length>1 ? 'visible':'hidden';
+  document.body.classList.add('open');
+  $('pane').setAttribute('aria-hidden','false');
+  $('pClose').focus();
+}
+function closePane(){
+  document.body.classList.remove('open');
+  $('pane').setAttribute('aria-hidden','true');
+  if(lastFocus) lastFocus.focus();
+}
+function step(d){ const n = visible[(idx + d + visible.length) % visible.length]; openPane(n.id); }
+
+$('chips').addEventListener('click', e=>{ const c=e.target.closest('.chip'); if(c) setNiche(c.dataset.n); });
+$('grid').addEventListener('click', e=>{ const c=e.target.closest('.card'); if(c) openPane(+c.dataset.id); });
+$('pClose').onclick = closePane; $('scrim').onclick = closePane;
+$('pPrev').onclick = ()=>step(-1); $('pNext').onclick = ()=>step(1);
+document.addEventListener('keydown', e=>{
+  if(!document.body.classList.contains('open')) return;
+  if(e.key==='Escape') closePane();
+  if(e.key==='ArrowRight') step(1);
+  if(e.key==='ArrowLeft') step(-1);
+});
+
+buildChips();
+const h = location.hash.replace('#','');
+if(NICHES[h]) current = h; else if(hashMap[h]) current = hashMap[h];
+render();
+$('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Portfolio — Web Design, SEO, Social Media &amp; Automation | TechTapasvi</title>
+<meta name="description" content="Explore TechTapasvi's featured work across web design, SEO, social media and automation, then view every project for each service.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--n1:#010736;--n2:#0D1C42;--n3:#22396F;--cream:#FCF1D0;--soft:#fbf6e6;--line:#ece3c6;--mute:#4a5577;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--soft);color:var(--n1);line-height:1.6}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+.dots{display:inline-block;width:34px;height:16px;vertical-align:middle;background:radial-gradient(circle at 8px 8px,var(--cream) 8px,transparent 8.5px),radial-gradient(circle at 22px 8px,var(--n3) 8px,transparent 8.5px)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.5rem;border-radius:50px;font-weight:600;font-size:.92rem;transition:.25s}
+.btn-cream{background:var(--cream);color:var(--n1)} .btn-cream:hover{background:#fff}
+.btn-navy{background:var(--n3);color:var(--cream)} .btn-navy:hover{background:var(--n1)}
+.btn-ghost{border:1px solid rgba(252,241,208,.5);color:var(--cream)} .btn-ghost:hover{background:var(--cream);color:var(--n1)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+.brand i{width:32px;height:32px;border-radius:50%;background:radial-gradient(circle,var(--n3) 0 7px,var(--cream) 7.5px)}
+.links{display:flex;gap:1.5rem;font-size:.88rem;color:var(--mute)}
+.links a:hover{color:var(--n1);text-decoration:underline;text-underline-offset:5px}
+@media(max-width:760px){.links{display:none}}
+
+/* HERO */
+.hero{background:var(--n1);color:var(--cream);padding:4.5rem 0 3.5rem;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(252,241,208,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(252,241,208,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 80% 30%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 80% 30%,#000,transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;align-items:end}
+.hero .eb{font-size:.95rem;display:flex;gap:.6rem;align-items:center;margin-bottom:.9rem}
+.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.12;font-weight:600;color:#fff;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--cream)}
+.hero p{color:#d9d2b8;max-width:520px;margin-top:1rem}
+.hstats{display:flex;gap:2rem;justify-self:end}
+.hstats b{display:block;font-size:2rem;font-weight:600;color:#fff;line-height:1.1}
+.hstats span{font-size:.82rem;color:#d9d2b8}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hstats{justify-self:start}}
+
+/* FILTER */
+.filters{position:sticky;top:68px;z-index:40;background:var(--soft);border-bottom:1px solid var(--line);padding:.9rem 0}
+.filters .wrap{display:flex;gap:.55rem;overflow-x:auto;scrollbar-width:none}
+.chip{flex:0 0 auto;padding:.5rem 1.1rem;border-radius:50px;border:1px solid var(--n3);color:var(--n3);font-size:.86rem;font-weight:500;background:#fff;transition:.2s;display:flex;align-items:center;gap:.45rem}
+.chip small{opacity:.6;font-size:.75rem}
+.chip:hover{background:var(--cream)}
+.chip.on{background:var(--n3);color:var(--cream);border-color:var(--n3)}
+
+/* GRID */
+.sec{padding:2.5rem 0 4.5rem}
+.count{color:var(--mute);font-size:.9rem;margin-bottom:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.4rem}
+.card{color:inherit;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;text-align:left;display:flex;flex-direction:column;transition:.3s;animation:in .45s both}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(1,7,54,.16);border-color:var(--n3)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.cover{height:190px;position:relative;display:flex;align-items:center;justify-content:center;color:var(--cream);overflow:hidden}
+.cover::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(252,241,208,.09) 0 1px,transparent 1px 9px)}
+.cover::after{content:"";position:absolute;right:-40px;bottom:-60px;width:180px;height:180px;border-radius:50%;background:rgba(252,241,208,.1)}
+.cover i{font-size:3.6rem;position:relative;z-index:1;transition:.4s}
+.card:hover .cover i{transform:scale(1.15) rotate(-4deg)}
+.g0{background:linear-gradient(135deg,#010736,#22396F)}
+.g1{background:linear-gradient(135deg,#0D1C42,#3a559b)}
+.g2{background:linear-gradient(135deg,#22396F,#010736)}
+.g3{background:linear-gradient(135deg,#FCF1D0,#e8d79c);color:var(--n1)}
+.g3.cover::before{background:repeating-linear-gradient(135deg,rgba(1,7,54,.07) 0 1px,transparent 1px 9px)}
+.cover .yr{position:absolute;top:14px;right:16px;font-size:.74rem;font-weight:600;background:rgba(1,7,54,.35);color:var(--cream);padding:.15rem .7rem;border-radius:50px;z-index:1}
+.g3 .yr{background:rgba(1,7,54,.12);color:var(--n1)}
+.plats{display:flex;flex-wrap:wrap;gap:.4rem;margin:.15rem 0}
+.plats span{font-size:.7rem;border:1px solid var(--line);color:var(--n3);padding:.05rem .6rem;border-radius:50px;background:var(--soft)}
+.cbody{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.tag{align-self:flex-start;font-size:.72rem;font-weight:600;background:var(--cream);color:var(--n1);padding:.15rem .75rem;border-radius:50px}
+.card h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:.88rem;color:var(--mute)}
+.more{margin-top:auto;padding-top:.7rem;font-size:.86rem;font-weight:600;color:var(--n3);display:flex;gap:.4rem;align-items:center}
+.card:hover .more i{transform:translateX(4px)} .more i{transition:.2s}
+
+/* CTA + FOOT */
+.cta{background:var(--n2);color:var(--cream);text-align:center;padding:4rem 0;position:relative}
+.cta::before{content:"";position:absolute;top:0;left:0;right:0;height:22px;background:repeating-linear-gradient(135deg,rgba(252,241,208,.2) 0 1px,transparent 1px 7px)}
+.cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;margin:.6rem 0 1.4rem}
+footer{background:var(--n1);color:#aab3cc;text-align:center;padding:1.3rem 0;font-size:.84rem}
+.empty{display:none;text-align:center;color:var(--mute);padding:3rem 0}
+
+.jump{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.jump a{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(252,241,208,.4);color:var(--cream);padding:.5rem 1.1rem;border-radius:50px;font-size:.88rem;transition:.2s}
+.jump a:hover{background:var(--cream);color:var(--n1)} .jump small{opacity:.7}
+.svc{padding:4rem 0;background:#fff}.svc.alt{background:var(--soft)}
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.shead h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:600;letter-spacing:-.02em;display:flex;align-items:center;gap:.7rem}
+.shead h2 i{width:46px;height:46px;border-radius:50%;background:var(--n3);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.shead p{color:var(--mute);max-width:560px;margin-top:.4rem}
+.eb{font-size:.9rem;font-weight:500;display:flex;gap:.6rem;align-items:center;margin-bottom:.6rem}
+.svc .grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:980px){.svc .grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.svc .grid{grid-template-columns:1fr}}
+.svc .card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.all{background:var(--n2);color:var(--cream);align-items:center;justify-content:center;text-align:center;padding:2rem;gap:.5rem;border-color:var(--n2);min-height:340px}
+.card.all:hover{background:var(--n1)}
+.card.all>i{font-size:2.6rem;color:var(--cream)}
+.card.all b{font-size:3.2rem;line-height:1;font-weight:600;color:#fff}
+.card.all span{color:#d9d2b8;font-size:.92rem;max-width:220px;margin-bottom:.8rem}
+.card.all em{font-style:normal}
+.hero .wrap{display:block}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="index.html"><i></i>TechTapasvi</a>
+  <div class="links"><a href="index.html">Home</a><a href="ayush.html">Ayush</a><a href="our-portfolio.html">Portfolio</a><a href="portfolio.html">Web Design</a><a href="portfolio-seo.html">SEO</a><a href="portfolio-social-media.html">Social Media</a><a href="portfolio-automation.html">Automation</a><a href="#contact">Contact</a></div>
+  <a class="btn btn-navy" href="#contact">Get a Quote</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eb"><span class="dots"></span>Our Portfolio</div>
+    <h1 style="max-width:820px">Four services. <em>One growth partner.</em></h1>
+    <p style="max-width:600px;margin-top:1rem">Explore a featured selection from each of our services, then open the full collection for the one you care about. 58 projects across every niche.</p>
+    <div class="jump"><a href="#web-design"><i class="bi bi-window-stack"></i>Web Design<small>9</small></a><a href="#seo"><i class="bi bi-search"></i>SEO<small>10</small></a><a href="#social-media"><i class="bi bi-instagram"></i>Social Media (SMO)<small>9</small></a><a href="#automation"><i class="bi bi-robot"></i>Automation<small>30</small></a></div>
+  </div>
+</header>
+
+<section class="svc " id="web-design">
+  <div class="wrap">
+    <div class="shead">
+      <div><div class="eb"><span class="dots"></span>Service 01</div><h2><i class="bi bi-window-stack"></i>Web Design</h2><p>Fast, conversion-focused websites and online stores for every niche.</p></div>
+      <a class="btn btn-navy" href="portfolio.html">View all 9 projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="grid"><a class="card" href="case-study-corporate-site-for-a-manufacturing-firm.html" style="animation-delay:0ms"><div class="cover g0"><span class="yr">2025</span><i class="bi bi-gear-wide-connected"></i></div><div class="cbody"><span class="tag">Websites</span><h3>Corporate Site for a Manufacturing Firm</h3><p>A credibility-first website that turns catalogue browsers into quote requests.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="case-study-online-store-for-a-home-decor-brand.html" style="animation-delay:60ms"><div class="cover g1"><span class="yr">2025</span><i class="bi bi-lamp"></i></div><div class="cbody"><span class="tag">E-commerce</span><h3>Online Store for a Home-Decor Brand</h3><p>A conversion-focused store that made repeat purchases effortless.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="case-study-property-listings-lead-funnel.html" style="animation-delay:120ms"><div class="cover g0"><span class="yr">2025</span><i class="bi bi-house-heart"></i></div><div class="cbody"><span class="tag">Real Estate</span><h3>Property Listings &amp; Lead Funnel</h3><p>A project microsite that captured qualified buyers, not just clicks.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="case-study-course-platform-for-a-coaching-institute.html" style="animation-delay:180ms"><div class="cover g3"><span class="yr">2024</span><i class="bi bi-journal-bookmark"></i></div><div class="cbody"><span class="tag">Education</span><h3>Course Platform for a Coaching Institute</h3><p>From scattered enquiries to a structured admission funnel.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="case-study-clinic-website-with-online-appointments.html" style="animation-delay:240ms"><div class="cover g1"><span class="yr">2025</span><i class="bi bi-hospital"></i></div><div class="cbody"><span class="tag">Healthcare</span><h3>Clinic Website with Online Appointments</h3><p>A trustworthy site that fills the appointment calendar.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card all" href="portfolio.html"><i class="bi bi-window-stack"></i><b>9</b><span>Web Design projects across 6 niches</span><em class="btn btn-cream">View all projects <i class="bi bi-arrow-right"></i></em></a></div>
+  </div>
+</section>
+<section class="svc alt" id="seo">
+  <div class="wrap">
+    <div class="shead">
+      <div><div class="eb"><span class="dots"></span>Service 02</div><h2><i class="bi bi-search"></i>SEO</h2><p>Local, e-commerce, technical and content SEO that brings in organic leads.</p></div>
+      <a class="btn btn-navy" href="portfolio-seo.html">View all 10 projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="grid"><a class="card" href="seo-case-local-seo-for-a-multi-clinic-dental-chain.html" style="animation-delay:0ms"><div class="cover g1"><span class="yr">2024</span><i class="bi bi-emoji-smile"></i></div><div class="cbody"><span class="tag">Local SEO</span><h3>Local SEO for a Multi-Clinic Dental Chain</h3><p>Showing up first when patients search &quot;dentist near me&quot;.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="seo-case-category-page-seo-for-a-fashion-store.html" style="animation-delay:60ms"><div class="cover g3"><span class="yr">2024</span><i class="bi bi-handbag"></i></div><div class="cbody"><span class="tag">E-commerce SEO</span><h3>Category-Page SEO for a Fashion Store</h3><p>Category pages that rank and convert.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="seo-case-core-web-vitals-speed-overhaul.html" style="animation-delay:120ms"><div class="cover g1"><span class="yr">2024</span><i class="bi bi-speedometer"></i></div><div class="cbody"><span class="tag">Technical SEO</span><h3>Core Web Vitals &amp; Speed Overhaul</h3><p>From slow and unstable to fast on every device.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="seo-case-blog-content-engine-for-an-education-brand.html" style="animation-delay:180ms"><div class="cover g3"><span class="yr">2024</span><i class="bi bi-pencil-square"></i></div><div class="cbody"><span class="tag">Content &amp; Blogs</span><h3>Blog Content Engine for an Education Brand</h3><p>A blog that brings students in before they search for courses.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="seo-case-lead-gen-seo-for-a-saas-startup.html" style="animation-delay:240ms"><div class="cover g2"><span class="yr">2025</span><i class="bi bi-laptop"></i></div><div class="cbody"><span class="tag">B2B &amp; SaaS SEO</span><h3>Lead-Gen SEO for a SaaS Startup</h3><p>Comparison and use-case pages that bring in demo requests.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card all" href="portfolio-seo.html"><i class="bi bi-search"></i><b>10</b><span>SEO projects across 5 niches</span><em class="btn btn-cream">View all projects <i class="bi bi-arrow-right"></i></em></a></div>
+  </div>
+</section>
+<section class="svc " id="social-media">
+  <div class="wrap">
+    <div class="shead">
+      <div><div class="eb"><span class="dots"></span>Service 03</div><h2><i class="bi bi-instagram"></i>Social Media (SMO)</h2><p>Content, community and campaigns that build audiences and sales.</p></div>
+      <a class="btn btn-navy" href="portfolio-social-media.html">View all 9 projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="grid"><a class="card" href="social-case-instagram-growth-for-a-caf-chain.html" style="animation-delay:0ms"><div class="cover g0"><span class="yr">2025</span><i class="bi bi-cup-hot"></i></div><div class="cbody"><span class="tag">Restaurants &amp; Cafés</span><h3>Instagram Growth for a Café Chain</h3><p>Turned scroll-stopping food visuals into steady walk-ins.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="social-case-reels-shopping-for-a-boutique-label.html" style="animation-delay:60ms"><div class="cover g1"><span class="yr">2025</span><i class="bi bi-handbag"></i></div><div class="cbody"><span class="tag">Fashion &amp; Retail</span><h3>Reels &amp; Shopping for a Boutique Label</h3><p>Made every post shoppable and every enquiry easy to close.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="social-case-social-presence-for-a-property-developer.html" style="animation-delay:120ms"><div class="cover g2"><span class="yr">2025</span><i class="bi bi-house-heart"></i></div><div class="cbody"><span class="tag">Real Estate</span><h3>Social Presence for a Property Developer</h3><p>Walkthrough videos and lead ads that brought in serious buyers.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="social-case-educational-content-for-a-dental-clinic.html" style="animation-delay:180ms"><div class="cover g3"><span class="yr">2025</span><i class="bi bi-emoji-smile"></i></div><div class="cbody"><span class="tag">Healthcare</span><h3>Educational Content for a Dental Clinic</h3><p>Trust-building education that filled the appointment book.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="social-case-linkedin-authority-for-a-b2b-services-firm.html" style="animation-delay:240ms"><div class="cover g3"><span class="yr">2025</span><i class="bi bi-linkedin"></i></div><div class="cbody"><span class="tag">B2B &amp; Services</span><h3>LinkedIn Authority for a B2B Services Firm</h3><p>Founder-led content that opened doors to decision makers.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card all" href="portfolio-social-media.html"><i class="bi bi-instagram"></i><b>9</b><span>Social Media (SMO) projects across 8 niches</span><em class="btn btn-cream">View all projects <i class="bi bi-arrow-right"></i></em></a></div>
+  </div>
+</section>
+<section class="svc alt" id="automation">
+  <div class="wrap">
+    <div class="shead">
+      <div><div class="eb"><span class="dots"></span>Service 04</div><h2><i class="bi bi-robot"></i>Automation</h2><p>WhatsApp, CRM, AI and workflow automations that save hours every week.</p></div>
+      <a class="btn btn-navy" href="portfolio-automation.html">View all 30 projects <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="grid"><a class="card" href="automation-case-whatsapp-order-bot-for-a-restaurant.html" style="animation-delay:0ms"><div class="cover g1"><span class="yr">2024</span><i class="bi bi-chat-dots"></i></div><div class="cbody"><span class="tag">WhatsApp &amp; Chatbots</span><h3>WhatsApp Order Bot for a Restaurant</h3><p>Orders taken, confirmed and routed to the kitchen without a single phone call.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="automation-case-instant-lead-capture-to-crm-sync.html" style="animation-delay:60ms"><div class="cover g1"><span class="yr">2024</span><i class="bi bi-lightning-charge"></i></div><div class="cbody"><span class="tag">CRM &amp; Lead Follow-up</span><h3>Instant Lead Capture-to-CRM Sync</h3><p>Every ad lead lands in the CRM and gets a reply in under a minute.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="automation-case-ai-website-chatbot-for-lead-qualification.html" style="animation-delay:120ms"><div class="cover g0"><span class="yr">2025</span><i class="bi bi-robot"></i></div><div class="cbody"><span class="tag">AI Assistants</span><h3>AI Website Chatbot for Lead Qualification</h3><p>A chatbot that answers questions and books qualified calls.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="automation-case-auto-invoicing-payment-reminders.html" style="animation-delay:180ms"><div class="cover g3"><span class="yr">2024</span><i class="bi bi-receipt"></i></div><div class="cbody"><span class="tag">Invoicing &amp; Finance</span><h3>Auto Invoicing &amp; Payment Reminders</h3><p>Invoices go out on time and reminders chase payments for you.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card" href="automation-case-appointment-booking-reminders.html" style="animation-delay:240ms"><div class="cover g1"><span class="yr">2024</span><i class="bi bi-calendar-check"></i></div><div class="cbody"><span class="tag">Booking &amp; Reminders</span><h3>Appointment Booking &amp; Reminders</h3><p>Patients book in seconds and actually show up.</p><span class="more">View case study <i class="bi bi-arrow-right"></i></span></div></a><a class="card all" href="portfolio-automation.html"><i class="bi bi-robot"></i><b>30</b><span>Automation projects across 9 niches</span><em class="btn btn-cream">View all projects <i class="bi bi-arrow-right"></i></em></a></div>
+  </div>
+</section>
+
+<section class="cta" id="contact"><div class="wrap">
+  <div class="dots"></div>
+  <h2>Let's build your success story</h2>
+  <a class="btn btn-cream" href="https://wa.me/919971103293" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Chat on WhatsApp</a>
+  <a class="btn btn-ghost" href="mailto:techtapasvi@gmail.com"><i class="bi bi-envelope"></i>Email us</a>
+</div></section>
+<footer>© <script>document.write(new Date().getFullYear())</script> TechTapasvi · Serving clients Pan India</footer>
+</body>
+</html>

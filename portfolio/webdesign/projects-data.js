@@ -1,0 +1,70 @@
+/* ============ EDIT YOUR PROJECTS HERE ============
+   NOTE: names, results and metrics below are SAMPLE placeholders — replace with real client work. */
+const NICHES = {
+  websites:   {label:'Websites',         icon:'bi-window-stack'},
+  ecommerce:  {label:'E-commerce',       icon:'bi-bag-heart'},
+  realestate: {label:'Real Estate',      icon:'bi-buildings'},
+  education:  {label:'Education',        icon:'bi-mortarboard'},
+  healthcare: {label:'Healthcare',       icon:'bi-heart-pulse'},
+  marketing:  {label:'Marketing & Ads',  icon:'bi-megaphone'}
+};
+const PROJECTS = [
+ {id:1,niche:'websites',title:'Corporate Site for a Manufacturing Firm',year:2025,icon:'bi-gear-wide-connected',g:0,client:'B2B Manufacturer',timeline:'5 weeks',role:'Design + Dev',
+  lead:'A credibility-first website that turns catalogue browsers into quote requests.',
+  challenge:'The old site was slow, outdated and gave buyers no clear way to request a quote.',
+  solution:'A fast, mobile-first rebuild with a product catalogue, certification section, and a one-tap quote form wired to email and WhatsApp.',
+  kpis:[['2.4x','Enquiries'],['1.1s','Load time'],['+60%','Mobile leads']],tools:['HTML/CSS/JS','SEO','Analytics','WhatsApp CTA']},
+ {id:2,niche:'websites',title:'Portfolio Site for a Design Studio',year:2025,icon:'bi-palette2',g:3,client:'Creative Studio',timeline:'3 weeks',role:'Design + Dev',
+  lead:'A gallery-led site that lets the work do the selling.',
+  challenge:'Great projects were buried in social feeds with no central, shareable home.',
+  solution:'A filterable case-study gallery with smooth transitions, a booking form and clean SEO foundations.',
+  kpis:[['+85%','Time on site'],['3x','Inbound DMs'],['98','Lighthouse']],tools:['Custom design','Animations','SEO']},
+ {id:3,niche:'ecommerce',title:'Online Store for a Home-Decor Brand',year:2025,icon:'bi-lamp',g:1,client:'D2C Retail',timeline:'6 weeks',role:'Store + Ads',
+  lead:'A conversion-focused store that made repeat purchases effortless.',
+  challenge:'High traffic, low checkout completion, and no abandoned-cart recovery.',
+  solution:'Streamlined checkout, UPI and COD options, product bundles and automated cart-recovery on WhatsApp and email.',
+  kpis:[['+42%','Conversion'],['18%','Carts recovered'],['3.2x','ROAS']],tools:['Shopify / WooCommerce','Razorpay','Automation']},
+ {id:4,niche:'ecommerce',title:'Fashion Catalogue & WhatsApp Ordering',year:2024,icon:'bi-handbag',g:2,client:'Boutique Label',timeline:'4 weeks',role:'Catalogue + Automation',
+  lead:'A lightweight catalogue that lets customers order in two taps.',
+  challenge:'Orders came through scattered DMs and were easy to lose.',
+  solution:'A browsable catalogue with size/colour selectors that sends a pre-filled order to WhatsApp and logs it to a sheet.',
+  kpis:[['0','Lost orders'],['2x','Weekly orders'],['-70%','Admin time']],tools:['Catalogue','WhatsApp API','Google Sheets']},
+ {id:5,niche:'realestate',title:'Property Listings & Lead Funnel',year:2025,icon:'bi-house-heart',g:0,client:'Real Estate Developer',timeline:'6 weeks',role:'Site + Funnel + Ads',
+  lead:'A project microsite that captured qualified buyers, not just clicks.',
+  challenge:'Paid leads were low-intent and slow to follow up, so site visits were dropping.',
+  solution:'A launch microsite with floor plans, EMI calculator and site-visit booking, plus Meta ads and instant lead auto-replies.',
+  kpis:[['-38%','Cost per lead'],['2.1x','Site visits'],['<5 min','Response time']],tools:['Landing pages','Meta Ads','CRM automation']},
+ {id:6,niche:'education',title:'Course Platform for a Coaching Institute',year:2024,icon:'bi-journal-bookmark',g:3,client:'Coaching Institute',timeline:'7 weeks',role:'Web + Funnel',
+  lead:'From scattered enquiries to a structured admission funnel.',
+  challenge:'Admissions depended on walk-ins and phone calls with no tracking.',
+  solution:'Course pages, a demo-class booking flow, fee enquiry forms and automated reminders for counsellors.',
+  kpis:[['+55%','Admissions'],['4x','Demo bookings'],['-30%','CAC']],tools:['Course pages','Forms','Email + WhatsApp']},
+ {id:7,niche:'healthcare',title:'Clinic Website with Online Appointments',year:2025,icon:'bi-hospital',g:1,client:'Multi-specialty Clinic',timeline:'4 weeks',role:'Design + Dev + Local SEO',
+  lead:'A trustworthy site that fills the appointment calendar.',
+  challenge:'Patients could not find timings or book, and local search visibility was weak.',
+  solution:'Doctor profiles, service pages, appointment booking with reminders, and Google Business Profile optimisation.',
+  kpis:[['+70%','Bookings'],['Top 3','Local pack'],['-45%','No-shows']],tools:['Booking system','Local SEO','Reminders']},
+ {id:8,niche:'marketing',title:'Lead-Gen Ad Campaign for a Service Brand',year:2025,icon:'bi-bullseye',g:2,client:'Home Services',timeline:'Ongoing',role:'Ads + Creatives',
+  lead:'Meta and Google campaigns optimised for cost per lead.',
+  challenge:'Spend was rising while lead quality and tracking were poor.',
+  solution:'Re-structured campaigns, new creatives and landing pages, conversion tracking and weekly optimisation.',
+  kpis:[['-41%','CPL'],['3.8x','ROAS'],['+120%','Leads']],tools:['Meta Ads','Google Ads','GA4','Creatives']},
+ {id:9,niche:'marketing',title:'Social Media Growth & Content System',year:2024,icon:'bi-instagram',g:0,client:'Lifestyle Brand',timeline:'6 months',role:'Content + Community',
+  lead:'A consistent content engine that built trust and demand.',
+  challenge:'Irregular posting and no clear content strategy.',
+  solution:'Monthly content calendar, reels and carousels, community management and a monthly performance review.',
+  kpis:[['5x','Reach'],['+9k','Followers'],['2.6x','Profile visits']],tools:['Content calendar','Reels','Analytics']}
+];
+
+const DELIV = {
+ 1:['Corporate website (8 pages)','Product catalogue','Quote-request form','On-page SEO setup'],
+ 2:['Filterable gallery site','Case-study templates','Booking form','Performance tuning'],
+ 3:['Store setup & theme','Checkout optimisation','Bundle & offer logic','Cart-recovery automation'],
+ 4:['Mobile catalogue','Size/colour selector','WhatsApp order flow','Order log in Google Sheets'],
+ 5:['Project microsite','EMI calculator','Meta ad creatives','Lead auto-reply workflow'],
+ 6:['Course & batch pages','Demo-class booking','Enquiry forms','Counsellor reminders'],
+ 7:['Clinic website','Appointment booking','Reminder messages','Google Business Profile setup'],
+ 8:['Campaign restructure','Ad creatives & copy','Landing pages','Conversion tracking (GA4)'],
+ 9:['Content strategy','Monthly calendar','Reels & carousels','Monthly performance report']
+};
+PROJECTS.forEach(p=>p.deliv=DELIV[p.id]);
