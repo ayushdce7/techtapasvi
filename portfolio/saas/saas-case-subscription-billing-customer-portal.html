@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscription Billing &amp; Customer Portal — SaaS Case Study | TechTapasvi</title>
+<meta name="description" content="Recurring billing, invoices and a self-serve portal in one product.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--n1:#010736;--n2:#0D1C42;--n3:#22396F;--cream:#FCF1D0;--soft:#fbf6e6;--line:#ece3c6;--mute:#4a5577;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff;color:var(--n1);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+.dots{display:inline-block;width:34px;height:16px;vertical-align:middle;background:radial-gradient(circle at 8px 8px,var(--cream) 8px,transparent 8.5px),radial-gradient(circle at 22px 8px,var(--n3) 8px,transparent 8.5px)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.5rem;border-radius:50px;font-weight:600;font-size:.92rem;transition:.25s}
+.btn-cream{background:var(--cream);color:var(--n1)} .btn-cream:hover{background:#fff}
+.btn-navy{background:var(--n3);color:var(--cream)} .btn-navy:hover{background:var(--n1)}
+.btn-ghost{border:1px solid rgba(252,241,208,.5);color:var(--cream)} .btn-ghost:hover{background:var(--cream);color:var(--n1)}
+h2{font-size:1.55rem;font-weight:600;letter-spacing:-.02em;margin-bottom:.7rem}
+.eb{font-size:.9rem;font-weight:500;display:flex;gap:.6rem;align-items:center;margin-bottom:.6rem}
+
+nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+.brand i{width:32px;height:32px;border-radius:50%;background:radial-gradient(circle,var(--n3) 0 7px,var(--cream) 7.5px)}
+.links{display:flex;gap:1.5rem;font-size:.88rem;color:var(--mute)}
+.links a:hover{color:var(--n1);text-decoration:underline;text-underline-offset:5px}
+@media(max-width:760px){.links{display:none}}
+
+/* HERO */
+.hero{background:var(--n1);color:var(--cream);padding:3rem 0 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(252,241,208,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(252,241,208,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 80% 20%,#000,transparent 70%);mask-image:radial-gradient(ellipse at 80% 20%,#000,transparent 70%)}
+.hero .wrap{position:relative}
+.crumb{font-size:.85rem;color:#d9d2b8;margin-bottom:1.6rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.crumb a:hover{color:#fff;text-decoration:underline}
+.tag{display:inline-block;font-size:.74rem;font-weight:600;background:var(--cream);color:var(--n1);padding:.15rem .8rem;border-radius:50px;margin-bottom:.9rem}
+.hero h1{font-size:clamp(1.9rem,4vw,3.1rem);line-height:1.12;font-weight:600;color:#fff;letter-spacing:-.02em;max-width:820px}
+.hero .lead{color:#d9d2b8;font-size:1.05rem;max-width:640px;margin-top:1rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0 2.5rem}
+.facts div{border-left:2px solid var(--cream);padding-left:.9rem}
+.facts small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#aab3cc}
+.facts b{font-size:.98rem;font-weight:600;color:#fff}
+@media(max-width:700px){.facts{grid-template-columns:repeat(2,1fr)}}
+
+/* BROWSER MOCK */
+.mock{background:#fff;border-radius:18px 18px 0 0;box-shadow:0 -10px 50px rgba(0,0,0,.35);overflow:hidden;max-width:920px;margin:0 auto;position:relative}
+.mock .bar{background:var(--cream);padding:.7rem 1rem;display:flex;gap:.45rem;align-items:center}
+.mock .bar i{width:11px;height:11px;border-radius:50%;background:var(--n3);opacity:.5}
+.mock .bar span{margin-left:.8rem;background:#fff;border-radius:50px;font-size:.72rem;padding:.1rem 1rem;color:var(--mute);flex:1;max-width:320px}
+.screen{height:300px;position:relative;display:flex;align-items:center;justify-content:center;color:var(--cream);overflow:hidden}
+.screen::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(252,241,208,.09) 0 1px,transparent 1px 9px)}
+.screen::after{content:"";position:absolute;right:-60px;bottom:-90px;width:260px;height:260px;border-radius:50%;background:rgba(252,241,208,.1)}
+.screen i{font-size:5.5rem;position:relative;z-index:1}
+.g0{background:linear-gradient(135deg,#010736,#22396F)} .g1{background:linear-gradient(135deg,#0D1C42,#3a559b)}
+.g2{background:linear-gradient(135deg,#22396F,#010736)} .g3{background:linear-gradient(135deg,#FCF1D0,#e8d79c);color:var(--n1)}
+.g3.screen::before{background:repeating-linear-gradient(135deg,rgba(1,7,54,.07) 0 1px,transparent 1px 9px)}
+
+/* BODY */
+section{padding:3.5rem 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.panel{border-radius:24px;padding:2rem}
+.panel p{color:var(--mute)}
+.p-soft{background:var(--soft)} .p-navy{background:var(--n2);color:var(--cream)} .p-navy h2{color:#fff} .p-navy p{color:#d9d2b8}
+.ico{width:46px;height:46px;border-radius:50%;background:var(--cream);color:var(--n1);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1rem}
+
+/* RESULTS */
+.results{background:var(--cream);text-align:center}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.8rem}
+.kpis div{background:var(--n1);color:var(--cream);border-radius:24px;padding:2rem 1rem}
+.kpis b{display:block;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:600;color:#fff;line-height:1.1}
+.kpis span{font-size:.9rem;color:#d9d2b8}
+.note{font-size:.78rem;color:var(--mute);margin-top:1.2rem}
+@media(max-width:600px){.kpis{grid-template-columns:1fr}}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:1.8rem;counter-reset:s}
+.step{border:1px solid var(--line);border-radius:22px;padding:1.4rem;position:relative;background:#fff;transition:.3s}
+.step:hover{background:var(--n3);border-color:var(--n3);transform:translateY(-4px)}
+.step:hover h5,.step:hover p{color:var(--cream)}
+.step::before{counter-increment:s;content:"0" counter(s);font-size:1.8rem;font-weight:600;color:var(--n3);display:block;margin-bottom:.4rem}
+.step:hover::before{color:var(--cream)}
+.step h5{font-size:1rem;font-weight:600}
+.step p{font-size:.86rem;color:var(--mute)}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* DELIVERABLES */
+.list{list-style:none;margin-top:.8rem}
+.list li{display:flex;gap:.7rem;padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.list li i{color:var(--n3);margin-top:.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.chips span{font-size:.82rem;border:1px solid var(--n3);color:var(--n3);padding:.25rem .95rem;border-radius:50px}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:2fr 1fr;gap:1.2rem;margin-top:1.5rem}
+.gal .mock{border-radius:18px;max-width:none}
+.gal .screen{height:230px} .gal .col{display:grid;gap:1.2rem}
+.gal .col .screen{height:105px} .gal .col .screen i{font-size:2.4rem}
+@media(max-width:760px){.gal{grid-template-columns:1fr}}
+.cap{font-size:.78rem;color:var(--mute);margin-top:.8rem}
+
+/* NEXT + CTA */
+.next{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.nx{flex:1;min-width:260px;border:1px solid var(--line);border-radius:22px;padding:1.3rem 1.5rem;transition:.3s;display:block}
+.nx:hover{background:var(--soft);border-color:var(--n3);transform:translateY(-3px)}
+.nx small{color:var(--mute);font-size:.76rem;text-transform:uppercase;letter-spacing:.06em}
+.nx b{display:block;font-weight:600;margin-top:.2rem}
+.nx.r{text-align:right}
+.cta{background:var(--n2);color:var(--cream);text-align:center;padding:4rem 0;position:relative}
+.cta::before{content:"";position:absolute;top:0;left:0;right:0;height:22px;background:repeating-linear-gradient(135deg,rgba(252,241,208,.2) 0 1px,transparent 1px 7px)}
+.cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);margin:.6rem 0 1.4rem}
+.cta .btn{margin:.25rem}
+footer{background:var(--n1);color:#aab3cc;text-align:center;padding:1.3rem 0;font-size:.84rem}
+
+.plat{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem}
+.plat span{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(252,241,208,.4);color:var(--cream);padding:.3rem .95rem;border-radius:50px;font-size:.82rem;text-transform:capitalize}
+.pill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:1.6rem}
+.pillar{background:var(--soft);border-radius:22px;padding:1.4rem;transition:.3s}
+.pillar:hover{background:var(--n3);transform:translateY(-4px)} .pillar:hover b,.pillar:hover small{color:var(--cream)}
+.pillar i{font-size:1.5rem;color:var(--n3)} .pillar:hover i{color:var(--cream)}
+.pillar b{display:block;font-weight:600;margin-top:.5rem}.pillar small{color:var(--mute)}
+@media(max-width:900px){.pill-grid{grid-template-columns:repeat(2,1fr)}}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.6rem;max-width:640px}
+.post{aspect-ratio:1;border-radius:16px;position:relative;display:flex;align-items:center;justify-content:center;font-size:2.2rem;color:var(--cream);overflow:hidden}
+.post::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(252,241,208,.09) 0 1px,transparent 1px 9px)}
+.post i{position:relative}
+.post em{position:absolute;left:10px;bottom:8px;font-style:normal;font-size:.68rem;font-weight:600;background:rgba(1,7,54,.4);padding:.05rem .6rem;border-radius:50px}
+.g3.post{color:var(--n1)}.g3.post em{background:rgba(1,7,54,.12);color:var(--n1)}
+.phone{border:6px solid var(--n1);border-radius:34px;background:#fff;padding:1rem;max-width:380px;box-shadow:0 20px 50px rgba(1,7,54,.18)}
+.phone .posts{max-width:none;margin-top:.8rem}
+.ph-head{display:flex;align-items:center;gap:.7rem}.ph-head i{width:40px;height:40px;border-radius:50%;background:radial-gradient(circle,var(--n3) 0 9px,var(--cream) 9.5px)}
+.ph-head b{font-size:.9rem}.ph-head small{display:block;color:var(--mute);font-size:.72rem}
+.showcase{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center}
+@media(max-width:800px){.showcase{grid-template-columns:1fr}}
+
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:1.8rem;position:relative}
+.fnode{position:relative;text-align:center;padding:0 .8rem}
+.fnode::after{content:"";position:absolute;top:34px;left:calc(50% + 38px);right:calc(-50% + 38px);border-top:2px dashed var(--n3);opacity:.5}
+.fnode:last-child::after{display:none}
+.fnode .c{width:68px;height:68px;border-radius:50%;margin:0 auto .8rem;display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:var(--n3);color:var(--cream);box-shadow:0 10px 24px rgba(1,7,54,.2);position:relative;z-index:1}
+.fnode:first-child .c{background:var(--cream);color:var(--n1);box-shadow:0 0 0 4px var(--n3)}
+.fnode:last-child .c{background:var(--n1)}
+.fnode small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.fnode b{font-size:.92rem;font-weight:600}
+@media(max-width:760px){.flow{grid-template-columns:1fr;gap:1.4rem}.fnode::after{display:none}}
+
+.trend{display:flex;align-items:flex-end;gap:.9rem;height:220px;margin-top:1.6rem;padding:1.4rem 1.4rem 0;background:var(--soft);border-radius:24px;max-width:760px}
+.trend .b{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.trend .b i{display:block;width:100%;border-radius:12px 12px 0 0;background:linear-gradient(180deg,var(--n3),var(--n1));min-height:8px;transition:.3s}
+.trend .b:last-child i{background:linear-gradient(180deg,#6f86c4,var(--n3))}
+.trend .b:hover i{filter:brightness(1.3)}
+.trend .b small{font-size:.72rem;color:var(--mute);padding:.5rem 0}
+
+.dash{display:grid;grid-template-columns:72px 1fr;min-height:300px;background:#fff}
+.dash .sb{background:var(--n2);padding:1rem .6rem;display:flex;flex-direction:column;gap:.9rem;align-items:center}
+.dash .sb i{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#aab3cc;font-size:1rem}
+.dash .sb i:first-child{background:var(--cream);color:var(--n1)}
+.dash .mn{padding:1.1rem 1.2rem;background:var(--soft)}
+.dash .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.9rem}
+.dash .top b{font-size:.95rem;color:var(--n1)}.dash .top span{font-size:.7rem;background:var(--cream);color:var(--n1);padding:.1rem .7rem;border-radius:50px;font-weight:600}
+.dash .st{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-bottom:.9rem}
+.dash .st div{background:#fff;border-radius:14px;padding:.7rem .8rem}
+.dash .st small{display:block;font-size:.62rem;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}
+.dash .st b{font-size:1.2rem;color:var(--n1)}
+.dash .ch{display:flex;align-items:flex-end;gap:.5rem;height:110px;background:#fff;border-radius:14px;padding:.8rem .9rem 0}
+.dash .ch i{flex:1;border-radius:6px 6px 0 0;background:linear-gradient(180deg,var(--n3),var(--n1))}
+.dash .ch i:last-child{background:linear-gradient(180deg,#6f86c4,var(--n3))}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.6rem}
+@media(max-width:900px){.feats{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.feats{grid-template-columns:1fr}}
+.feat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.3rem;transition:.3s}
+.feat:hover{background:var(--n3);border-color:var(--n3);transform:translateY(-4px)}.feat:hover b,.feat:hover i{color:var(--cream)}
+.feat i{font-size:1.5rem;color:var(--n3);display:block;margin-bottom:.5rem}.feat b{font-weight:600;font-size:.96rem}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="index.html"><i></i>TechTapasvi</a>
+  <div class="links"><a href="index.html">Home</a><a href="ayush.html">Ayush</a><a href="our-portfolio.html">Portfolio</a><a href="portfolio.html">Web Design</a><a href="portfolio-seo.html">SEO</a><a href="portfolio-social-media.html">Social Media</a><a href="portfolio-automation.html">Automation</a><a href="portfolio-saas.html">SaaS</a><a href="blog.html">Blog</a><a href="#contact">Contact</a></div>
+  <a class="btn btn-navy" href="#contact">Get a Quote</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="crumb"><a href="portfolio-saas.html"><i class="bi bi-arrow-left"></i> SaaS Portfolio</a> / <a href="portfolio-saas.html#commerce">Billing &amp; Commerce</a> / <span>Case study</span></div>
+  <span class="tag">Billing &amp; Commerce</span>
+  <h1>Subscription Billing &amp; Customer Portal</h1>
+  <p class="lead">Recurring billing, invoices and a self-serve portal in one product.</p>
+  <div class="facts">
+    <div><small>Client</small><b>B2B Software Startup</b></div>
+    <div><small>Build time</small><b>10 weeks</b></div>
+    <div><small>Our role</small><b>Product design + development</b></div>
+    <div><small>Year</small><b>2024</b></div>
+  </div>
+  <div class="mock"><div class="bar"><i></i><i></i><i></i><span>app.yourproduct.com</span></div><div class="dash"><div class="sb"><i class="bi bi-grid-1x2-fill"></i><i class="bi bi-credit-card-2-front"></i><i class="bi bi-people"></i><i class="bi bi-gear"></i></div><div class="mn"><div class="top"><b>Subscription Billing &amp; Customer Portal</b><span>Live</span></div><div class="st"><div><small>Users</small><b>1,284</b></div><div><small>Growth</small><b>+18%</b></div><div><small>Active</small><b>92%</b></div></div><div class="ch"><i style="height:40%"></i><i style="height:55%"></i><i style="height:51%"></i><i style="height:59%"></i><i style="height:63%"></i><i style="height:82%"></i><i style="height:78%"></i><i style="height:86%"></i></div></div></div></div>
+</div></header>
+
+<section><div class="wrap two">
+  <div class="panel p-soft"><div class="ico"><i class="bi bi-exclamation-circle"></i></div><h2>The problem</h2><p>Billing was manual, invoices were late and customers had no way to manage plans.</p></div>
+  <div class="panel p-navy"><div class="ico"><i class="bi bi-lightbulb"></i></div><h2>The product</h2><p>A subscription platform with plans, trials, automatic invoicing, payment retries and a customer portal for upgrades and downloads.</p></div>
+</div></section>
+
+<section style="background:var(--soft)"><div class="wrap">
+  <div class="eb"><span class="dots"></span>Product journey</div>
+  <h2>From idea to launch</h2>
+  <div class="flow"><div class="fnode"><div class="c"><i class="bi bi-compass-fill"></i></div><small>Discover</small><b>Map plans &amp; pricing</b></div><div class="fnode"><div class="c"><i class="bi bi-vector-pen"></i></div><small>Design</small><b>Design billing flows</b></div><div class="fnode"><div class="c"><i class="bi bi-code-slash"></i></div><small>Build</small><b>Build MVP &amp; payments</b></div><div class="fnode"><div class="c"><i class="bi bi-rocket-takeoff-fill"></i></div><small>Launch</small><b>Launch &amp; add dunning</b></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eb"><span class="dots"></span>Features</div>
+  <h2>Core features we built</h2>
+  <div class="feats"><div class="feat"><i class="bi bi-check2-square"></i><b>Plans, trials &amp; coupons</b></div><div class="feat"><i class="bi bi-shield-check"></i><b>Auto invoices (GST-ready)</b></div><div class="feat"><i class="bi bi-lightning-charge"></i><b>Payment retries</b></div><div class="feat"><i class="bi bi-bell"></i><b>Customer self-serve portal</b></div><div class="feat"><i class="bi bi-people"></i><b>Usage &amp; revenue dashboard</b></div><div class="feat"><i class="bi bi-graph-up"></i><b>Admin &amp; role controls</b></div></div>
+</div></section>
+
+<section class="results"><div class="wrap">
+  <div class="eb" style="justify-content:center"><span class="dots"></span>Results</div>
+  <h2>The impact</h2>
+  <div class="kpis"><div><b>-85%</b><span>Billing admin</span></div><div><b>+22%</b><span>On-time payments</span></div><div><b>10 wks</b><span>Idea to launch</span></div></div>
+  <p class="note">Sample figures — replace with real, verified client results.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eb"><span class="dots"></span>How we worked</div>
+  <h2>Our process</h2>
+  <div class="steps"><div class="step"><h5>Discovery &amp; scope</h5><p>Workshops with the b2b software startup to define users, must-have features and success metrics.</p></div><div class="step"><h5>Design &amp; prototype</h5><p>Clickable prototypes tested with real users before development started.</p></div><div class="step"><h5>Build the MVP</h5><p>Iterative sprints with a demo every week, so feedback shaped the product.</p></div><div class="step"><h5>Launch &amp; scale</h5><p>Went live with monitoring, then added features based on real usage.</p></div></div>
+</div></section>
+
+<section style="background:var(--soft)"><div class="wrap">
+  <h2>Tech stack</h2>
+  <div class="chips"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Razorpay / Stripe</span></div>
+</div></section>
+
+<section><div class="wrap next">
+  <a class="nx" href="saas-case-inventory-order-management-saas.html"><small><i class="bi bi-arrow-left"></i> Previous project</small><b>Inventory &amp; Order Management SaaS</b></a>
+  <a class="nx r" href="saas-case-multi-tenant-crm-for-small-sales-teams.html"><small>Next project <i class="bi bi-arrow-right"></i></small><b>Multi-tenant CRM for Small Sales Teams</b></a>
+</div></section>
+
+<section class="cta" id="contact"><div class="wrap">
+  <div class="dots"></div>
+  <h2>Have a SaaS idea? Let us build it.</h2>
+  <a class="btn btn-cream" href="https://wa.me/919971103293" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Chat on WhatsApp</a>
+  <a class="btn btn-ghost" href="mailto:techtapasvi@gmail.com?subject=SaaS%20project%20like:%20Subscription%20Billing%20&amp;%20Customer%20Portal"><i class="bi bi-envelope"></i>Email us</a>
+</div></section>
+<footer>© <script>document.write(new Date().getFullYear())</script> TechTapasvi · Serving clients Pan India</footer>
+</body>
+</html>
